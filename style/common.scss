@@ -1,6 +1,14 @@
 @font-face {
-	font-family:National-Bold;
-	src:url(../../fonts/font-gn/National-Bold.otf);
+	font-family:OpenSans-Bold;
+	src:url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family:OpenSans-Regular;
+	src:url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family:Eina-SemiBold;
+	src:url(../fonts/Eina-SemiBold.ttf);
 }
 body, html, *
 {
@@ -36,7 +44,6 @@ main
 	position: relative;
 	width: 100%;
 	overflow:hidden;
-	color:red;
 }
 
 /* ----------------------------------------------------------------- */
@@ -53,10 +60,14 @@ main
 ==============================*/
 
 	/*----------  MAIN COLORS  ----------*/
-	$colorMain_1: #000;
+	$colorMain_1: #0ED094;
+	$colorMain_2: #11ABEC;
+	$colorMain_3: #013A51;
+	$colorMain_4: #F4F4F4;
+	$colorMain_5: #002534;
+	$colorMain_6: #58676D;
 
-	/*----------  FONTS COLORS  ----------*/
-	$colorFont_1: #000;
+
 
 /*=====  End of COLORS  ======*/
 
@@ -64,13 +75,13 @@ main
 /*=============================
 =            FONTS            =
 =============================*/
-
+	
 	/*----------  H1  ----------*/
-	$font_1: Font;
+	$font_1_bold: OpenSans-Bold;
+	$font_1_regular: OpenSans-Regular;
 
 	/*----------  H2  ----------*/
-	$font_2: Font;
-
+	$font_2_semibold: Eina-SemiBold;
 
 /*=====  End of FONTS  ======*/
 
@@ -81,17 +92,62 @@ main
 
 	/*----------  H1  ----------*/
 		/*----------  DESKTOP  ----------*/
-		$h1_textsize_desktop: 44px;
-		$h1_lineheight_h1_desktop: 50px;
+		$h1_textsize_desktop: 40px;
+		$h1_lineheight_desktop: 54px;
 
-		/*----------  MOBILE  ----------*/
-		$h1_textsize_mobile: 34px;
-		$h1_lineheight_desktop: 40px;
 
+	/*----------  H2  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h2_textsize_desktop: 32px;
+		$h2_lineheight_desktop: 42px;
+
+
+	/*----------  H3  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h3_textsize_desktop: 26px;
+		$h3_lineheight_desktop: 36px;
+
+
+	/*----------  H4  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h4_textsize_desktop: 22px;
+		$h4_lineheight_desktop: 19px;
+
+
+	/*----------  H5  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$h5_textsize_desktop: 16px;
+		$h5_lineheight_desktop: 19px;
+
+
+	/*----------  PARAGRAPH  ----------*/
+		/*----------  BIG  ----------*/
+		$paragraphBig_textsize_desktop: 18px;
+		$paragraphBig_lineheight_desktop: 24px;
+
+		/*----------  MEDIUM  ----------*/
+		$paragraphMedium_textsize_desktop: 16px;
+		$paragraphMedium_lineheight_desktop: 24px;
+
+		/*----------  SMALL  ----------*/
+		$paragraphSmall_textsize_desktop: 14px;
+		$paragraphSmall_lineheight_desktop: 24px;
+
+
+	/*----------  BUTTON/LINK  ----------*/
+		/*---------- LINK STYLE 1  ----------*/
+		$linkStyle1_textsize_desktop: 13px;
+		$linkStyle1_lineheight_desktop: 18px;
+
+		/*---------- LINK STYLE 2  ----------*/
+		$linkStyle2_textsize_desktop: 16px;
+		$linkStyle2_lineheight_desktop: 19px;
+
+		/*---------- BUTTON STYLE 1  ----------*/
+		$buttonStyle1_textsize_desktop: 14px;
+		$buttonStyle1_lineheight_desktop: 19px;
 
 /*=====  End of TEXT SIZE  ======*/
-
-
 
 
 /*============================
@@ -106,6 +162,7 @@ main
 	$grid_mobile: 100%;
 
 /*=====  End of GRID  ======*/
+
 
 /*===================================
 =            BREAK POINT            =
@@ -135,21 +192,169 @@ main
 
 		/*----------  H1  ----------*/
 		@mixin styleH1{
-			font-family: $font_h1;
-		  	color: $colorFont_primary;
+			font-family: $font_2_semibold;
+		  	color: $colorMain_3;
 
 			@media screen and (min-width: $breakPoint_tablet){
-				font-size: $textsize_h1_desktop;
-				line-height: $lineheight_h1_desktop;
+				font-size: $h1_textsize_desktop;
+				line-height: $h1_lineheight_desktop;
 			}
 			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
 
 			}
 			@media screen and (max-width: $breakPoint_mobile){
-				font-size: $textsize_h1_mobile;
-				line-height: $lineheight_h1_mobile;
+				
 			}
-		  	
+		}
+
+
+		/*----------  H2  ----------*/
+		@mixin styleH2{
+			font-family: $font_2_semibold;
+		  	color: $colorMain_3;
+
+			@media screen and (min-width: $breakPoint_tablet){
+				font-size: $h2_textsize_desktop;
+				line-height: $h2_lineheight_desktop;
+			}
+			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				
+			}
+		}
+
+		/*----------  H3  ----------*/
+		@mixin styleH3{
+			font-family: $font_2_semibold;
+		  	color: $colorMain_3;
+		  	font-size: $h3_textsize_desktop;
+			line-height: $h3_lineheight_desktop;
+		}
+
+		/*----------  H4  ----------*/
+		@mixin styleH4{
+			font-family: $font_2_semibold;
+		  	color: $colorMain_3;
+		  	font-size: $h4_textsize_desktop;
+			line-height: $h4_lineheight_desktop;
+		}
+
+		/*----------  H5  ----------*/
+		@mixin styleH5{
+			font-family: $font_2_semibold;
+		  	color: $colorMain_3;
+		  	font-size: $h5_textsize_desktop;
+			line-height: $h5_lineheight_desktop;
+		}
+
+
+	/*----------  PARAGRAPH  ----------*/
+
+		/*----------  BIG  ----------*/
+		@mixin styleParagraphBig{
+			font-family: $font_1_regular;
+		  	color: $colorMain_6;
+		  	font-size: $paragraphBig_textsize_desktop;
+			line-height: $paragraphBig_lineheight_desktop;
+		}
+
+		/*----------  MEDIUM  ----------*/
+		@mixin styleParagraphMedium{
+			font-family: $font_1_regular;
+		  	color: $colorMain_6;
+		  	font-size: $paragraphMedium_textsize_desktop;
+			line-height: $paragraphMedium_lineheight_desktop;
+		}
+
+		/*----------  SMALL  ----------*/
+		@mixin styleParagraphSmall{
+			font-family: $font_1_regular;
+		  	color: $colorMain_6;
+		  	font-size: $paragraphSmall_textsize_desktop;
+			line-height: $paragraphSmall_lineheight_desktop;
+		}
+
+
+	/*----------  BTN/LINK  ----------*/
+
+		/*----------  LINK STYLE 1  ----------*/
+		@mixin styleLinkStyle1{
+			font-family: $font_1_bold;
+		  	color: $colorMain_3;
+		  	font-size: $btnLinkStyle1_textsize_desktop;
+			line-height: $btnLinkStyle1_lineheight_desktop;
+		}
+
+		/*----------  LINK STYLE 2  ----------*/
+		@mixin styleLinkStyle2{
+			font-family: $font_2_semibold;
+		  	color: $colorMain_2;
+		  	font-size: $btnLinkStyle2_textsize_desktop;
+			line-height: $btnLinkStyle2_lineheight_desktop;
+		}
+
+		/*----------  BTN STYLE 1  ----------*/
+		@mixin styleBtnStyle1{
+			text-decoration: none;
+			font-family: $font_1_bold;
+			display: inline-flex;
+			justify-content: center;
+			padding: 16px 34px 16px 34px;
+			border-radius: 50px;
+			.btn-content{
+				font-size: $buttonStyle1_textsize_desktop;
+				line-height: $buttonStyle1_lineheight_desktop;
+			}
+		}
+
+
+	/*----------  GRID  ----------*/
+
+		/*----------  SIZE 1  ----------*/
+		@mixin styleGrid1{
+			margin-right: auto;
+			margin-left: auto;
+			@media screen and (min-width: $breakPoint_tablet){
+				width: $grid_desktop_1;
+			}
+			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				
+			}
+		}
+
+		/*----------  SIZE 2  ----------*/
+		@mixin styleGrid2{
+			margin-right: auto;
+			margin-left: auto;
+			@media screen and (min-width: $breakPoint_tablet){
+				width: $grid_desktop_2;
+			}
+			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				
+			}
+		}
+
+		/*----------  SIZE 3  ----------*/
+		@mixin styleGrid3{
+			margin-right: auto;
+			margin-left: auto;
+			@media screen and (min-width: $breakPoint_tablet){
+				width: $grid_desktop_3;
+			}
+			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				
+			}
 		}
 
 /* ----------------------------------------------------- */
