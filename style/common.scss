@@ -283,16 +283,16 @@ main
 		@mixin styleLinkStyle1{
 			font-family: $font_1_bold;
 		  	color: $colorMain_3;
-		  	font-size: $btnLinkStyle1_textsize_desktop;
-			line-height: $btnLinkStyle1_lineheight_desktop;
+		  	font-size: $linkStyle1_textsize_desktop;
+			line-height: $linkStyle1_lineheight_desktop;
 		}
 
 		/*----------  LINK STYLE 2  ----------*/
 		@mixin styleLinkStyle2{
 			font-family: $font_2_semibold;
 		  	color: $colorMain_2;
-		  	font-size: $btnLinkStyle2_textsize_desktop;
-			line-height: $btnLinkStyle2_lineheight_desktop;
+		  	font-size: $linkStyle2_textsize_desktop;
+			line-height: $linkStyle2_lineheight_desktop;
 		}
 
 		/*----------  BTN STYLE 1  ----------*/

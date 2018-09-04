@@ -4,7 +4,15 @@
 =            PAGE HOME           =
 ================================*/
 
-/*----------  SECTION HOME  ----------*/
+/*----------  HOME COMMON  ----------*/
+.homeCommon-section-onTitle{
+	@include styleH5;
+	color: $colorMain_2;
+}
+.homeCommon-section-title{
+	@include styleH2;
+}
+/*----------  SECTION COVER  ----------*/
 #section-cover{
 	padding: 235px 0px 0px 0px;
 	background-color: #C0E0ED;
@@ -75,6 +83,513 @@
 						color:#FFF;
 					}
 				}
+			}
+		}
+	}
+}
+
+
+
+/*----------  SECTION FTR  ----------*/
+#section-ftr{
+	.wrapper{
+		@include styleGrid1;
+		.container-ftr{
+			padding: 85px 0px 85px 0px;
+			display: flex;
+			flex-flow: row wrap;
+			width: 100%;
+			border-bottom: 1px solid #F1F3F3;
+			justify-content: space-between;
+			.ftr{
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				.logo{
+					height: 35px;
+					margin-right: 25px;
+				}
+				.text{
+					@include styleH5;
+					width: 240px;
+				}
+			}
+		}
+	}
+}
+
+
+
+/*----------  SECTION PRES  ----------*/
+#section-pres{
+	position: relative;
+	padding-top: 90px;
+	.wrapper{
+		@include styleGrid1;
+		.head{
+			text-align: center;
+			margin-bottom: 85px;
+			.desc{
+				@include styleParagraphMedium;
+			}
+		}
+		.container-col{
+			padding-bottom: 110px;
+			border-bottom: 1px solid #F1F3F3;
+			display: flex;
+			flex-flow: row wrap;
+			width: 100%;
+			justify-content: space-between;
+			.col-el{
+				width: 290px;
+				&.col-el-1{
+					text-align: right;
+					.el:nth-child(1),
+					.el:nth-child(3){
+						transform: translateX(40px);
+					}
+				}
+				&.col-el-2{
+					text-align: left;
+					.el:nth-child(1),
+					.el:nth-child(3){
+						transform: translateX(-40px);
+					}
+				}
+				.el{
+					margin-bottom: 90px;
+					&:last-child{
+						margin-bottom:0px;
+					}
+					h5{
+						@include styleH5;
+					}
+					p{
+						@include styleParagraphSmall;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------  SECTION PRES  ----------*/
+#section-quotes{
+	position: relative;
+	padding: 80px 0px 55px 0px;
+	.wrapper{
+		@include styleGrid1;
+
+		.head{
+			margin-bottom: 75px;
+			text-align: center;
+		}
+		.container-quotes{
+			width: 100%;
+			height: 330px;
+			position: relative;
+
+			.li-quotes{
+				display: flex;
+				flex-flow: row wrap;
+				width: 100%;
+				align-content: flex-start;
+				justify-content: space-between;
+				.quote{
+					position: relative;
+					.shape{
+						position: absolute;
+					}
+					&:nth-child(1){
+						margin-top: 16px;
+						.shape{
+							top: 35px;
+							right: -35px;
+							width: 159px;
+						}
+					}
+					&:nth-child(2){
+						margin-top: 105px;
+						.shape{
+							top: 155px;
+							right: -12px;
+							width: 109px;
+						}
+					}
+					&:nth-child(3){
+						.shape{
+							width: 97px;
+							top: -35px;
+							left: 95px;
+						}
+					}
+					.quote-content{
+						position: relative;
+						z-index: 1;
+						padding: 30px;
+						height: 225px;
+						width: 360px;
+						box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
+						border-radius: 8px;	
+						background-color: #FFFFFF;
+						.name{
+							display: block;
+							@include styleH5;
+						}
+						.text{
+							display: block;
+							margin-top: 10px;
+							@include styleParagraphMedium;
+							display: -webkit-box;
+		  					-webkit-line-clamp: 4;
+		  					-webkit-box-orient: vertical;  
+		  					overflow: hidden;
+						}
+						.link{
+							display: inline-block;
+							margin-top:25px;
+							@include styleLinkStyle2;
+						}
+					}
+				}
+			}
+		}
+		.container-nav{
+			margin-top: 100px;
+			display: flex;
+			flex-flow: row wrap;
+			width: 100%;
+			justify-content: center;
+			.nav{
+				cursor: pointer;
+				margin-right: 20px;
+				&:last-child{
+					margin-right:0px;
+				}
+				.num{
+					@include styleParagraphMedium;
+					color: #9BABB1;
+				}
+				.underline{
+					width: 50px;
+					height: 2px;
+					background-color: #9BABB1;
+				}
+				&.active{
+					.num{
+						color: $colorMain_3;
+					}
+					.underline{
+						background-color: $colorMain_3;
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+/*----------  SECTION BTP  ----------*/
+#section-btp{
+	background-color: $colorMain_4;
+	.wrapper{
+		@include styleGrid1;
+		.container-el{
+			>.el{
+				@include styleGrid2;
+				padding: 120px 0px 120px 0px;
+				display: flex;
+				flex-flow: row wrap;
+				width: 100%;
+				align-items: center;
+				justify-content: space-between;
+				border-bottom: 1px solid rgba(1,58,81,0.1);
+				&:last-child{
+					margin-bottom:0px;
+				}
+				.container-illu{
+					width: 580px;
+					text-align: center;
+				}
+				.container-text{
+					width: 410px;
+					>p{
+						@include styleParagraphBig;
+					}
+					.li-el{
+						margin-top: 60px;
+						.el{
+							display: flex;
+							flex-flow: row wrap;
+							width: 100%;
+							align-content: flex-start;
+							justify-content: space-between;
+							margin-bottom: 14px;
+							&:last-child{
+								margin-bottom:0px;
+							}
+							.shape{
+								width: 16px;
+							}
+							.text{
+								width: calc(100% - 30px);
+								@include styleParagraphMedium;
+							}
+						}
+					}
+				}
+				&:nth-child(odd){
+					.container-illu{
+						order:1;
+					}
+					.container-text{
+						order:2;
+					}
+				}
+				&:nth-child(even){
+					.container-illu{
+						order:2;
+					}
+					.container-text{
+						order:1;
+					}
+				}
+				&:nth-child(1){
+					.container-illu{
+						.illu{
+							width: 100%;
+						}
+					}
+				}
+				&:nth-child(2){
+					.container-illu{
+						.illu{
+							width: 415px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------  SECTION APP  ----------*/
+#section-app{
+	position: relative;
+	.wrapper{
+		padding: 125px 0px 125px 0px;
+		@include styleGrid3;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		.container-illu{
+			width: calc(100% - 430px);
+			text-align: center;
+			.illu{
+				width: 370px;
+			}
+		}
+		.container-text{
+			width: 430px;
+			>p{
+				@include styleParagraphMedium;
+			}
+			.container-action{
+				margin-top: 45px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				a{
+					margin-right: 24px;
+					&:last-child{
+						margin-right: 0px;
+					}
+					text-decoration: none;
+					padding: 10px 15px 10px 15px;
+					border-radius: 25px;
+					background-color: $colorMain_3;
+					display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+					.logo{
+						height: 27px;
+						margin-right: 13px;
+					}
+					.text{
+						.onTitle{
+							color:#FFF;
+							font-size: 8px;
+							font-family: $font_1_regular;
+						}
+						.store{
+							color:#FFF;
+							font-size: 16px;
+							font-family: $font_1_regular;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*----------  SECTION BANNER  ----------*/
+#section-banner{
+	position: relative;
+	.wrapper{
+		border-top: 1px solid #F1F3F3;
+		padding: 100px 0px 110px 0px;
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		.title{
+			width: 360px;
+		}
+		.text{
+			width: 300px;
+			@include styleParagraphBig;
+		}
+		.btn{
+			@include styleBtnStyle1;
+			background-color: $colorMain_2;
+			.btn-content{
+				color: #FFF;
+			}
+		}
+	}
+}
+
+
+/*----------  SECTION EXPERT ----------*/
+#section-expert{
+	position: relative;
+	&:before{
+		content:'';
+		background-color: $colorMain_1;
+		height: 95%;
+		width: 100%;
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+	}
+	.wrapper{
+		position: relative;
+		z-index: 1;
+		@include styleGrid3;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		.container-text{
+			padding: 120px 0px 120px 0px;
+			width: 500px;
+			.homeCommon-section-onTitle{
+				color: $colorMain_3;
+			}
+			.homeCommon-section-title{
+				color: #FFF;
+			}
+			.text{
+				margin-top: 45px;
+				@include styleParagraphMedium;
+				color: #FFF;
+			}
+			.link{
+				display: inline-block;
+				margin-top: 45px;
+				@include styleLinkStyle1;
+			}
+		}
+		.container-img{
+			position: relative;
+			.img{
+				width: 455px;
+			}
+			.cdr{
+				left: 50%;
+				bottom: 0px;
+				transform: translateX(-50%);
+				position: absolute;
+				text-align: center;
+				background-color: #FFF;
+				padding: 25px;
+				.name{
+					@include styleH5;
+				}
+				.job{
+					@include styleParagraphSmall;
+				}
+			}
+		}
+	}
+}
+
+
+/*----------  SECTION SECU ----------*/
+#section-secu{
+	position: relative;
+	@include styleGrid2;
+	
+	.wrapper{
+		padding: 90px 0px 90px 0px;
+		border-bottom: 1px solid #F1F3F3;
+		.head{
+			margin-bottom: 75px;
+			text-align: center;		
+		}
+		.container-el{
+			display: flex;
+			flex-flow: row wrap;
+			width: 100%;
+			justify-content: space-around;
+			align-items: flex-start;
+			.el{
+				width: 400px;
+				text-align: center;
+				.illu{
+					width: 100%;
+					margin-bottom: 50px;
+				}
+				.title{
+					@include styleH5;
+				}
+				.text{
+					margin-top: 20px;
+					@include styleParagraphMedium;
+				}
+			}
+		}
+	}
+	
+}
+
+
+/*----------  SECTION TARIFS ----------*/
+#section-tarifs{
+	padding: 110px 0px 100px 0px;
+
+	.wrapper{
+		width: 510px;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+
+		.text{
+			margin-top: 35px;
+			@include styleParagraphMedium;
+		}
+		.btn{
+			margin-top: 42px;
+			@include styleBtnStyle1;
+			background-color: $colorMain_2;
+			.btn-content{
+				color: #FFF;
 			}
 		}
 	}
