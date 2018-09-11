@@ -169,12 +169,15 @@
 					}
 				}
 			}
+			.illu{
+				width: 384px;
+			}
 		}
 	}
 }
 
 
-/*----------  SECTION PRES  ----------*/
+/*----------  SECTION QUOTES  ----------*/
 #section-quotes{
 	position: relative;
 	padding: 80px 0px 55px 0px;
@@ -286,9 +289,9 @@
 				}
 			}
 		}
-	}
-	
+	}	
 }
+
 
 /*----------  SECTION BTP  ----------*/
 #section-btp{
@@ -593,6 +596,84 @@
 			}
 		}
 	}
+}
+
+
+
+/*----------  RESPONSIVE ----------*/
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	#section-cover{
+		padding-top: 130px;
+	}
+	#section-cover .wrapper
+	{
+		align-items: center;
+	}
+	#section-cover .wrapper .container-text{
+		width: 400px;
+	}
+	#section-cover .wrapper .container-img{
+		width: calc(100% - 450px);
+		max-width: 330px;
+		margin-top: 0px;
+	}
+	#section-cover .wrapper .container-img .container-tag .tag.tag-1{
+		top: 10px;
+	}
+	#section-cover .wrapper .container-img .container-tag .tag.tag-2{
+		top: 160px;
+	}
+	#section-cover .wrapper .container-img .container-tag .tag.tag-3{
+		top: 215px;
+	}
+
+	#section-ftr .wrapper .container-ftr .ftr{
+		width: calc(100% / 3.5);
+	}
+	#section-ftr .wrapper .container-ftr .ftr .logo{
+		height: initial;
+		width: 25px;
+	}
+	#section-ftr .wrapper .container-ftr .ftr .text{
+		width: calc(100% - 50px);
+	}
+	#section-pres .wrapper .container-col .illu{
+		width: 250px;
+	}
+	#section-pres .wrapper .container-col .col-el.col-el-1 .el:first-child, 
+	#section-pres .wrapper .container-col .col-el.col-el-1 .el:nth-child(3){
+		transform: translateX(80px);
+	}
+	#section-pres .wrapper .container-col .col-el.col-el-2 .el:first-child, 
+	#section-pres .wrapper .container-col .col-el.col-el-2 .el:nth-child(3){
+		transform: translateX(-80px);
+	}
+	#section-pres .wrapper .container-col .col-el{
+		width: 200px;
+	}
+
+	#section-quotes .wrapper .container-quotes .li-quotes .quote .quote-content{
+		width: 210px;
+		height: 210px;
+		padding: 20px;
+	}
+	#section-btp .wrapper .container-el>.el
+	{
+		width: 100%;
+	}
+	#section-btp .wrapper .container-el>.el .container-text{
+		width: 45%;
+	}
+	#section-btp .wrapper .container-el>.el .container-illu{
+		width: 45%;
+	}
+	#section-btp .wrapper .container-el>.el:nth-child(2) .container-illu .illu
+	{
+		width: 100%;
+	}
+}
+@media screen and (max-width: $breakPoint_mobile){
+
 }
 
 /*====================================

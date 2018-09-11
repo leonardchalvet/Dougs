@@ -1,0 +1,97 @@
+#footer{
+	width: 100%;
+	position: relative;
+	padding-top: 50px;
+	background-color: #011F2B;
+	.wrapper{
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		.container-logo{
+			width: 290px;
+			.logo{
+				height: 36px;
+				margin-bottom: 28px;
+			}
+			p{
+				@include styleParagraphMedium;
+				color: #FFF;
+			}
+		}
+		.container-ul{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-end;
+			width: 720px;
+			ul{
+				width: 180px;
+				list-style: none;
+				margin-left: 60px;
+				margin-bottom: 38px;
+				li{
+					&:first-child{
+						a{
+							@include styleParagraphMedium;
+							color:#FFF;
+							margin-bottom: 17px;
+						}
+					}
+					&:not(:first-child){
+						a{
+							@include styleParagraphSmall;
+							color: rgba(255, 255, 255, 0.7);
+						}
+					}
+					a{
+						display: inline-block;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	.foot{
+		@include styleGrid1;
+		padding: 8px 0px 8px 0px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		.container-left{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			p{
+				@include styleParagraphSmall;
+				color: #FFF;
+				font-size: 11px;
+			}
+			.li-rs{
+				margin-left: 18px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				a{
+					display: block;
+					text-decoration: none;
+					margin-right: 25px;
+					width: 17px;
+					&:last-child{
+						margin-right:0px;
+					}
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+		.container-right{
+			height: 44px;
+			img{
+				height: 100%;
+			}
+		}
+	}
+}

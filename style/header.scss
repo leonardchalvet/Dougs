@@ -1,0 +1,88 @@
+#header-desktop{
+	position: fixed;
+	z-index: 20;
+	height: 80px;
+	width: 100%;
+	transition: all ease 0.25s;
+	&.scroll{
+		background-color: #FFF;
+		    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+	}
+	.wrapper{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		@include styleGrid1;
+		display: inline-flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+		.container{
+			display: inline-flex;
+			flex-flow: row wrap;
+			align-items: center;
+			.sep{
+				margin-left: 23px;
+				margin-right: 23px;
+				height: 4px;	
+				width: 4px;	
+				opacity: 0.2;
+				border-radius: 2px;
+				background-color: $colorMain_3;
+			}
+			.logo{
+				height: 26px;
+				img{
+					height: 100%;
+				}
+			}
+			.tel{
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				img{
+					height: 12px;
+					margin-right: 8px;
+				}
+				.num{
+					text-decoration: none;
+					@include styleLinkStyle1;
+				}
+			}
+			.li-link{
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				a{
+					color: $colorMain_6;
+					font-family: $font_1_regular;
+					font-size: $linkStyle1_textsize_desktop;
+					line-height: $linkStyle1_lineheight_desktop;
+					text-decoration: none;
+					margin-right: 30px;
+					&:last-child{
+						margin-right:0px;
+					}
+				}
+			}
+			.li-action{
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				.action-signin{
+					@include styleLinkStyle1;
+					margin-right: 18px;
+					text-decoration: none;
+				}
+				.action-signup{
+					@include styleBtnStyle1;
+					border:1px solid $colorMain_2;
+					.btn-content{
+						color:$colorMain_2;
+					} 
+				}
+			}
+		}
+	}
+}

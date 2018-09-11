@@ -158,8 +158,8 @@ main
 	$grid_desktop_2: 1100px;
 	$grid_desktop_3: 1000px;
 
-	$grid_tablet: 100%;
-	$grid_mobile: 100%;
+	$grid_tablet: calc(100% - 160px);
+	$grid_mobile: calc(100% - 50px);
 
 /*=====  End of GRID  ======*/
 
@@ -320,10 +320,11 @@ main
 				width: $grid_desktop_1;
 			}
 			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+				width: $grid_tablet;
 
 			}
 			@media screen and (max-width: $breakPoint_mobile){
-				
+				width: $grid_mobile;
 			}
 		}
 
@@ -335,10 +336,10 @@ main
 				width: $grid_desktop_2;
 			}
 			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
-
+				width: $grid_tablet;
 			}
 			@media screen and (max-width: $breakPoint_mobile){
-				
+				width: $grid_mobile;
 			}
 		}
 
@@ -350,10 +351,10 @@ main
 				width: $grid_desktop_3;
 			}
 			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
-
+				width: $grid_tablet;
 			}
 			@media screen and (max-width: $breakPoint_mobile){
-				
+				width: $grid_mobile;
 			}
 		}
 
