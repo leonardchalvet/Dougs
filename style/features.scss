@@ -4,19 +4,11 @@
 =         PAGE FEATURES         =
 ================================*/
 
-/*----------  HOME COMMON  ----------*/
+/*----------  FEATURES COMMON  ----------*/
 .featuresCommon-section-title {
 	@include styleH2;
 }
 
-/*----------  HOME COMMON  ----------*/
-.homeCommon-section-onTitle{
-	@include styleH5;
-	color: $colorMain_2;
-}
-.homeCommon-section-title{
-	@include styleH2;
-}
 /*----------  SECTION COVER  ----------*/
 #section-cover{
 	padding: 235px 0px 0px 0px;
@@ -57,6 +49,7 @@
 	}
 }
 
+/*----------  SECTION APP  ----------*/
 #section-app {
 	position: relative;
 	margin-top: -40px;
@@ -121,13 +114,13 @@
 					&.tag-5 {
 						top: 385px;
     					left: 145px;
-						background-color: #11ABEC;
+						background-color: $colorMain_2;
 						color:#FFF;
 					}
 					&.tag-6 {
 						top: 495px;
     					right: 50px;
-						background-color: #0ED094;
+						background-color: $colorMain_1;
 						color:#FFF;
 					}
 				}
@@ -156,11 +149,11 @@
 	}
 }
 
-
+/*----------  SECTION NTF  ----------*/
 #section-ntf {
 	padding: 100px 0 80px 0;
 	margin-top: -15px;
-	background-color: #0ED094;
+	background-color: $colorMain_1;
 	
 	.wrapper {
 		position: relative;
@@ -202,6 +195,7 @@
 	}
 }
 
+/*----------  SECTION LPT  ----------*/
 #section-lpt {
 	.wrapper{
 		@include styleGrid1;
@@ -255,6 +249,7 @@
 	}
 }
 
+/*----------  SECTION BLN  ----------*/
 #section-bln {
 	position: relative;
 	margin-top: -5%;
@@ -303,7 +298,7 @@
 }
 
 /*====================================
-=            END PAGE HOME           =
+=          END PAGE FEATURES         =
 =====================================*/
 
 @import 'footer.scss';
