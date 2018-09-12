@@ -79,9 +79,11 @@
 						<p>
 							Pour réaliser votre bilan, nos comptables doivent savoir à quoi correspond chaque opération de votre compte bancaire professionnel. La synchronisation avec votre banque est directe, vous gardez vos relevés de compte chez vous. Les opérations sont catégorisées automatiquement dans Dougs. Vous ne passez que quelques minutes par mois sur votre compta.
 						</p>
-						<a class="btn" href="">
-							<span class="btn-content">Essayez Dougs gratuitement</span>
-						</a>
+						<div class="container-action">
+							<a class="btn" href="">
+								<span class="btn-content">Essayez Dougs gratuitement</span>
+							</a>
+						</div>
 					</div>
 
 				</div>
