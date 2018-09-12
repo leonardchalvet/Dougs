@@ -1,0 +1,153 @@
+@import 'common.scss';
+@import 'header.scss';
+/*===============================
+=         PAGE CREATION         =
+================================*/
+
+/*----------  CREATION COMMON  ----------*/
+.creationCommon-section-title {
+	@include styleH2;
+}
+
+/*----------  SECTION COVER  ----------*/
+#section-cover{
+	padding: 200px 0px 200px 0px;
+	.wrapper{
+		position: relative;
+		@include styleGrid1;
+		display: flex;
+		justify-content: center;
+		.pattern {
+			position: absolute;
+    		width: 110%;
+		}
+		.container-text{
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+			text-align: center;
+			h1{
+				width: 700px;
+				@include styleH1;
+			}
+			p{
+				width: 480px;
+				margin-top: 17px;
+				@include styleParagraphBig;
+
+				span {
+					color: $colorMain_5;
+				}
+			}
+			.container-action{
+				margin-top: 45px;
+				.btn{
+					@include styleBtnStyle1;
+					background-color:$colorMain_2;
+					.btn-content{
+						color:#FFF;
+					} 
+				}
+			}
+		}
+	}
+}
+
+#section-jpd {
+	position: relative;
+	&:before{
+	    content: '';
+	    background-color: #C0E0ED;
+		height: 88%;
+	    width: 100%;
+	    position: absolute;
+	    left: 0px;
+	    bottom: 50px;
+	}
+	.wrapper {
+		position: relative;
+		@include styleGrid1;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.el-1 {
+			position: relative;
+			z-index: 1;
+			margin-top: 20px;
+			background-color: #fff;
+			box-shadow: 0 20px 30px 0 rgba(0,0,0,0.1);
+			width: 480px;
+			padding: 50px 70px;
+
+			.container-text {
+				width: 100%;
+				ul {
+					li {
+						margin-top: 40px;
+						display: flex;
+						align-items: start;
+						p {
+							@include styleParagraphMedium;
+							color: $colorMain_5;
+							margin-left: 30px;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.el-2 {
+			position: absolute;
+		    bottom: 50px;
+		    left: 390px;
+		    z-index: 0;
+		    width: 415px;
+			img {
+				width: 100%;
+			}
+		}
+
+		.el-3 {
+			width: 280px;
+			.container-text {
+				.text {
+					@include styleParagraphBig;
+					color: $colorMain_3;
+				}
+
+				.name {
+					margin-top: 25px;
+					@include styleParagraphMedium;
+					color: $colorMain_3;
+					font-weight: bold;
+				}
+
+				span {
+					@include styleParagraphSmall;
+					color: $colorMain_6;
+				}
+			}
+		}
+	}
+}
+
+#section-xpr {
+	height: 200px;
+}
+
+
+/*----------  RESPONSIVE ----------*/
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	
+}
+@media screen and (max-width: $breakPoint_mobile){
+
+}
+
+/*====================================
+=          END PAGE CREATION         =
+=====================================*/
+
+@import 'footer.scss';
