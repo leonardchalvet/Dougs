@@ -1,0 +1,185 @@
+@import 'common.scss';
+@import 'header.scss';
+/*================================
+=            PAGE TEAM           =
+================================*/
+
+/*----------  SECTION COVER  ----------*/
+#section-cover{
+	padding: 175px 0px 80px 0px;
+	.wrapper{
+		position: relative;
+		@include styleGrid1;
+		.pattern{
+			position: absolute;
+			top: -60px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+		}
+		.container-text{
+			text-align: center;
+			h1{
+				@include styleH1;	
+			}
+			p{
+				margin-top: 20px;
+				@include styleParagraphBig;
+			}
+			.btn{
+				margin-top: 40px;
+				@include styleBtnStyle1;
+				border: 1px solid #EBF1F4;
+				.btn-content{
+					color: $colorMain_3;
+				}
+			}
+
+		}
+	}
+}
+
+
+/*----------  SECTION TEAM  ----------*/
+#section-team{
+	position: relative;
+	padding-bottom: 110px;
+	&:before{
+		content:'';
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		width: 100%;
+		height: calc(100% - 60px);
+		background-color: $colorMain_4;
+	}
+	.wrapper{
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		.item{
+			position: relative;
+			overflow: hidden;
+			transition: all 0.25s ease;
+			margin-bottom: 17px;
+			&:hover{
+				transform:scale(1.2);
+				box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+				z-index: 1;
+			}
+			.pp{
+				height: 247px;
+				width: 186px;
+				background-repeat: no-repeat;
+			    background-position: center center;
+			    background-size: cover;
+			}
+			.container-text{
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				width: calc(100% - 40px);
+				transition: all 0.25s ease;
+				transform: translateY(100%);
+				.text{
+					background-color: #FFF;
+					padding-top: 22px;
+					.name{
+						@include styleH4;
+						padding: 0px 13px 0px 13px;
+					}
+					.job{
+						position: relative;
+						margin-top: 10px;
+						@include styleParagraphSmall;
+						padding: 0px 13px 13px 13px;
+						&:after{
+							content: '';
+							position: absolute;
+							left: calc(100% - 1px);
+							bottom: 0%;
+							background-color: #FFF;
+							width: 41px;
+							height: 100%;
+						}
+					}
+				}
+			}
+			&:hover .container-text{
+				transform: translateY(0%);
+			}
+		}
+	}
+}
+
+
+/*----------  SECTION FONDATEUR  ----------*/
+#section-fondateur{
+	.wrapper{
+		@include styleGrid1;
+		.container-el{
+			>.el{
+				@include styleGrid2;
+				padding: 120px 0px 120px 0px;
+				display: flex;
+				flex-flow: row wrap;
+				width: 100%;
+				align-items: center;
+				justify-content: space-between;
+				border-bottom: 1px solid rgba(1,58,81,0.1);
+				&:last-child{
+					margin-bottom:0px;
+				}
+				.container-illu{
+					order:2;
+					width: 580px;
+					text-align: center;
+					.illu{
+						width: 100%;
+					}
+				}
+				.container-text{
+					order:1;
+					width: 410px;
+					.title{
+						@include styleH2;
+					}
+					>p{
+						margin-top: 13px;
+						@include styleParagraphBig;
+					}
+					.li-el{
+						margin-top: 40px;
+						margin-bottom: 40px;
+						.el{
+							display: flex;
+							flex-flow: row wrap;
+							width: 100%;
+							align-content: flex-start;
+							justify-content: space-between;
+							margin-bottom: 14px;
+							&:last-child{
+								margin-bottom:0px;
+							}
+							.shape{
+								width: 16px;
+							}
+							.text{
+								width: calc(100% - 30px);
+								@include styleParagraphMedium;
+								color: $colorMain_3;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*====================================
+=            END PAGE TEAM           =
+=====================================*/
+
+@import 'footer.scss';
