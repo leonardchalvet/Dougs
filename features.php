@@ -163,6 +163,8 @@
 
 		</main>
 
+		<?php include('common-sectionBnd.php'); ?>
+
 		<?php include('footer.php'); ?>
 
 		<script type="text/javascript" src="js/index.js"></script>
