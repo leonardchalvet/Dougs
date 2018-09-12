@@ -1,9 +1,9 @@
 <header id="header-desktop">
 	<div class="wrapper">
 		<div class="container container-left">
-			<div class="logo">
+			<a href="index.php" class="logo">
 				<img src="img/header/logo-black.svg">
-			</div>
+			</a>
 			<div class="sep"></div>
 			<div class="tel">
 				<img src="img/header/icn-tel.svg">
@@ -14,7 +14,7 @@
 		</div>
 		<div class="container container-right">
 			<div class="li-link">
-				<a href="">
+				<a href="features.php">
 					Fonctionnalités
 				</a>
 				<a href="">
@@ -23,7 +23,7 @@
 				<a href="">
 					Création d’entreprise
 				</a>
-				<a href="">
+				<a href="team.php">
 					L’équipe
 				</a>
 				<a href="">
