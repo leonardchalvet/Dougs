@@ -1,0 +1,35 @@
+@import 'common.scss';
+@import 'header.scss';
+/*===============================
+=         PAGE PRICING           =
+================================*/
+
+/*----------  PRICING COMMON  ----------*/
+.pricingCommon-section-onTitle{
+	@include styleH5;
+	color: $colorMain_2;
+}
+.pricingCommon-section-title{
+	@include styleH2;
+}
+
+/* SECTION PRICE */
+
+/* SECTION DETAILS */
+
+/* SECTION FRQ */
+
+/*----------  RESPONSIVE ----------*/
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	
+}
+@media screen and (max-width: $breakPoint_mobile){
+
+}
+
+/*====================================
+=          END PAGE PRICING          =
+=====================================*/
+
+@import 'common-sectionBnd.scss';
+@import 'footer.scss';
