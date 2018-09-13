@@ -29,7 +29,76 @@
 			
 			<section id="section-details">
 				<div class="wrapper">
-					
+					<div class="container-text">
+						<ul>
+							<li>
+								<p>
+									Création de statut
+								</p>
+								<p>
+									Vous souhaitez créer votre entreprise ? Dougs vous accompagne :
+								</p>
+							</li>
+							<li>
+								<p>
+									Création EURL, SASU (1 associé)
+								</p>
+								<p>
+									150€
+								</p>
+							</li>
+							<li>
+								<p>
+									Création SARL, SAS, SCI (2 associés et +)
+								</p>
+								<p>
+									150€
+								</p>
+							</li>
+							<li>
+								<p>
+									Autres formes juridiques
+								</p>
+								<p class="contact">
+									Nous contacter
+								</p>
+							</li>
+							<li>
+								<p>
+									Assemblée générale
+								</p>
+								<p>
+									à partir de 80€
+								</p>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<p>
+									Bulletins de salaire
+								</p>
+								<p>
+									Vous êtes assimilé salarié ou vous avez des employés ? Dougs vous propose ses services :
+								</p>
+							</li>
+							<li>
+								<p>
+									Bulletin de salaire
+								</p>
+								<p>
+									30€/mois
+								</p>
+							</li>
+							<li>
+								<p>
+									Pour 2 ou 3 bulletins
+								</p>
+								<p class="contact">
+									Nous contacter
+								</p>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 

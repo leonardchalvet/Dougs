@@ -20,8 +20,55 @@
 
 /* SECTION DETAILS */
 #section-details {
+	padding: 100px 0;
 	background-color: #F4F4F4;
-	height: 200px;
+	.wrapper {
+		@include styleGrid1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.container-text {
+			width: 800px;
+			ul {
+				li {
+					list-style: none;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					&:first-child {
+						padding-bottom: 10px;
+						border-bottom: 1px solid #CED5D8;
+						p:first-child {
+							@include styleH5();
+						}
+						p:last-child {
+							@include styleParagraphSmall();
+						}
+					}
+
+					&:not(:first-child) {
+						margin-top: 25px;
+						p {
+							@include styleParagraphMedium();
+							color: $colorMain_3;
+							&:last-child {
+								font-weight: bold;
+							}
+							&.contact {
+								color: $colorMain_2;
+							}
+						}
+					}
+				}
+
+				&:nth-child(2) {
+					margin-top: 75px;
+				}
+			}
+		}
+	}
 }
 
 /* SECTION FRQ */
@@ -42,7 +89,7 @@
 				width: 340px;
 				h4 {
 					@include styleH4();
-					line-height: 22px;
+					line-height: 26px;
 				}
 				p {
 					margin-top: 25px;
