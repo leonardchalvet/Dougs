@@ -136,7 +136,7 @@
 			width: 500px;
 			padding: 90px 70px;
 			p {
-				@include styleParagraphBig;
+				@include styleParagraphMedium;
 				margin-top: 40px;
 				width: 100%;
 			}
@@ -172,7 +172,7 @@
 				color: #fff;
 			}
 			p {
-				@include styleParagraphSmall;
+				@include styleParagraphMedium();
 				color: #fff;
 				margin-top: 20px;
 			}
@@ -221,10 +221,10 @@
 					}
 				}
 				.container-text{
-					width: 410px;
+					width: 420px;
 					>p{
 						margin-top: 20px;
-						@include styleParagraphBig;
+						@include styleParagraphMedium;
 					}
 				}
 				&:nth-child(1){
@@ -284,7 +284,7 @@
 			padding-top: 200px;
 			width: 400px;
 			p {
-				@include styleParagraphBig;
+				@include styleParagraphMedium();
 				margin-top: 40px;
 			}
 		}
