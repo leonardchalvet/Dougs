@@ -6,6 +6,7 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
+		align-items:center;
 
 		.container-img {
 			width: 460px;
@@ -17,7 +18,6 @@
 		.container-text {
 			width: 610px;
 			h2 {
-				margin-top: 30px;
 				@include styleH2;
 				color: #fff;
 			}
@@ -30,10 +30,10 @@
 			.container-btn {
 				display: flex;
 				justify-content: space-between;
+				margin-top: 45px;
 
 				.container-action{
 					position: relative;
-					margin-top: 45px;
 					.btn{
 						@include styleBtnStyle1;
 						background-color:$colorMain_2;

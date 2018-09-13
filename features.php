@@ -49,7 +49,7 @@
 				<div class="wrapper">
 
 					<div class="container-img">
-						<img src="img/features/app-illu.png">
+						<img class="illu" src="img/features/app-illu.png">
 						<div class="container-tag">
 							<div class="tag tag-1">
 								<img src="img/features/app-el1.svg">
