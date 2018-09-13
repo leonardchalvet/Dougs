@@ -14,10 +14,44 @@
 }
 
 /* SECTION PRICE */
+#section-price {
+	height: 200px;
+}
 
 /* SECTION DETAILS */
+#section-details {
+	background-color: #F4F4F4;
+	height: 200px;
+}
 
 /* SECTION FRQ */
+#section-frq {
+	padding: 70px 0 100px 0;
+	.wrapper {
+		@include styleGrid1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.container-text {
+			margin-top: 100px;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			.el {
+				width: 340px;
+				h4 {
+					@include styleH4();
+					line-height: 22px;
+				}
+				p {
+					margin-top: 25px;
+					@include styleParagraphMedium();
+				}
+			}
+		}
+	}
+}
 
 /*----------  RESPONSIVE ----------*/
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
