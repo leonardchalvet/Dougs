@@ -53,6 +53,7 @@
 	}
 }
 
+/*----------  SECTION JPD  ----------*/
 #section-jpd {
 	position: relative;
 	&:before{
@@ -133,6 +134,7 @@
 	}
 }
 
+/*----------  SECTION XPR  ----------*/
 #section-xpr {
 	padding: 90px 0;
 	.wrapper {
@@ -198,11 +200,28 @@
 	}
 }
 
-#section-step {
+/*----------  SECTION COMMON SECTION QUOTES  ----------*/
+#common-section-quotes {
 	background-color: #F4F4F4;
-	height: 200px;
+	.wrapper {
+		.head {
+			margin: auto;
+			width: 420px;
+		}
+	}
 }
 
+/*----------  SECTION COMMON SECTION PRESS  ----------*/
+#common-section-pres {
+	padding-top: 60px;
+	background-color: #F4F4F4;
+	.wrapper {
+		padding-top: 70px;
+		border-top: 1px solid rgba(1,58,81,0.1);
+	}
+}
+
+/*----------  SECTION START  ----------*/
 #section-start {
 	padding: 80px 0 120px 0;
 	background-color: #0ED094;

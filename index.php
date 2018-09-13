@@ -82,7 +82,7 @@
 				</div>
 			</section>
 
-			<section id="section-pres">
+			<section id="common-section-pres">
 				<div class="wrapper">
 					<div class="head">
 						<h3 class="homeCommon-section-onTitle">
@@ -129,7 +129,7 @@
 				</div>
 			</section>
 
-			<section id="section-quotes">
+			<section id="common-section-quotes">
 				<div class="wrapper">
 					
 					<div class="head">

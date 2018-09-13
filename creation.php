@@ -133,8 +133,104 @@
 				</div>
 			</section>
 
-			<section id="section-step">
+			<section id="common-section-quotes">
+				<div class="wrapper">
+					
+					<div class="head">
+						<h2 class="creationCommon-section-title">
+							Nos clients en parlent mieux que nous !
+						</h2>
+					</div>
 
+					<div class="container-quotes">
+						<div class="li-quotes">
+							<div class="quote">
+								<img class="shape" src="img/creation/quote-shape1.svg">
+								<div class="quote-content">
+									<h5 class="name">
+										Amaury Bouchard
+									</h5>	
+									<q class="text">
+										Très bon cabinet comptable en ligne. L'application est facile à utiliser. L'équipe est réactive et a toujours répondu à mes questlkdh sqkljdh qslkdh dhsqjk dsdkjqs kj
+									</q>
+									<a class="link" href="">
+										Lire plus
+									</a>
+								</div>
+							</div>
+							<div class="quote">
+								<img class="shape" src="img/creation/quote-shape2.svg">
+								<div class="quote-content">
+									<h5 class="name">
+										Calvïn Poujol
+									</h5>	
+									<q class="text">
+										Dougs est un expert-comptable connecté à la pointe des dernières technologies Web ! Deux applications développées en respectant lesjh jkqsgh qjks qhkjsh qkjs h
+									</q>
+									<a class="link" href="">
+										Lire plus
+									</a>
+								</div>
+							</div>
+							<div class="quote">
+								<img class="shape" src="img/creation/quote-shape3.svg">
+								<div class="quote-content">
+									<h5 class="name">
+										Jeremy Brouche
+									</h5>	
+									<q class="text">
+										Cela fait 2 ans que je travaille avec eux pour mon compte professionnel concernant mon activité de kiné. C'est synchronisé avec ma banque, celad gsd gsqdg sqjg
+									</q>
+									<a class="link" href="">
+										Lire plus
+									</a>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="common-section-pres">
+				<div class="wrapper">
+					<div class="head">
+						<h2 class="creationCommon-section-title">
+							Concrètement, les 6 étapes de la création d'entreprise
+						</h2>
+					</div>
+					<div class="container-col">
+						<div class="col-el col-el-1">
+							<div class="el">
+								<h5>.01</h5>
+								<p>Vous remplissez quelques informations directement en ligne pour commencer la création de votre entreprise.</p>
+							</div>
+							<div class="el">
+								<h5>.02</h5>
+								<p>Un juriste Dougs vous contacte et vous décidez de la forme juridique de votre entreprise. Vous recevez votre projet de statuts.</p>
+							</div>
+							<div class="el">
+								<h5>.03</h5>
+								<p>Vous transmettez le projet à la banque de votre choix et déposez le capital.</p>
+							</div>
+						</div>
+						<img class="illu" src="img/creation/sectionPres-illu.svg">
+						<div class="col-el col-el-2">
+							<div class="el">
+								<h5>.04</h5>
+								<p>La banque vous remet une attestation de dépôt des fonds, vous nous la transmettez.</p>
+							</div>
+							<div class="el">
+								<h5>.05</h5>
+								<p>Votre juriste Dougs finalise l'ensemble de votre dossier de constitution et vous le signez.</p>
+							</div>
+							<div class="el">
+								<h5>.06</h5>
+								<p>Nous transmettons le dossier au centre de formalités des entreprises pour immatriculation. Votre Kbis est obtenu, votre activité est lancée !</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<section id="section-start">
