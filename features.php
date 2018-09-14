@@ -52,13 +52,13 @@
 						<img class="illu" src="img/features/app-illu.png">
 						<div class="container-tag">
 							<div class="tag tag-1">
-								<img src="img/features/app-el1.svg">
+								<img src="img/features/app-el1.png">
 							</div>
 							<div class="tag tag-2">
-								<img src="img/features/app-el2.svg">
+								<img src="img/features/app-el2.png">
 							</div>
 							<div class="tag tag-3">
-								<img src="img/features/app-el3.svg">
+								<img src="img/features/app-el3.png">
 							</div>
 							<div class="tag tag-4">
 								#OPERATIONS
