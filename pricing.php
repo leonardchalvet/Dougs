@@ -24,6 +24,243 @@
 			<section id="section-price">
 				<div class="wrapper">
 					
+					<div class="head">
+						<h5>
+							Sans engagement, 30 jours d'essai gratuit 
+						</h5>
+						<h2 class="pricingCommon-section-title">
+							Choississez l'accompagnement qui vous convient
+						</h2>
+					</div>
+
+					<div class="grp">
+						<div class="el el-1">
+							<div class="container-icon">
+								<img src="img/pricing/price-el1-icon.svg">
+							</div>
+							<h5>Pack Essentiel</h5>
+							<div class="price">
+								<p>Dés</p>
+								<div class="number">
+									49<sup>€</sup><span>/mois</span>
+								</div>
+								<p>30 jours gratuits</p>
+							</div>
+							<div class="container-action">
+								<a class="btn" href="">
+									<span class="btn-content">
+										Essai gratuit, sans engagement
+									</span>
+								</a>
+							</div>
+							<div class="text">
+								Un bon point de départ pour la comptabilité de votre activité. Bénéficiez de conseils de qualité et de la <div class="blue">validation par un expert-comptable.</div>
+							</div>
+							<ul>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Accès à l'application Dougs. Récupération et catégorisation automatique de vos transactions bancaires.
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Prévision de vos cotisations sociales
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Gestion des notes de frais, indemnités kilométriques et paiements en espèces
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Support technique en ligne
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Conseil téléphonique
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Déclaration 2035 et transmission au centre des impôts
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Contactez votre Expert Comptable par tchat et email
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Pas de gestion de l'AGA
+									</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="el el-2">
+							<div class="container-icon">
+								<img src="img/pricing/price-el2-icon.svg">
+							</div>
+							<h5>Pack Liberté</h5>
+							<div class="price">
+								<p>Dés</p>
+								<div class="number">
+									69<sup>€</sup><span>/mois</span>
+								</div>
+								<p>30 jours gratuits</p>
+							</div>
+							<div class="container-action">
+								<a class="btn" href="">
+									<span class="btn-content">
+										Essai gratuit, sans engagement
+									</span>
+								</a>
+							</div>
+							<div class="text">
+								Les outils indispensables pour la gestion complète de votre activité. <div class="blue">Préparation de votre déclaration de TVA et élaboration de votre bilan.</div>
+							</div>
+							<ul>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Tous les services du pack Essentiel
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Réalisation de votre bilan, compte de résultat et liasse fiscale
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Suivi et préparation de votre déclaration de TVA
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Déclaration 2031, 2065 ou 2035 et transmission au centre des impôts
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Préparation de votre déclaration sociale des indépendants, notamment URSSAF et RSI
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Transmission des données comptables à votre AGA
+									</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="el el-3">
+							<div class="announcement">
+								<p>POPULAIRE</p>
+								<p>chez les créateurs d'entreprise</p>
+							</div>
+							<div class="container-icon">
+								<img src="img/pricing/price-el3-icon.svg">
+							</div>
+							<h5>Pack Créateur</h5>
+							<div class="price">
+								<p>500€</p>
+								<div class="number">
+									150<sup>€</sup><span>/mois</span>
+								</div>
+								<p>30 jours gratuits</p>
+							</div>
+							<div class="container-action">
+								<a class="btn" href="">
+									<span class="btn-content">
+										Essai gratuit, sans engagement
+									</span>
+								</a>
+							</div>
+							<div class="text">
+								Le pack des nouveaux entrepreneurs. <div class="blue">La création de votre société</div> clé en main par nos juristes qualifiés, et un accompagnement comptable dédié.
+							</div>
+							<ul>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Tous les services du pack Essentiel ou Liberté
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Accompagnement complet sur votre projet, de l'idée à la concrétisation
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Entretien avec un juriste Dougs pour le choix de la forme de votre société (SAS, SARL, etc.)
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Rédaction de vos statuts juridiques
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Démarches administratives
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Dépôt au greffe du tribunal de commerce (50€ à régler au greffe)
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Publication de l'annonce légale (250€ à régler au journal d'annonces)
+									</p>
+								</li>
+								<li>
+									<img src="img/pricing/price-el-shape.svg">
+									<p>
+										Réception de votre Kbis
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="foot">
+						<P class="test">
+							Le suivi de votre dossier et l'ensemble des prestations sont réalisées par les comptables et experts-comptables de notre cabinet Lyonnais.
+						</P>
+						<p class="question">
+							Une question ? 
+						</p>
+						<div class="info">
+							<div class="blue">04.28.29.62.62</div> ou <div class="blue">support@dougs.fr</div>
+						</div>
+					</div>
+
 				</div>
 			</section>
 			
