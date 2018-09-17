@@ -31,6 +31,8 @@
 				@include styleParagraphBig;
 			}
 			.container-action{
+				display: flex;
+				align-items: center;
 				margin-top: 45px;
 				.btn{
 					@include styleBtnStyle1;
@@ -38,6 +40,38 @@
 					.btn-content{
 						color:#FFF;
 					} 
+				}
+				.price {
+					margin-left: 35px;
+					display: flex;
+					align-items: baseline;
+					p {
+						@include styleParagraphSmall();
+						text-align: center;
+						line-height: 2px;
+						color: $colorMain_3;
+						opacity: 1;
+						font-weight: bold;	
+					}
+					.number {
+						margin-left: 10px;
+						text-align: center;
+						@include styleParagraphBig();
+						font-size: 34px;	
+						font-weight: bold;	
+						line-height: 43px;
+						color: $colorMain_3;
+						opacity: 1;
+						sup {
+							font-size: 15px;
+							margin-left: 2px;
+						}
+						span {
+							font-size: 14px;
+							margin-left: -2px;
+							font-weight: bold;	
+						}
+					}
 				}
 			}
 		}
@@ -63,6 +97,7 @@
 					line-height: 14px;
 					display: inline-flex;
 					font-family: $font_2_semibold;
+					box-shadow: 0 4px 18px 0 rgba(0,0,0,0.1);
 
 					&.tag-1{
 						top: 87px;
@@ -133,13 +168,23 @@
 				width: 100%;
 				align-items: center;
 				justify-content: space-between;
-				border-bottom: 1px solid rgba(1,58,81,0.1);
+				&:first-child {
+					border-bottom: 1px solid rgba(1,58,81,0.1);
+				}
 				&:last-child{
 					margin-bottom:0px;
 				}
 				.container-illu{
+					position: relative;
 					width: 580px;
 					text-align: center;
+					.pattern {
+						position: absolute;
+    					top: -65px;
+					}
+					.illu {
+						position: relative;
+					}
 				}
 				.container-text{
 					width: 410px;
@@ -154,7 +199,7 @@
 							width: 100%;
 							align-content: flex-start;
 							justify-content: space-between;
-							margin-bottom: 14px;
+							margin-bottom: 30px;
 							&:last-child{
 								margin-bottom:0px;
 							}
@@ -224,6 +269,7 @@
 			width: 430px;
 			>p{
 				@include styleParagraphMedium;
+				margin-top: 30px;
 			}
 			.container-action{
 				margin-top: 45px;
@@ -341,6 +387,7 @@
 				width: 455px;
 			}
 			.cdr{
+				width: 270px;
 				left: 50%;
 				bottom: 0px;
 				transform: translateX(-50%);
@@ -383,6 +430,10 @@
 				text-align: center;
 				.illu{
 					width: 100%;
+					height: 260px;
+				    display: flex;
+				    justify-content: center;
+				    align-items: center;
 					margin-bottom: 50px;
 				}
 				.title{

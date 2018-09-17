@@ -37,6 +37,12 @@
 									Essai gratuit
 								</div>
 							</a>
+							<div class="price">
+								<p>Dés</p>
+								<div class="number">
+									49<sup>€</sup><span>/mois</span>
+								</div>
+							</div>
 						</div>
 					</div>	
 					<div class="container-img">
@@ -208,6 +214,7 @@
 					<div class="container-el">
 						<div class="el">
 							<div class="container-illu">
+								<img class="pattern "src="img/home/btp-pattern.svg">
 								<img class="illu" src="img/home/btp-el1-illu.png">
 							</div>
 							<div class="container-text">
@@ -227,13 +234,13 @@
 									<div class="el">
 										<img src="img/home/btp-shape1.svg">
 										<p class="text">
-											Dougs se synchronise de manière sécurisée avec votre compte professionnel.
+											Vos transactions bancaires sont catégorisées automatiquement et vous n'avez plus qu'à valider en un clic.
 										</p>
 									</div>
 									<div class="el">
 										<img src="img/home/btp-shape1.svg">
 										<p class="text">
-											Dougs se synchronise de manière sécurisée avec votre compte professionnel.
+											C'est simple et ne nécessite aucune connaissance en informatique.
 										</p>
 									</div>
 								</div>
