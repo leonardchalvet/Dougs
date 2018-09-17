@@ -9,4 +9,8 @@ $(window).on('load', function() {
 	    	$('#header-desktop').removeClass('scroll');
 	    };
 	});
+
+	$('.burger').click(function() {
+		$(this.parentNode).parent().parent().toggleClass('active');
+	})
 })

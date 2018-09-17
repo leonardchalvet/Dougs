@@ -1,6 +1,6 @@
 <header id="header-desktop">
 	<div class="wrapper">
-		<div class="container container-left">
+		<div class="container container-left desktop">
 			<a href="index.php" class="logo">
 				<img src="img/header/logo-black.svg">
 			</a>
@@ -12,15 +12,33 @@
 				</a>
 			</div>
 		</div>
+		<div class="container container-left mobile">
+			<a class="icon" href="tel:0428296262">
+				<img src="img/header/icn-tel.svg">
+			</a>
+			<a href="index.php" class="logo">
+				<img src="img/header/logo-black.svg">
+			</a>
+			<div class="burger">
+				<div class="trait"></div>
+				<div class="trait"></div>
+			</div>
+			<a class="tel" href="tel:0428296262">
+				<img src="img/header/icn-tel.svg">
+				<div class="num">
+					04 28 29 62 62
+				</div>
+			</a>
+		</div>
 		<div class="container container-right">
 			<div class="li-link">
 				<a href="features.php">
 					Fonctionnalités
 				</a>
-				<a href="">
+				<a href="pricing.php">
 					Tarifs
 				</a>
-				<a href="">
+				<a href="creation.php">
 					Création d’entreprise
 				</a>
 				<a href="team.php">
