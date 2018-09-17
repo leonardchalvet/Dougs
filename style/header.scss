@@ -212,18 +212,18 @@
 		height: 27px;	
 		width: 27px;
 	}
-	#header-desktop .wrapper .container .burger .trait {
+	#header-desktop .wrapper .container .burger .line {
 		position: absolute;
 		height: 3px;		
 		border-radius: 1.5px;	
 		background-color: #013A51;
 		transition-duration: 0.2s;
+		width: 100%;
 		&:first-child {
-			width: 27px;
 			top: 6px;
 		}
 		&:last-child {
-			width: 20px;
+			transform: scaleX(0.7) translateX(6px);
 			top: 16px;
 			right: 0;
 		}
@@ -260,16 +260,13 @@
 		.wrapper .container .burger {
 			justify-content: initial;
 		}
-		.wrapper .container .burger .trait {
+		.wrapper .container .burger .line {
 			width: 24px;
 			&:first-child {
-				transform: rotate(45deg);
-				top: 10;
+				transform: rotate(45deg) translateX(7px) translateY(7px);
 			}
 			&:last-child {
-				transform: rotate(-45deg);
-				top: 11px;
-	    		right: 3px
+				transform: rotate(-45deg) scaleX(1) translateX(-2px) translateY(-2px);
 			}
 		}
 	}

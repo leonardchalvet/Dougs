@@ -20,8 +20,8 @@
 				<img src="img/header/logo-black.svg">
 			</a>
 			<div class="burger">
-				<div class="trait"></div>
-				<div class="trait"></div>
+				<div class="line"></div>
+				<div class="line"></div>
 			</div>
 			<a class="tel" href="tel:0428296262">
 				<img src="img/header/icn-tel.svg">
