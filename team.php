@@ -373,6 +373,16 @@
 						<div class="el">
 							<div class="container-illu">
 								<img class="illu" src="img/team/fondateur.png">
+								<div class="under-illu">
+									<div class="text">
+										<h5>
+											Patrick Paurice
+										</h5>
+										<p>
+											Cofondateur, Dirigeant, Expert-comptable
+										</p>
+									</div>
+								</div>
 							</div>
 							<div class="container-text">
 								<h2 class="title">

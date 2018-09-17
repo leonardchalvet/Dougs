@@ -87,6 +87,7 @@
 					padding-top: 22px;
 					.name{
 						@include styleH4;
+						font-size: 18px;
 						padding: 0px 13px 0px 13px;
 					}
 					.job{
@@ -132,11 +133,35 @@
 					margin-bottom:0px;
 				}
 				.container-illu{
+					position: relative;
 					order:2;
 					width: 580px;
 					text-align: center;
 					.illu{
 						width: 100%;
+					}
+					.under-illu {
+						position: absolute;
+					    bottom: 0;
+					    left: 0;
+					    width: 100%;
+					    height: 200px;
+					    background-color: #fff;
+					    display: flex;
+					    justify-content: center;
+					    align-items: center;
+					    .text {
+					    	width: 160px;
+					    	h5 {
+					    		@include styleParagraphMedium();
+					    		color: $colorMain_3;
+					    		opacity: 1;
+					    		font-weight: bold;
+					    	}
+					    	p {
+					    		@include styleParagraphSmall();
+					    	}
+					    }
 					}
 				}
 				.container-text{
