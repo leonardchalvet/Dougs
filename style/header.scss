@@ -22,6 +22,9 @@
 			display: inline-flex;
 			flex-flow: row wrap;
 			align-items: center;
+			&.mobile {
+				display: none;
+			}
 			.sep{
 				margin-left: 23px;
 				margin-right: 23px;
@@ -41,6 +44,7 @@
 				display: flex;
 				flex-flow: row wrap;
 				align-items: center;
+				border-bottom: 1px solid transparent;
 				img{
 					height: 12px;
 					margin-right: 8px;
@@ -48,6 +52,9 @@
 				.num{
 					text-decoration: none;
 					@include styleLinkStyle1;
+				}
+				&:hover {
+					border-bottom: 1px solid $colorMain_3;
 				}
 			}
 			.li-link{
@@ -64,6 +71,10 @@
 					&:last-child{
 						margin-right:0px;
 					}
+					&:hover {
+						color: #000;
+						font-weight: bold;
+					}
 				}
 			}
 			.li-action{
@@ -78,6 +89,7 @@
 				.action-signup{
 					@include styleBtnStyle1;
 					border:1px solid $colorMain_2;
+					padding: 12px 25px;
 					.btn-content{
 						color:$colorMain_2;
 					} 
@@ -86,3 +98,175 @@
 		}
 	}
 }
+
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet) {
+
+	#header-desktop {
+		height: 105px;
+	}
+	#header-desktop .wrapper {
+		align-items: start;
+	}
+	#header-desktop .wrapper .container {
+		flex-direction: column;
+		align-items: start;
+		justify-content: space-between;
+	}
+	#header-desktop .wrapper .container .sep {
+		display: none;
+	}
+	#header-desktop .wrapper .container .tel {
+		margin-top: 10px;
+	}
+	#header-desktop .wrapper .container .li-action {
+		margin-top: 10px;
+	}
+
+}
+
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#header-desktop {
+		display: flex;
+	}
+	#header-desktop .wrapper {
+		flex-direction: column;
+		position: initial;
+		transform: none;
+		margin-top: 20px;
+	}
+	#header-desktop .wrapper .container.desktop {
+		display: none;
+	}
+	#header-desktop .wrapper .container.mobile {
+		display: block;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	#header-desktop .wrapper .container.container-right {
+		display: none;
+		margin-top: 100px;
+	}
+	#header-desktop .wrapper .container .icon {
+		height: 40px;	
+		width: 40px;	
+		border-radius: 25px;	
+		background-color: rgba(1,58,81,0.08);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#header-desktop .wrapper .container .icon img {
+		margin-right: initial;
+		height: 14px;
+	}
+	#header-desktop .wrapper .container .tel {
+		display: none;
+	    position: absolute;
+	    top: 70px;
+		left: 50%;
+		transform: translate(-45%);
+	    width: 100%;
+	    justify-content: center;
+	    align-items: center;
+    	height: 40px;	
+    	width: 160px;	
+    	border-radius: 25px;	
+    	background-color: rgba(1,58,81,0.08);
+	}
+	#header-desktop .wrapper .container .tel .num {
+		font-size: 16px;
+		font-family: $font_1_regular;
+	}
+
+	#header-desktop .wrapper .container .li-link {
+	 	flex-direction: column;
+		align-items: start;
+		width: 100%;
+	}
+	#header-desktop .wrapper .container .li-link a {
+		@include styleParagraphMedium();
+		padding-bottom: 20px;
+		padding-top: 20px;
+		border-bottom: 2px solid #F1F3F3;
+		width: 100%;
+		color: $colorMain_6;
+		&:last-child {
+			border: none;
+		}
+	}
+	#header-desktop .wrapper .container .sep {
+		display: none;
+	}
+	#header-desktop .wrapper .container .li-action {
+		margin-top: 20px;
+	}
+
+	#header-desktop .wrapper .container .burger {
+		position: relative;
+		height: 27px;	
+		width: 27px;
+	}
+	#header-desktop .wrapper .container .burger .trait {
+		position: absolute;
+		height: 3px;		
+		border-radius: 1.5px;	
+		background-color: #013A51;
+		transition-duration: 0.2s;
+		&:first-child {
+			width: 27px;
+			top: 6px;
+		}
+		&:last-child {
+			width: 20px;
+			top: 16px;
+			right: 0;
+		}
+	}
+
+	#header-desktop.active {
+		position: fixed;
+		top: 0;
+		height: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+	
+		.wrapper {
+			height: 100%;
+			justify-content: start;
+		}
+		.wrapper .container.container-right {
+			display: flex;
+			flex-direction: column;
+	    	align-items: center;
+	    	width: 100%;
+		}
+		.wrapper .container .icon {
+			background-color: transparent;
+		}
+		.wrapper .container .icon img {
+			display: none;
+		}
+		.wrapper .container .tel {
+			display: flex;	
+			text-decoration: none;
+		}
+		.wrapper .container .burger {
+			justify-content: initial;
+		}
+		.wrapper .container .burger .trait {
+			width: 24px;
+			&:first-child {
+				transform: rotate(45deg);
+				top: 10;
+			}
+			&:last-child {
+				transform: rotate(-45deg);
+				top: 11px;
+	    		right: 3px
+			}
+		}
+	}
+} 

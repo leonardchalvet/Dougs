@@ -76,7 +76,7 @@
 			.illu {
 				margin-top: 125px;
 				margin-left: 180px;
-				width: 290px;
+				width: 260px;
 			}
 
 			.container-tag {
@@ -87,23 +87,23 @@
 				.tag {
 					position: absolute;
 					&.tag-1, &.tag-2, &.tag-3 {
-						width: 300px;
+						width: 270px;
 						img {
 							width: 100%;
 						}
 					}
 					&.tag-1 {
-						top: 280px;
-						left: 320px;
+						top: 265px;
+    					left: 300px;
 					}
 					&.tag-2 {
-						top: 410px;
-    					left: 50px;
+						top: 380px;
+    					left: 65px;
 					    z-index: -1;
 					}
 					&.tag-3 {
-						top: 516px;
-    					left: 290px;
+						top: 475px;
+    					left: 280px;
 					    z-index: -1;	
 					}
 					&.tag-4, &.tag-5, &.tag-6 {
@@ -115,20 +115,20 @@
 						font-family: $font_2_semibold;
 					}
 					&.tag-4 {
-						top: 255px;
-    					right: 50px;
+						top: 245px;
+    					right: 70px;
 						background-color: #EBF1F4;
 						color:$colorMain_3;
 					}
 					&.tag-5 {
-						top: 385px;
-    					left: 145px;
+						top: 356px;
+    					left: 142px;
 						background-color: $colorMain_2;
 						color:#FFF;
 					}
 					&.tag-6 {
-						top: 495px;
-    					right: 50px;
+						top: 456px;
+						right: 45px;
 						background-color: $colorMain_1;
 						color:#FFF;
 					}
