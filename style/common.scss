@@ -540,30 +540,6 @@ main
 
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet) {
 
-	/*
-	#common-section-pres .wrapper .head {
-		margin-bottom: 50px;
-	}
-	#common-section-pres .wrapper .container-col .illu {
-		width: 25%;
-	}
-	#common-section-pres .wrapper .container-col .col-el {
-		margin: auto;
-		width: 30%;
-	}
-	#common-section-pres .wrapper .container-col .col-el .el {
-		//transform: none !important;
-	}
-
-
-	#common-section-quotes .wrapper .container-quotes .li-quotes {
-		flex-wrap: nowrap;
-	}
-	#common-section-quotes .wrapper .container-quotes .li-quotes .quote {
-		margin-top: 0 !important;
-		margin-right: 75px;
-	}*/
-
 	#common-section-pres .wrapper .container-col .illu{
 		width: 25%;
 	}
@@ -588,4 +564,62 @@ main
 		padding: 20px;
 	}
 
+}
+
+
+@media screen and (max-width: $breakPoint_mobile) {
+
+	#common-section-pres {
+		padding-top: 60px;
+	}
+	#common-section-pres .wrapper .head {
+		margin-bottom: 40px;
+	}
+	#common-section-pres .wrapper .container-col {
+		padding-bottom: 60px;
+	}
+	#common-section-pres .wrapper .container-col .illu {
+		order: 1;
+		width: 100%;
+	}
+	#common-section-pres .wrapper .container-col .col-el {
+		margin-top: 40px;
+		width: 100%;
+	}
+	#common-section-pres .wrapper .container-col .col-el.col-el-1 {
+		order: 2;
+		text-align: left;
+	}
+	#common-section-pres .wrapper .container-col .col-el.col-el-2 {
+		order: 3;
+	}
+	#common-section-pres .wrapper .container-col .col-el .el {
+		transform: none !important;
+		margin-bottom: 40px;
+	}
+
+
+	#common-section-quotes {
+		padding: 60px 0;
+	}
+	#common-section-quotes .wrapper .head {
+		margin-bottom: 40px !important;
+		width: 100% !important;
+	}
+	#common-section-quotes .wrapper .container-quotes {
+		height: auto;
+	}
+	#common-section-quotes .wrapper .container-quotes .li-quotes {
+		flex-wrap: nowrap;
+	}
+	#common-section-quotes .wrapper .container-quotes .li-quotes .quote {
+		margin-top: 0 !important;
+		margin-right: 30px;
+	}
+	#common-section-quotes .wrapper .container-quotes .li-quotes .quote .quote-content {
+		width: 270px;
+	}
+	#common-section-quotes .wrapper .container-nav {
+		display: none;
+	}
 }
