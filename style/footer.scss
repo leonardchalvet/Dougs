@@ -107,6 +107,11 @@
 	}
 	#footer .wrapper .container-ul {
 		margin-top: 40px; 
+		width: 100%;
+		justify-content: start;
+	}
+	#footer .wrapper .container-ul ul {
+		margin-left: 0;
 	}
 
 	#footer .foot {
