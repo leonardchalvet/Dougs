@@ -24,6 +24,7 @@
 			<section id="section-cover">
 				<div class="wrapper">
 					<img class="pattern" src="img/creation/cover-pattern.svg">
+					<img class="pattern-mobile" src="img/creation/start-pattern-1.svg">
 					<div class="container-text">
 						<h1>
 							Créez votre entreprise rapidement et sereinement, en ligne
@@ -44,7 +45,7 @@
 
 			<section id="section-jpd">
 				<div class="wrapper">
-					<div class="el el-1">
+					<div class="left">
 						<div class="container-text">
 							<h2 class="creationCommon-section-title">
 								La création de votre entreprise par un juriste professionnel
@@ -71,10 +72,10 @@
 							</ul>
 						</div>
 					</div>
-					<div class="el el-2">
-						<img src="img/creation/jpd-illu.png">
-					</div>
-					<div class="el el-3">
+					<div class="right">
+						<div class="illu">
+							<img src="img/creation/jpd-illu.png">
+						</div>
 						<div class="container-text">
 							<p class="text">
 								Le choix de votre forme juridique est déterminant pour la réussite de votre entreprise. Faire le bon choix peut vous faire gagner jusqu'à 30% sur votre résultat. Une erreur vous ferait travailler plus pour l'administration fiscale que pour vous !
@@ -237,7 +238,13 @@
 
 			<section id="section-start">
 				<div class="wrapper">
-					<img class="pattern" src="img/creation/start-pattern.svg">
+					<div class="pattern">
+						<img class="pattern" src="img/creation/start-pattern-1.svg">
+						<img class="pattern" src="img/creation/start-pattern-2.svg">
+						<img class="pattern" src="img/creation/start-pattern-3.svg">
+						<img class="pattern" src="img/creation/start-pattern-3.svg">
+						<img class="pattern" src="img/creation/start-pattern-4.svg">
+					</div>
 					<div class="container-title">
 						<h2 class="creationCommon-section-title">
 							Lancez votre activité dés aujourd’hui !
