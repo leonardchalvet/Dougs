@@ -39,7 +39,7 @@
 			justify-content: space-between;
 			.el {
 				position: relative;
-				padding: 100px 30px 70px 30px;
+				padding: 100px 50px 70px 50px;
 				width: 400px;
 				display: flex;
 				flex-direction: column;				
@@ -68,6 +68,8 @@
 				    flex-direction: column;
 				    align-items: center;
 					p:first-child {
+						@include styleParagraphSmall();
+						opacity: 1;
 						height: 20px;	
 						width: 70px;	
 						border-radius: 3px;	
@@ -153,6 +155,7 @@
 						margin-top: 15px;
 						img {
 							width: 12px;
+							height: 12px;
 						}
 						p {
 							margin-left: 15px;
@@ -168,6 +171,7 @@
 								p {
 									color: $colorMain_5;
 									opacity: 1;
+									font-weight: bold;
 								}
 							}
 						}
@@ -181,6 +185,7 @@
 								p {
 									color: $colorMain_5;
 									opacity: 1;
+									font-weight: bold;
 								}
 							}
 						}
@@ -217,8 +222,12 @@
 				margin-top: 5px;
 				.blue {
 					display: inline;
-					color: $colorMain_2;
+					text-decoration: none;
+					color: #3799D0;
 					font-weight: bold;
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 			}
 		}
@@ -265,7 +274,7 @@
 								font-weight: bold;
 							}
 							&.contact {
-								color: $colorMain_2;
+								color: #3799D0;
 							}
 						}
 					}

@@ -411,7 +411,8 @@ main
 						@include styleH5;
 					}
 					p{
-						@include styleParagraphSmall;
+						@include styleParagraphMedium;
+						opacity: 1;
 					}
 				}
 			}
@@ -494,11 +495,13 @@ main
 		  					-webkit-line-clamp: 4;
 		  					-webkit-box-orient: vertical;  
 		  					overflow: hidden;
+		  					opacity: 1;
 						}
 						.link{
 							display: inline-block;
 							margin-top:25px;
 							@include styleLinkStyle2;
+							font-size: 13px;
 						}
 					}
 				}

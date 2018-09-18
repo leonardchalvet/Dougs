@@ -79,12 +79,14 @@
 							<p class="text">
 								Le choix de votre forme juridique est déterminant pour la réussite de votre entreprise. Faire le bon choix peut vous faire gagner jusqu'à 30% sur votre résultat. Une erreur vous ferait travailler plus pour l'administration fiscale que pour vous !
 							</p>
-							<p class="name">
-								Guillaume Paour
-							</p>
-							<span>
-								Expert-comptable chez Dougs
-							</span>
+							<div class="author">
+								<p class="name">
+									Guillaume Paour
+								</p>
+								<p class="job">
+									Expert-comptable chez Dougs
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -150,9 +152,9 @@
 									<h5 class="name">
 										Amaury Bouchard
 									</h5>	
-									<q class="text">
+									<p class="text">
 										Très bon cabinet comptable en ligne. L'application est facile à utiliser. L'équipe est réactive et a toujours répondu à mes questlkdh sqkljdh qslkdh dhsqjk dsdkjqs kj
-									</q>
+									</p>
 									<a class="link" href="">
 										Lire plus
 									</a>
@@ -164,9 +166,9 @@
 									<h5 class="name">
 										Calvïn Poujol
 									</h5>	
-									<q class="text">
+									<p class="text">
 										Dougs est un expert-comptable connecté à la pointe des dernières technologies Web ! Deux applications développées en respectant lesjh jkqsgh qjks qhkjsh qkjs h
-									</q>
+									</p>
 									<a class="link" href="">
 										Lire plus
 									</a>
@@ -178,9 +180,9 @@
 									<h5 class="name">
 										Jeremy Brouche
 									</h5>	
-									<q class="text">
+									<p class="text">
 										Cela fait 2 ans que je travaille avec eux pour mon compte professionnel concernant mon activité de kiné. C'est synchronisé avec ma banque, celad gsd gsqdg sqjg
-									</q>
+									</p>
 									<a class="link" href="">
 										Lire plus
 									</a>
@@ -269,7 +271,7 @@
 										Appelez-moi
 									</div>
 								</a>
-								<span class="btn-under">Ou appelez le 04.28.29.62.62</span>
+								<span class="tel">Ou appelez le 04.28.29.62.62</span>
 							</div>
 						</div>
 					</div>

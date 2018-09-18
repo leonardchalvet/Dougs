@@ -88,6 +88,10 @@
 						margin-top: 40px;
 						display: flex;
 						align-items: start;
+						img {
+							width: 40px;
+							height: 40px;
+						}
 						p {
 							@include styleParagraphMedium;
 							color: $colorMain_5;
@@ -116,18 +120,22 @@
 				.text {
 					@include styleParagraphBig;
 					color: $colorMain_3;
+					opacity: 1;
 				}
 
-				.name {
-					margin-top: 25px;
-					@include styleParagraphMedium;
-					color: $colorMain_3;
-					font-weight: bold;
-				}
+				.author {
+					.name {
+						margin-top: 25px;
+						@include styleParagraphMedium;
+						opacity: 1;
+						color: $colorMain_3;
+						font-weight: bold;
+					}
 
-				span {
-					@include styleParagraphSmall;
-					color: $colorMain_6;
+					.job {
+						@include styleParagraphSmall;
+						color: $colorMain_6;
+					}
 				}
 			}
 		}
@@ -158,6 +166,7 @@
 						display: flex;
 						align-items: baseline;
 						margin-top: 40px;
+						width: 100%;
 
 						p {
 							margin-left: 20px;
@@ -258,6 +267,11 @@
 				flex-direction: column;
 				align-items: center;
 
+				.icon {
+					width: 40px;
+					height: 40px;
+				}
+
 				p {
 					margin-top: 20px;
 					@include styleParagraphBig;
@@ -275,14 +289,18 @@
 							color:#FFF;
 						} 
 					}
-					.btn-under {
+					.tel {
 						position: absolute;
 						@include styleParagraphSmall;
 					    color: #fff;
 					    bottom: -25px;
 					    text-align: center;
-					    left: -12.5%;
     					width: 125%;
+    					opacity: 1;
+    					top: calc(100% + 10px); 
+    					left:50%; 
+    					transform: translateX(-50%); 
+    					white-space:nowrap;
 					}
 				}
 			}

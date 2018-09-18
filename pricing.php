@@ -257,7 +257,7 @@
 							Une question ? 
 						</p>
 						<div class="info">
-							<div class="blue">04.28.29.62.62</div> ou <div class="blue">support@dougs.fr</div>
+							<a href="tel:0428296262" class="blue">04.28.29.62.62</a> ou <div class="blue">support@dougs.fr</div>
 						</div>
 					</div>
 
