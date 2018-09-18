@@ -242,13 +242,15 @@
 		content: none;
 	}
 	#section-team .wrapper {
-		flex-wrap: nowrap;
+		white-space: nowrap;
+		display: initial;
 	}
 	#section-team .wrapper .item {
 		margin-left: 10px;
 		margin-right: 10px;
 		width: 180px;
 		height: 245px;
+		display: inline-block;
 	}
 	#section-team .wrapper .item .pp {
 		width: 100%;
