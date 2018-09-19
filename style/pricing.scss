@@ -231,7 +231,7 @@
 /* SECTION DETAILS */
 #section-details {
 	padding: 100px 0;
-	background-color: #F4F4F4;
+	background-color: $colorMain_4;
 	.wrapper {
 		@include styleGrid1;
 		display: flex;

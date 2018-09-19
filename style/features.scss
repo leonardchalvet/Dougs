@@ -265,7 +265,7 @@
 	
 	&:before{
 		content:'';
-		background-color: #F4F4F4;
+		background-color: $colorMain_4;
 		height: 90%;
 		width: 100%;
 		position: absolute;
@@ -525,7 +525,7 @@
 
 	#section-bln {
 		padding: 70px 0;
-		background-color: #F4F4F4;
+		background-color: $colorMain_4;
 	}
 	#section-bln:before {
 		content: none;

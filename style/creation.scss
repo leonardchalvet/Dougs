@@ -213,7 +213,7 @@
 
 /*----------  SECTION COMMON SECTION QUOTES  ----------*/
 #common-section-quotes {
-	background-color: #F4F4F4;
+	background-color: $colorMain_4;
 	.wrapper {
 		.head {
 			margin: auto;
@@ -225,7 +225,7 @@
 /*----------  SECTION COMMON SECTION PRESS  ----------*/
 #common-section-pres {
 	padding-top: 60px;
-	background-color: #F4F4F4;
+	background-color: $colorMain_4;
 	.wrapper {
 		padding-top: 70px;
 		border-top: 1px solid rgba(1,58,81,0.1);
