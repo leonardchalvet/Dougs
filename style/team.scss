@@ -12,10 +12,45 @@
 		@include styleGrid1;
 		.pattern{
 			position: absolute;
-			top: -60px;
-			left: 50%;
-			transform: translateX(-50%);
 			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			img {
+				position: absolute;
+
+				&:first-child {
+					height: 30px;	
+					width: 30px;
+					left: 150px;
+					top: 0;
+				}
+				&:nth-child(2) {
+					height: 20px;	
+					width: 40px;
+					left: 50%;
+					top: -40px;
+				}
+				&:nth-child(3) {
+					height: 17px;	
+					width: 17px;
+					bottom: 0;
+    				left: 200px;
+
+				}
+				&:nth-child(4) {
+					height: 42px;	
+					width: 80px;
+					right: 40px;
+    				top: -25px;
+				}
+				&:last-child {
+					height: 30px;	
+					width: 30px;
+					right: 0;
+    				bottom: 0;	
+				}
+			}
 		}
 		.container-text{
 			text-align: center;
@@ -137,6 +172,12 @@
 					order:2;
 					width: 580px;
 					text-align: center;
+					.pattern {
+						position: absolute;
+						width: 175%;
+					    top: 60px;
+					    right: 20px;
+					}
 					.illu{
 						width: 100%;
 					}
@@ -155,7 +196,6 @@
 					    	h5 {
 					    		@include styleParagraphMedium();
 					    		color: $colorMain_3;
-					    		opacity: 1;
 					    		font-weight: bold;
 					    	}
 					    	p {
@@ -229,15 +269,50 @@
 		width: 450px;
 		margin: auto;
 	}
+	#section-fondateur .wrapper .container-el>.el .container-illu .pattern {
+		top: 50px;
+		right: 15px;
+	}
 
 }
 
 @media screen and (max-width: $breakPoint_mobile) { 
 
+	#section-cover {
+		padding-bottom: 50px;
+	}
 	#section-cover .wrapper .container-text {
 		width: 100%;
 	}
+	#section-cover .wrapper .container-text h1 {
+		font-size: 29px;
+	}
+	#section-cover .wrapper .pattern img {
+		&:first-child {
+			left: -10px;
+			top: -30px;
+		}
+		&:nth-child(2) {
+			top: -60px;
+		}
+		&:nth-child(3) {
+			bottom: -20px;
+			left: 25px;
+		}
+		&:nth-child(4) {
+			right: -80px;
+			top: 0px;	
+		}
+		&:last-child {
+			right: -35px;
+			bottom: -10px;
+		}
+	}
 
+	#section-team {
+		padding-bottom: 0;
+		overflow-x: auto;
+	}
 	#section-team:before {
 		content: none;
 	}
@@ -246,11 +321,19 @@
 		display: initial;
 	}
 	#section-team .wrapper .item {
+		margin-top: 30px;
+		margin-bottom: 50px;
 		margin-left: 10px;
 		margin-right: 10px;
 		width: 180px;
 		height: 245px;
 		display: inline-block;
+		&:first-child {
+			margin-left: 30px;
+		}
+		&:last-child {
+			margin-right: 30px;
+		}
 	}
 	#section-team .wrapper .item .pp {
 		width: 100%;
@@ -260,13 +343,18 @@
 	#section-fondateur .wrapper .container-el>.el {
 		width: 100%;
 		justify-content: center;
-		padding: 60px 0;
+		padding: 20px 0 0 0;
 	}
 	#section-fondateur .wrapper .container-el>.el .container-text {
 		width: 100%;
 	}
 	#section-fondateur .wrapper .container-el>.el .container-illu {
 		width: 100%;
+	}
+	#section-fondateur .wrapper .container-el>.el .container-illu .pattern {
+		width: 190%;
+		top: 35px;
+		right: 0px;
 	}
 	#section-fondateur .wrapper .container-el>.el .container-illu .under-illu {
 		height: 125px;

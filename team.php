@@ -23,7 +23,13 @@
 
 			<section id="section-cover">
 				<div class="wrapper">
-					<img class="pattern" src="img/team/cover-pattern.svg">
+					<div class="pattern">
+						<img src="img/team/cover-pattern-1.svg">
+						<img src="img/team/cover-pattern-2.svg">
+						<img src="img/team/cover-pattern-3.svg">
+						<img src="img/team/cover-pattern-4.svg">
+						<img src="img/team/cover-pattern-1.svg">
+					</div>
 					<div class="container-text">
 						<h1>Les humains qui font Dougs.</h1>
 						<p>Voici l'équipe qui vous simplifie la vie et vous aide à oublier la paperasse.</p>
@@ -372,6 +378,7 @@
 					<div class="container-el">
 						<div class="el">
 							<div class="container-illu">
+								<img class="pattern" src="img/team/fondateur-pattern.svg">
 								<img class="illu" src="img/team/fondateur.png">
 								<div class="under-illu">
 									<div class="text">

@@ -273,7 +273,7 @@
 											« Combien dois-je mettre de côté pour mes cotisations sociales ? »
 										</p>
 									</div>
-									<div class="el">
+									<div class="el active">
 										<img src="img/home/btp-shape2.svg">
 										<p class="text">
 											« Quel est mon taux de progression ce mois-ci ? »

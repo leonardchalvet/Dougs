@@ -181,6 +181,7 @@
 				@include styleParagraphMedium();
 				color: #fff;
 				margin-top: 20px;
+				opacity: 0.9;
 			}
 		} 
 
@@ -439,9 +440,6 @@
 		width: 100%;
 		padding: 50px 30px;
 	}
-	#section-app .wrapper .container-text p {
-		@include styleParagraphSmall();
-	}
 	#section-app .wrapper .container-text .btn {
 		margin-top: 40px;
 	}
@@ -513,6 +511,7 @@
 		padding: 75px 0;
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
 	}
 	#section-lpt .wrapper .container-el > .el .container-text {
 		order: 1 !important;

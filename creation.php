@@ -278,7 +278,7 @@
 										Appelez-moi
 									</div>
 								</a>
-								<span class="tel">Ou appelez le 04.28.29.62.62</span>
+								<span class="tel">Ou appelez le <a href="tel:0428296262">04.28.29.62.62</a></span>
 							</div>
 						</div>
 					</div>

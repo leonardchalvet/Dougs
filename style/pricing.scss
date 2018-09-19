@@ -69,7 +69,6 @@
 				    align-items: center;
 					p:first-child {
 						@include styleParagraphSmall();
-						opacity: 1;
 						height: 20px;	
 						width: 70px;	
 						border-radius: 3px;	
@@ -137,7 +136,6 @@
 					margin-top: 25px;
 					@include styleParagraphSmall();
 					text-align: center;
-					opacity: 1;
 					padding-bottom: 50px;
 					border-bottom: 1px solid #EBF1F4;
 					.blue {
@@ -170,7 +168,6 @@
 							&:nth-last-child(2), &:last-child {
 								p {
 									color: $colorMain_5;
-									opacity: 1;
 									font-weight: bold;
 								}
 							}
@@ -184,7 +181,6 @@
 							&:first-child {
 								p {
 									color: $colorMain_5;
-									opacity: 1;
 									font-weight: bold;
 								}
 							}
@@ -209,7 +205,6 @@
 			p {
 				@include styleParagraphMedium();
 				color: $colorMain_5;
-				opacity: 1;
 				&.question {
 					margin-top: 40px;
 				}
@@ -218,7 +213,6 @@
 			.info {
 				@include styleParagraphMedium();
 				color: $colorMain_5;
-				opacity: 1;
 				margin-top: 5px;
 				.blue {
 					display: inline;
@@ -269,9 +263,9 @@
 						p {
 							@include styleParagraphMedium();
 							color: $colorMain_3;
-							opacity: 1;
 							&:last-child {
 								font-weight: bold;
+								font-family: OpenSans-Bold;
 							}
 							&.contact {
 								color: #3799D0;
@@ -345,6 +339,10 @@
 
 	#section-price .wrapper .head {
 		width: 100%;
+		margin-bottom: 0;
+	}
+	#section-price .wrapper .head h2 {
+		font-size: 29px;
 	}
 	#section-price .wrapper .grp {
 		flex-direction: column;
@@ -358,6 +356,9 @@
 			transform: none;
 		}
 	}
+	#section-price .wrapper .grp .el .announcement {
+		top: 0;
+	}
 	#section-price .wrapper .foot {
 		width: 100%;
 	}
@@ -368,6 +369,7 @@
 	#section-details .wrapper .container-text ul li:first-child {
 		flex-direction: column;
 		align-items: start;
+		padding-bottom: 25px;
 	}
 	#section-details .wrapper .container-text ul li:not(:first-child) p {
 		font-size: 14px;
@@ -375,6 +377,9 @@
 
 	#section-frq {
 		padding: 70px 0 35px 0;
+	}
+	#section-frq .wrapper .container-title {
+		width: 100%;
 	}
 	#section-frq .wrapper .container-text {
 		flex-direction: column;

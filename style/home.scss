@@ -50,18 +50,16 @@
 						text-align: center;
 						line-height: 2px;
 						color: $colorMain_3;
-						opacity: 1;
 						font-weight: bold;	
 					}
 					.number {
 						margin-left: 10px;
 						text-align: center;
-						@include styleParagraphBig();
+						font-family:OpenSans-Bold;
 						font-size: 34px;	
 						font-weight: bold;	
 						line-height: 43px;
 						color: $colorMain_3;
-						opacity: 1;
 						sup {
 							font-size: 15px;
 							margin-left: 2px;
@@ -190,6 +188,10 @@
 					width: 410px;
 					>p{
 						@include styleParagraphBig;
+						margin-top: 15px;
+					}
+					h2 {
+						margin-top: 6px;
 					}
 					.li-el{
 						margin-top: 60px;
@@ -197,7 +199,7 @@
 							display: flex;
 							flex-flow: row wrap;
 							width: 100%;
-							align-content: flex-start;
+							align-items: baseline;
 							justify-content: space-between;
 							margin-bottom: 30px;
 							&:last-child{
@@ -209,6 +211,11 @@
 							.text{
 								width: calc(100% - 30px);
 								@include styleParagraphMedium;
+							}
+							&.active {
+								.text {
+									color: #000;
+								}
 							}
 						}
 					}
@@ -347,7 +354,7 @@
 	&:before{
 		content:'';
 		background-color: $colorMain_1;
-		height: 95%;
+		height: 90%;
 		width: 100%;
 		position: absolute;
 		left: 0px;
@@ -362,7 +369,7 @@
 		justify-content: space-between;
 		align-items: center;
 		.container-text{
-			padding: 120px 0px 120px 0px;
+			padding: 200px 0px 80px 0px;
 			width: 500px;
 			.homeCommon-section-onTitle{
 				color: $colorMain_3;
@@ -374,6 +381,7 @@
 				margin-top: 45px;
 				@include styleParagraphMedium;
 				color: #FFF;
+				opacity: 0.9;
 			}
 			.link{
 				display: inline-block;
@@ -384,7 +392,7 @@
 		.container-img{
 			position: relative;
 			.img{
-				width: 455px;
+				width: 475px;
 			}
 			.cdr{
 				width: 270px;
@@ -588,6 +596,9 @@
 		width: 100%;
     	text-align: center;
 	}
+	#section-cover .wrapper .container-text h1 {
+		font-size: 29px;
+	}
 	#section-cover .wrapper .container-img {
 		margin: auto;
 	    width: 300px;
@@ -638,7 +649,7 @@
 	}
 	#section-btp .wrapper .container-el > .el .container-text {
 		width: 100%;
-		margin-bottom: 40px;
+		margin-bottom: 60px;
 	}
 	#section-btp .wrapper .container-el > .el .container-text .li-el {
 		margin-top: 40px;
@@ -664,6 +675,9 @@
 	#section-app .wrapper .container-text {
 		width: 100%;
 		order: 1;
+	}
+	#section-app .wrapper .container-text .container-action a {
+		margin-bottom: 20px;
 	}
 
 	#section-banner .wrapper {
@@ -699,7 +713,7 @@
 		width: 70%;
 	}
 	#section-expert .wrapper .container-img .cdr {
-		padding: 10px 25px;
+		padding: 15px 25px 5px 25px;
 	}
 
 	#section-secu .wrapper {
@@ -729,6 +743,10 @@
 	}
 	#section-tarifs .wrapper {
 		width: 100%;
+	}
+	#section-tarifs .wrapper h2 {
+		width: 95%;
+		margin: auto;
 	}
 }
 
