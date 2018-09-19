@@ -75,6 +75,14 @@
 						color: #000;
 						font-weight: bold;
 					}
+					&:after {
+					    display: block;
+					    content: attr(title);
+					    font-weight: bold;
+					    height: 0;
+					    overflow: hidden;
+					    visibility: hidden;
+					}
 				}
 			}
 			.li-action{

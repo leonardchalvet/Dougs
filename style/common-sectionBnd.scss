@@ -50,6 +50,15 @@
 					    bottom: -25px;
 					    text-align: center;
 					    width: 100%;
+					    left: 50%;
+					    transform: translateX(-50%);
+					    a {
+					    	color: #fff;
+					    	text-decoration: none;
+					    	&:hover {
+					    		text-decoration: underline;
+					    	}
+					    }
 					}
 
 					&:nth-child(2) {

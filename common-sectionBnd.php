@@ -20,7 +20,7 @@
 					<a class="btn" href="">
 						<span class="btn-content">Demander un rappel immédiat !</span>
 					</a>
-					<span class="btn-under">Ou appelez le 04.28.29.62.62</span>
+					<span class="btn-under">Ou appelez le <a href="tel:0428296262">04.28.29.62.62</a></span>
 				</div>
 			</div>
 		</div>

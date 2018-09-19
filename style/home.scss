@@ -136,7 +136,7 @@
 			justify-content: space-between;
 			.ftr{
 				display: flex;
-				flex-flow: row wrap;
+				flex-flow: row nowrap;
 				align-items: center;
 				.logo{
 					height: 35px;
@@ -289,17 +289,19 @@
 						margin-right: 0px;
 					}
 					text-decoration: none;
-					padding: 10px 15px 10px 15px;
+					padding: 10px 20px 10px 20px;
 					border-radius: 25px;
 					background-color: $colorMain_3;
 					display: flex;
-					flex-flow: row wrap;
+					flex-flow: row nowrap;
 					align-items: center;
+					justify-content: start;
 					.logo{
 						height: 27px;
 						margin-right: 13px;
 					}
 					.text{
+						width: 100%;
 						.onTitle{
 							color:#FFF;
 							font-size: 8px;
@@ -310,6 +312,13 @@
 							font-size: 16px;
 							font-family: $font_1_regular;
 						}
+					}
+
+					&:first-child {
+						width: 150px;
+					}
+					&:last-child {
+						width: 175px;
 					}
 				}
 			}
