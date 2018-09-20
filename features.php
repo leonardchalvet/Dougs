@@ -48,29 +48,7 @@
 			<section id="section-app">
 				<div class="wrapper">
 
-					<div class="container-img">
-						<img class="illu" src="img/features/app-illu.png">
-						<div class="container-tag">
-							<div class="tag tag-1">
-								<img src="img/features/app-el1.png">
-							</div>
-							<div class="tag tag-2">
-								<img src="img/features/app-el2.png">
-							</div>
-							<div class="tag tag-3">
-								<img src="img/features/app-el3.png">
-							</div>
-							<div class="tag tag-4">
-								#OPERATIONS
-							</div>
-							<div class="tag tag-5">
-								#AUTOMATIQUE
-							</div>
-							<div class="tag tag-6">
-								#SYNCHRONISATION
-							</div>
-						</div>
-					</div>
+					<img class="illu" src="img/features/app-illu.png">
 
 					<div class="container-text">
 						<h2 class="featuresCommon-section-title">

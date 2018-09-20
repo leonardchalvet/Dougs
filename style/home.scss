@@ -90,7 +90,7 @@
 				.tag{
 					position: absolute;
 					border-radius: 4px;
-					padding: 4px 8px 4px 8px;
+					padding: 5px 8px 4px 8px;
 					font-size:11px;
 					line-height: 14px;
 					display: inline-flex;
@@ -502,7 +502,7 @@
 				position: absolute;
 				text-align: center;
 				background-color: #FFF;
-				padding: 25px;
+				padding: 25px 0 5px 0;
 				.name{
 					@include styleH5;
 				}
@@ -730,6 +730,7 @@
 
 	#section-btp .wrapper .container-el > .el {
 		padding: 60px 0;
+		width: 100%;
 	}
 	#section-btp .wrapper .container-el > .el:nth-child(odd) .container-illu {
 		order: 2;
@@ -813,7 +814,7 @@
 		width: 70%;
 	}
 	#section-expert .wrapper .container-img .cdr {
-		padding: 15px 25px 5px 25px;
+		padding: 15px 25px 0 25px;
 	}
 
 	#section-secu .wrapper {
@@ -839,7 +840,7 @@
 	}
 
 	#section-tarifs {
-		padding: 60px 0;
+		padding: 70px 0;
 	}
 	#section-tarifs .wrapper {
 		width: 100%;

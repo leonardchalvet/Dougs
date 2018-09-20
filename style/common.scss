@@ -600,9 +600,13 @@ main
 	#common-section-quotes {
 		padding: 60px 0;
 	}
+	#common-section-quotes .wrapper {
+		width: 100%;
+	}
 	#common-section-quotes .wrapper .head {
+		margin: auto;
 		margin-bottom: 40px !important;
-		width: 100% !important;
+		width: 90% !important;
 	}
 	#common-section-quotes .wrapper .container-quotes {
 		height: auto;
@@ -614,7 +618,7 @@ main
 	}
 	#common-section-quotes .wrapper .container-quotes .li-quotes .quote {
 		margin-top: 0 !important;
-		margin-right: 30px;
+		padding: 0 30px;
 	}
 	#common-section-quotes .wrapper .container-quotes .li-quotes .quote .quote-content {
 		width: 270px;

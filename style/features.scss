@@ -69,71 +69,11 @@
 		@include styleGrid1;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 
-		.container-img {
+		.illu {
 			position: relative;
-			width: 545px;
-			.illu {
-				margin-top: 125px;
-				margin-left: 180px;
-				width: 260px;
-			}
-
-			.container-tag {
-				position: absolute;
-				top: 0;
-				width: 100%;
-				height: 100%;
-				.tag {
-					position: absolute;
-					&.tag-1, &.tag-2, &.tag-3 {
-						width: 270px;
-						img {
-							width: 100%;
-						}
-					}
-					&.tag-1 {
-						top: 265px;
-    					left: 300px;
-					}
-					&.tag-2 {
-						top: 380px;
-    					left: 65px;
-					    z-index: -1;
-					}
-					&.tag-3 {
-						top: 475px;
-    					left: 280px;
-					    z-index: -1;	
-					}
-					&.tag-4, &.tag-5, &.tag-6 {
-						border-radius: 4px;
-						padding: 4px 8px 4px 8px;
-						font-size:11px;
-						line-height: 14px;
-						display: inline-flex;
-						font-family: $font_2_semibold;
-					}
-					&.tag-4 {
-						top: 245px;
-    					right: 70px;
-						background-color: #EBF1F4;
-						color:$colorMain_3;
-					}
-					&.tag-5 {
-						top: 356px;
-    					left: 142px;
-						background-color: $colorMain_2;
-						color:#FFF;
-					}
-					&.tag-6 {
-						top: 456px;
-						right: 45px;
-						background-color: $colorMain_1;
-						color:#FFF;
-					}
-				}
-			}
+			width: 550px;
 		}
 
 		.container-text {
@@ -319,51 +259,12 @@
 		padding-bottom: 50px;
 	}
 	#section-app .wrapper {
-	    flex-direction: column-reverse;
-	    align-items: center;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
 	}
-	#section-app .wrapper .container-text {
-		width: 100%;
-	}
-	#section-app .wrapper .container-img .illu {
-		margin: 125px auto auto auto;
-	    display: flex;
-	    width: 350px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-1, 
-	#section-app .wrapper .container-img .container-tag .tag.tag-2, 
-	#section-app .wrapper .container-img .container-tag .tag.tag-3 {
-		width: 325px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-1 {
-		top: 310px;
-    	left: 260px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-2 {
-		top: 470px;
-    	left: -40px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-3 {
-		top: 600px;
-    	left: 250px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-4, 
-	#section-app .wrapper .container-img .container-tag .tag.tag-5, 
-	#section-app .wrapper .container-img .container-tag .tag.tag-6 {
-		font-size: 14px;
-		padding: 6px 10px 6px 10px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-4 {
-		top: 285px;
-    	right: 65px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-5 {
-		top: 435px;
-		left: 55px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-6 {
-		top: 570px;
-    	right: 50px;
+	#section-app .wrapper .illu {
+		margin-top: 50px;
+	    width: 500px;
 	}
 
 	#section-ntf .wrapper .container-text {
@@ -449,48 +350,9 @@
 	#section-app .wrapper .container-text .btn .btn-content {
 		font-size: 12px;
 	}
-	#section-app .wrapper .container-img {
-		width: 300px;
-	}
-	#section-app .wrapper .container-img .illu {
-		margin: 70px auto auto auto;
-	    display: flex;
-	    width: 150px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-1,
-	#section-app .wrapper .container-img .container-tag .tag.tag-2,
-	#section-app .wrapper .container-img .container-tag .tag.tag-3 {
-		width: 200px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-1 {
-		top: 152px;
-    	left: 144px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-2 {
-		top: 218px;
-		left: -15px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-3 {
-		top: 270px;
-		left: 110px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-4,
-	#section-app .wrapper .container-img .container-tag .tag.tag-5,
-	#section-app .wrapper .container-img .container-tag .tag.tag-6 {
-		padding: 1px 6px;
-		font-size: 7px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-4 {
-		top: 140px;
-    	right: 52px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-5 {
-		top: 203px;
-		left: 50px;
-	}
-	#section-app .wrapper .container-img .container-tag .tag.tag-6 {
-		top: 259px;
-    	right: 47px;
+	#section-app .wrapper .illu {
+		margin-top: 70px;
+		width: 80%;
 	}
 
 	#section-ntf {

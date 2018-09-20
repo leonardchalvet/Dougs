@@ -252,13 +252,13 @@
 									<div class="card order-1">
 										<div class="text">
 											<div class="date">Vendredi 14 Juin 1</div>
-											<p>Quel est mon taux de progression ce mois-ci ?</p>
+											<p>Combien dois-je me verser de salaire</p>
 										</div>
 									</div>
 									<div class="card order-2">
 										<div class="text">
 											<div class="date">Vendredi 14 Juin 2</div>
-											<p>Quel est mon taux de progression ce mois-ci ?</p>
+											<p>Combien dois-je mettre de côté pour mes cotisations sociales ?</p>
 										</div>
 									</div>
 									<div class="card order-3">
