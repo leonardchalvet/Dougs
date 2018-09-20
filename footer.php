@@ -56,7 +56,7 @@
 			</div>
 		</div>
 		<div class="container-right">
-			<img src="img/footer/dougs-expert-comptable-en-ligne-pas-cher@2x.png">
+			<img src="img/footer/dougs-expert-comptable-en-ligne-pas-cher.png">
 		</div>
 	</div>
 </footer>
