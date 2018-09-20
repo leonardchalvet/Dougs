@@ -247,8 +247,27 @@
 							</div>
 						</div>
 						<div class="el">
-							<div class="container-illu">
-								<img class="illu" src="img/home/btp-el2-illu.png">
+							<div class="container-illu container-illu-anim">
+								<div class="container-cards">
+									<div class="card order-1">
+										<div class="text">
+											<div class="date">Vendredi 14 Juin 1</div>
+											<p>Quel est mon taux de progression ce mois-ci ?</p>
+										</div>
+									</div>
+									<div class="card order-2">
+										<div class="text">
+											<div class="date">Vendredi 14 Juin 2</div>
+											<p>Quel est mon taux de progression ce mois-ci ?</p>
+										</div>
+									</div>
+									<div class="card order-3">
+										<div class="text">
+											<div class="date">Vendredi 14 Juin 3</div>
+											<p>Quel est mon taux de progression ce mois-ci ?</p>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="container-text">
 								<h3 class="homeCommon-section-onTitle">
@@ -262,19 +281,29 @@
 								</p>
 								<div class="li-el">
 									<div class="el">
-										<img class="shape" src="img/home/btp-shape1.svg">
+										<div class="container-status">
+											<img class="status-unactive" src="img/home/btp-shape1.svg">
+											<img class="status-active" src="img/home/btp-shape2.svg">
+										</div>
+										
 										<p class="text">
 											« Combien dois-je me verser de salaire ? »
 										</p>
 									</div>
 									<div class="el">
-										<img src="img/home/btp-shape1.svg">
+										<div class="container-status">
+											<img class="status-unactive" src="img/home/btp-shape1.svg">
+											<img class="status-active" src="img/home/btp-shape2.svg">
+										</div>
 										<p class="text">
 											« Combien dois-je mettre de côté pour mes cotisations sociales ? »
 										</p>
 									</div>
-									<div class="el active">
-										<img src="img/home/btp-shape2.svg">
+									<div class="el">
+										<div class="container-status">
+											<img class="status-unactive" src="img/home/btp-shape1.svg">
+											<img class="status-active" src="img/home/btp-shape2.svg">
+										</div>
 										<p class="text">
 											« Quel est mon taux de progression ce mois-ci ? »
 										</p>
