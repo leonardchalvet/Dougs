@@ -45,7 +45,7 @@
 
 			<section id="section-jpd">
 				<div class="wrapper">
-					<div class="left">
+					<div class="container-ftr">
 						<div class="container-text">
 							<h2 class="creationCommon-section-title">
 								La création de votre entreprise par un juriste professionnel
@@ -72,10 +72,8 @@
 							</ul>
 						</div>
 					</div>
-					<div class="right">
-						<div class="illu">
-							<img src="img/creation/jpd-illu.png">
-						</div>
+					<div class="container-desc">
+						<img class="illu" src="img/creation/jpd-illu.png">
 						<div class="container-text">
 							<p class="text">
 								Le choix de votre forme juridique est déterminant pour la réussite de votre entreprise. Faire le bon choix peut vous faire gagner jusqu'à 30% sur votre résultat. Une erreur vous ferait travailler plus pour l'administration fiscale que pour vous !
@@ -95,42 +93,43 @@
 
 			<section id="section-xpr">
 				<div class="wrapper">
-					<div class="el el-1">
-						<div class="container-text">
-							<h2 class="creationCommon-section-title">
-								Dougs est un cabinet d'expertise-comptable en ligne, c'est une garantie de sérieux
-							</h2>
-							<ul>
-								<li>
-									<img src="img/creation/xpr-icon.svg">
-									<p>
-										En tant que cabinet d'expertise-comptable inscrit à l'Ordre des experts-comptables de Lyon, Dougs se doit d'un haut niveau de qualité de conseil et de professionnalisme. Cela vous garantit que les solutions trouvées pour la création de votre entreprise seront les meilleures pour vous et que le travail sera mené à bien.
-									</p>
-								</li>
-								<li>
-									<img src="img/creation/xpr-icon.svg">
-									<p>
-										Une fois votre entreprise créée, Dougs pourra vous accompagner pour votre comptabilité et votre gestion avec des conseils spécifiques, dédiés aux nouveaux entrepreneurs. Cela vous permettra d'assurer le succès de votre nouvelle activité !
-									</p>
-								</li>
-							</ul>
-						</div>
+					<div class="container-text">
+						<h2 class="creationCommon-section-title">
+							Dougs est un cabinet d'expertise-comptable en ligne, c'est une garantie de sérieux
+						</h2>
+						<ul>
+							<li>
+								<img src="img/creation/xpr-icon.svg">
+								<p>
+									En tant que cabinet d'expertise-comptable inscrit à l'Ordre des experts-comptables de Lyon, Dougs se doit d'un haut niveau de qualité de conseil et de professionnalisme. Cela vous garantit que les solutions trouvées pour la création de votre entreprise seront les meilleures pour vous et que le travail sera mené à bien.
+								</p>
+							</li>
+							<li>
+								<img src="img/creation/xpr-icon.svg">
+								<p>
+									Une fois votre entreprise créée, Dougs pourra vous accompagner pour votre comptabilité et votre gestion avec des conseils spécifiques, dédiés aux nouveaux entrepreneurs. Cela vous permettra d'assurer le succès de votre nouvelle activité !
+								</p>
+							</li>
+						</ul>
 					</div>
-					<div class="el el-2">
-						<div class="container-text">
-							<h2 class="creationCommon-section-title">
-								Découvrez pourquoi Dougs est si populaire pour la création d'entreprise !
-							</h2>
-							<p>
-								Vous souhaitez en savoir plus ? Demandez et un juriste expert en création d'entreprise vous appelle dans les 30 secondes.
-							</p>
-							<div class="container-action">
-								<a href="#" class="btn">
-									<div class="btn-content">
-										Demander un rappel gratuit !
-									</div>
-								</a>
-							</div>
+				</div>
+			</section>
+
+			<section id="section-btn">
+				<div class="wrapper">
+					<div class="container-text">
+						<h2 class="creationCommon-section-title">
+							Découvrez pourquoi Dougs est si populaire pour la création d'entreprise !
+						</h2>
+						<p>
+							Vous souhaitez en savoir plus ? Demandez et un juriste expert en création d'entreprise vous appelle dans les 30 secondes.
+						</p>
+						<div class="container-action">
+							<a href="#" class="btn">
+								<div class="btn-content">
+									Demander un rappel gratuit !
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -264,10 +263,10 @@
 								</a>
 							</div>
 						</div>
-						<div class="el el-2">
+						<div class="sep">
 							<div class="circle">OU</div>
 						</div>
-						<div class="el el-3">
+						<div class="el el-2">
 							<img class="icon" src="img/creation/start-el3-icon">
 							<p>
 								 Demandez une présentation de Dougs, un juriste expert en création d’entreprise vous appelle dans la minute. C’est gratuit, rapide et sans engagement 

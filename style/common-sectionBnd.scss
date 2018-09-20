@@ -92,13 +92,19 @@
 }
 @media screen and (max-width: $breakPoint_mobile) {
 	#common-sectionBnd {
-		padding: 100px 0;
+		padding: 40px 0 80px 0;
 	}
 	#common-sectionBnd .wrapper .container-img {
-		width: 300px;
+		display: flex;
+    	justify-content: center;
+		width: 100%;
+	}
+	#common-sectionBnd .wrapper .container-img img {
+		width: 80%;
 	}
 	#common-sectionBnd .wrapper .container-text {
-		width: 300px;
+		margin-top: 20px;
+		width: 100%;
 	}
 	#common-sectionBnd .wrapper .container-text .container-btn {
 		align-items: start;

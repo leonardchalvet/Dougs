@@ -573,10 +573,11 @@ main
 	}
 	#common-section-pres .wrapper .container-col {
 		padding-bottom: 60px;
+		flex-direction: column;
 	}
 	#common-section-pres .wrapper .container-col .illu {
 		order: 1;
-		width: 90%;
+		width: 80%;
 		margin: auto;
 	}
 	#common-section-pres .wrapper .container-col .col-el {
