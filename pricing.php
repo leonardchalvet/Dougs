@@ -33,7 +33,7 @@
 						</h2>
 					</div>
 
-					<div class="grp">
+					<div class="container-el">
 						<div class="el el-1">
 							<div class="container-icon">
 								<img src="img/pricing/price-el1-icon.svg">
@@ -53,9 +53,9 @@
 									</span>
 								</a>
 							</div>
-							<div class="text">
-								Un bon point de départ pour la comptabilité de votre activité. Bénéficiez de conseils de qualité et de la <div class="blue">validation par un expert-comptable.</div>
-							</div>
+							<p class="text">
+								Un bon point de départ pour la comptabilité de votre activité. Bénéficiez de conseils de qualité et de la <span>validation par un expert-comptable.</span>
+							</p>
 							<ul>
 								<li>
 									<img src="img/pricing/price-el-shape.svg">
@@ -127,9 +127,9 @@
 									</span>
 								</a>
 							</div>
-							<div class="text">
-								Les outils indispensables pour la gestion complète de votre activité. <div class="blue">Préparation de votre déclaration de TVA et élaboration de votre bilan.</div>
-							</div>
+							<p class="text">
+								Les outils indispensables pour la gestion complète de votre activité. <span>Préparation de votre déclaration de TVA et élaboration de votre bilan.</span>
+							</p>
 							<ul>
 								<li>
 									<img src="img/pricing/price-el-shape.svg">
@@ -193,9 +193,9 @@
 									</span>
 								</a>
 							</div>
-							<div class="text">
-								Le pack des nouveaux entrepreneurs. <div class="blue">La création de votre société</div> clé en main par nos juristes qualifiés, et un accompagnement comptable dédié.
-							</div>
+							<p class="text">
+								Le pack des nouveaux entrepreneurs. <span>La création de votre société</span> clé en main par nos juristes qualifiés, et un accompagnement comptable dédié.
+							</p>
 							<ul>
 								<li>
 									<img src="img/pricing/price-el-shape.svg">
@@ -250,14 +250,14 @@
 					</div>
 
 					<div class="foot">
-						<P class="test">
+						<p>
 							Le suivi de votre dossier et l'ensemble des prestations sont réalisées par les comptables et experts-comptables de notre cabinet Lyonnais.
-						</P>
+						</p>
 						<p class="question">
 							Une question ? 
 						</p>
 						<div class="info">
-							<a href="tel:0428296262" class="blue">04.28.29.62.62</a> ou <div class="blue">support@dougs.fr</div>
+							<a href="tel:0428296262">04.28.29.62.62</a> ou <a href="mailto:support@dougs.fr">support@dougs.fr</a>
 						</div>
 					</div>
 
@@ -347,7 +347,7 @@
 						</h2>
 					</div>
 					<div class="container-text">
-						<div class="el el1">
+						<div class="el">
 							<h4>
 								Je ne sais pas quel pack choisir, pouvez-vous m'aider ?
 							</h4>
@@ -355,7 +355,7 @@
 								Si vous êtes assujetti à la TVA et/ou en société, vous devez opter pour le pack Liberté à 69€ HT. Si vous êtes profession libérale ou BNC, le pack Essentiel à 49€ HT est fait pour vous. Dans tous les cas sentez-vous libre de nous contacter ou de nous téléphoner au 04.28.29.62.62, nous vous aiderons à prendre une décision.
 							</p>
 						</div>
-						<div class="el el2">
+						<div class="el">
 							<h4>
 								Est-ce réellement sans engagement ?
 							</h4>
@@ -363,7 +363,7 @@
 								Oui bien sûr ! Vous pouvez arrêter votre souscription du jour au lendemain. Dans ce cas, vous ne payez que le mois commencé. De plus, quel que soit le pack choisi, les 30 premiers jours vous sont offerts.
 							</p>
 						</div>
-						<div class="el el3">
+						<div class="el">
 							<h4>
 								Dois-je payer un comptable en plus ?
 							</h4>

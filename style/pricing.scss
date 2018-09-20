@@ -37,7 +37,7 @@
 			}
 		}
 
-		.grp {
+		.container-el {
 			display: flex;
 			align-items: start;
 			justify-content: space-between;
@@ -48,10 +48,10 @@
 				display: flex;
 				flex-direction: column;				
 				align-items: center;
+				transition: all 0.25s ease;
 
 				&:hover {
 					transform: scale(1.01);
-					transition-duration: 0.2s;
 					box-shadow: 0 20px 30px 0 rgba(0,0,0,0.1);
 					.container-action {
 						.btn {
@@ -92,11 +92,10 @@
 					}
 				}
 				.container-icon {
-					width: 165px;
-					height: 110px;
+					width: 100%;
+					text-align: center;
 					img {
-						width: 100%;
-						height: 100%;
+						height: 110px;
 					}
 				}
 				h5 {
@@ -142,19 +141,22 @@
 					text-align: center;
 					padding-bottom: 50px;
 					border-bottom: 1px solid #EBF1F4;
-					.blue {
+					span {
 						display: inline;
 						color: $colorMain_5;
 					}
 				}
 				ul {
 					width: 90%;
-					margin-top: 40px;
+					margin-top: 50px;
 					li {
 						list-style: none;
 						display: flex;
 						align-items: baseline;
-						margin-top: 15px;
+						margin-bottom: 15px;
+						&:last-child {
+							margin-bottom: 0;
+						}
 						img {
 							width: 12px;
 							height: 12px;
@@ -218,7 +220,7 @@
 				@include styleParagraphMedium();
 				color: $colorMain_5;
 				margin-top: 5px;
-				.blue {
+				a {
 					display: inline;
 					text-decoration: none;
 					color: #3799D0;
@@ -318,7 +320,7 @@
 /*----------  RESPONSIVE ----------*/
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
 	
-	#section-price .wrapper .grp {
+	#section-price .wrapper .container-el {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
@@ -348,11 +350,11 @@
 	#section-price .wrapper .head h2 {
 		font-size: 29px;
 	}
-	#section-price .wrapper .grp {
+	#section-price .wrapper .container-el {
 		flex-direction: column;
 		align-items: center;
 	}
-	#section-price .wrapper .grp .el {
+	#section-price .wrapper .container-el .el {
 		width: 100%;
 		padding: 50px 0 50px 0;
 		&:hover {
@@ -360,10 +362,10 @@
 			transform: none;
 		}
 	}
-	#section-price .wrapper .grp .el ul {
+	#section-price .wrapper .container-el .el ul {
 		width: 100%;
 	}
-	#section-price .wrapper .grp .el .announcement {
+	#section-price .wrapper .container-el .el .announcement {
 		top: 0;
 	}
 	#section-price .wrapper .foot {
