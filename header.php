@@ -32,19 +32,19 @@
 		</div>
 		<div class="container container-right">
 			<div class="li-link">
-				<a href="features.php" title="Fonctionnalités">
+				<a href="features.php">
 					Fonctionnalités
 				</a>
-				<a href="pricing.php" title="Tarifs">
+				<a href="pricing.php">
 					Tarifs
 				</a>
-				<a href="creation.php" title="Création d'entreprise">
+				<a href="creation.php">
 					Création d’entreprise
 				</a>
-				<a href="team.php" title="L’équipe">
+				<a href="team.php">
 					L’équipe
 				</a>
-				<a href="" title="Blog">
+				<a href="">
 					Blog
 				</a>
 			</div>

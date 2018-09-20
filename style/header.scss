@@ -62,7 +62,8 @@
 				flex-flow: row wrap;
 				align-items: center;
 				a{
-					color: $colorMain_6;
+					color: #000;
+					opacity: 0.5;
 					font-family: $font_1_regular;
 					font-size: $linkStyle1_textsize_desktop;
 					line-height: $linkStyle1_lineheight_desktop;
@@ -71,17 +72,11 @@
 					&:last-child{
 						margin-right:0px;
 					}
-					&:hover {
-						color: #000;
-						font-weight: bold;
+					&.active {
+						opacity: 0.2;
 					}
-					&:after {
-					    display: block;
-					    content: attr(title);
-					    font-weight: bold;
-					    height: 0;
-					    overflow: hidden;
-					    visibility: hidden;
+					&:hover {
+						opacity: 1;
 					}
 				}
 			}
