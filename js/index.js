@@ -4,7 +4,7 @@ $(window).on('load', function() {
 
 
 	/* HEADER */
-	
+
 	$window.scroll(function() {
 	    if ( $window.scrollTop() >= 1 ) {
 	        $('#header-desktop').addClass('scroll');
@@ -26,13 +26,13 @@ $(window).on('load', function() {
 	});
 
 	let body = $('body').attr('id');
-	let linkHeader = '#header-desktop .wrapper .container .li-link a';
+	let linkHeader = '#header-desktop .wrapper .container .li-link a:nth-child(';
 
 	switch(body) {
-		case 'features' : $(linkHeader + ':nth-child(1)').addClass('here');  break;
-		case 'pricing' : $(linkHeader + ':nth-child(2)').addClass('here');  break;
-		case 'creation' : $(linkHeader + ':nth-child(3)').addClass('here');  break;
-		case 'team' : $(linkHeader + ':nth-child(4)').addClass('here');  break;
+		case 'features'  : $(linkHeader + '1)').addClass('here');  break;
+		case 'pricing'   : $(linkHeader + '2)').addClass('here');  break;
+		case 'creation'  : $(linkHeader + '3)').addClass('here');  break;
+		case 'team'      : $(linkHeader + '4)').addClass('here');  break;
 	}
 
 	/* END HEADER */
