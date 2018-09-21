@@ -44,12 +44,13 @@ $(window).on('load', function() {
 				animCarousel();
 			}, delay);
 		}, 200);
-
-
-
 	}
 
 	animCarousel();
+
+	$('body').click(function(){
+		$('.li-quotes').toggleClass('active');
+	})
 
 
 })
