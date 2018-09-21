@@ -431,7 +431,6 @@ main
 		}
 		.container-quotes{
 			width: 100%;
-			height: 330px;
 			position: relative;
 
 			.li-quotes{
@@ -497,18 +496,26 @@ main
 							display: block;
 							margin-top: 10px;
 							@include styleParagraphMedium;
-							display: -webkit-box;
 		  					-webkit-line-clamp: 4;
 		  					-webkit-box-orient: vertical;  
 		  					overflow: hidden;
+		  					max-height: 100px;
 						}
 						.link{
 							display: inline-block;
 							margin-top:25px;
 							@include styleLinkStyle2;
 							font-size: 13px;
+							cursor: pointer;
 						}
 					}
+
+					&.show .quote-content {
+						height: auto;
+						.text {
+			        		max-height: initial;
+			        	}
+			        }
 				}
 			}
 		}

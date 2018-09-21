@@ -154,8 +154,11 @@
 									</h5>	
 									<p class="text">
 										Très bon cabinet comptable en ligne. L'application est facile à utiliser. L'équipe est réactive et a toujours répondu à mes questlkdh sqkljdh qslkdh dhsqjk dsdkjqs kj
+										Très bon cabinet comptable en ligne. L'application est facile à utiliser. L'équipe est réactive et a toujours répondu à mes questlkdh sqkljdh qslkdh dhsqjk dsdkjqs kj
+										Très bon cabinet comptable en ligne. L'application est facile à utiliser. L'équipe est réactive et a toujours répondu à mes questlkdh sqkljdh qslkdh dhsqjk dsdkjqs kj
+										Très bon cabinet comptable en ligne. L'application est facile à utiliser. L'équipe est réactive et a toujours répondu à mes questlkdh sqkljdh qslkdh dhsqjk dsdkjqs kj
 									</p>
-									<a class="link" href="">
+									<a class="link">
 										Lire plus
 									</a>
 								</div>
@@ -169,7 +172,7 @@
 									<p class="text">
 										Dougs est un expert-comptable connecté à la pointe des dernières technologies Web ! Deux applications développées en respectant lesjh jkqsgh qjks qhkjsh qkjs h
 									</p>
-									<a class="link" href="">
+									<a class="link">
 										Lire plus
 									</a>
 								</div>
@@ -183,7 +186,7 @@
 									<p class="text">
 										Cela fait 2 ans que je travaille avec eux pour mon compte professionnel concernant mon activité de kiné. C'est synchronisé avec ma banque, celad gsd gsqdg sqjg
 									</p>
-									<a class="link" href="">
+									<a class="link">
 										Lire plus
 									</a>
 								</div>
@@ -199,7 +202,7 @@
 									<p class="text">
 										Très bon cabinet comptable en ligne. L'application est facile à utiliser. L'équipe est réactive et a toujours répondu à mes questlkdh sqkljdh qslkdh dhsqjk dsdkjqs kj
 									</p>
-									<a class="link" href="">
+									<a class="link">
 										Lire plus
 									</a>
 								</div>
@@ -213,7 +216,7 @@
 									<p class="text">
 										Dougs est un expert-comptable connecté à la pointe des dernières technologies Web ! Deux applications développées en respectant lesjh jkqsgh qjks qhkjsh qkjs h
 									</p>
-									<a class="link" href="">
+									<a class="link">
 										Lire plus
 									</a>
 								</div>
@@ -227,7 +230,7 @@
 									<p class="text">
 										Cela fait 2 ans que je travaille avec eux pour mon compte professionnel concernant mon activité de kiné. C'est synchronisé avec ma banque, celad gsd gsqdg sqjg
 									</p>
-									<a class="link" href="">
+									<a class="link">
 										Lire plus
 									</a>
 								</div>
@@ -245,7 +248,7 @@
 							<div class="underline"></div>
 						</div>
 					</div>
-					
+
 				</div>
 
 			</section>

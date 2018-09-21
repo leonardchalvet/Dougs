@@ -2,6 +2,9 @@ $(window).on('load', function() {
 
 	$window = $(window);
 
+
+	/* HEADER */
+	
 	$window.scroll(function() {
 	    if ( $window.scrollTop() >= 1 ) {
 	        $('#header-desktop').addClass('scroll');
@@ -21,6 +24,18 @@ $(window).on('load', function() {
 		.mouseout(function() {
 			$('#header-desktop .wrapper .container .li-link a').removeClass('active');
 	});
+
+	let body = $('body').attr('id');
+	let linkHeader = '#header-desktop .wrapper .container .li-link a';
+
+	switch(body) {
+		case 'features' : $(linkHeader + ':nth-child(1)').addClass('here');  break;
+		case 'pricing' : $(linkHeader + ':nth-child(2)').addClass('here');  break;
+		case 'creation' : $(linkHeader + ':nth-child(3)').addClass('here');  break;
+		case 'team' : $(linkHeader + ':nth-child(4)').addClass('here');  break;
+	}
+
+	/* END HEADER */
 
 
 	function animCarousel(){
@@ -48,6 +63,10 @@ $(window).on('load', function() {
 
 	animCarousel();
 
+	/* QUOTE */
+
+	$('.li-quotes:not(:first-child)').hide();
+
 	$('#common-section-quotes .wrapper .container-nav .nav').click(function(){
 		let num = $(this).attr('data-liquote');
 
@@ -69,14 +88,10 @@ $(window).on('load', function() {
 		$('.li-quotes').addClass('active');
 	}
 
-	let body = $('body').attr('id');
-	let linkHeader = '#header-desktop .wrapper .container .li-link a';
 
-	switch(body) {
-		case 'features' : $(linkHeader + ':nth-child(1)').addClass('here');  break;
-		case 'pricing' : $(linkHeader + ':nth-child(2)').addClass('here');  break;
-		case 'creation' : $(linkHeader + ':nth-child(3)').addClass('here');  break;
-		case 'team' : $(linkHeader + ':nth-child(4)').addClass('here');  break;
-	}
+	$('#common-section-quotes .wrapper .container-quotes .li-quotes .quote .quote-content .link').click(function() {
+		$(this.parentNode).parent().toggleClass('show');
+	})
 
+	/* END QUOTE */
 })
