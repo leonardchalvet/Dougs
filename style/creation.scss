@@ -248,6 +248,16 @@
 		border-top: 1px solid rgba(1,58,81,0.1);
 		.container-col {
 			border: none;
+
+			.col-el.col-el-2 .el:first-child {
+				transform: translateY(10px) translateX(-40px);
+			} 
+			.col-el.col-el-2 .el:nth-child(2) {
+				transform: translateY(30px)	
+			}
+			.col-el.col-el-2 .el:nth-child(3) {
+				transform: translateY(25px) translateX(-40px); 
+			}
 		}
 	}
 }
