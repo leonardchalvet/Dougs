@@ -80,6 +80,11 @@
 			justify-content: center;
 			.illu {
 				width: 260px;
+				animation-name: floating;
+			  	animation-iteration-count: infinite;
+			  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+			  	transform-origin: 50% 1px; 
+			  	animation-duration: 7s;  
 			}
  			.container-tag {
 				position: absolute;
@@ -88,6 +93,21 @@
 				height: 100%;
 				.tag {
 					position: absolute;
+					animation-name: floating;
+				  	animation-iteration-count: infinite;
+				  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+				  	transform-origin: 50% 1px; 
+					@keyframes floating {
+					  0%{
+					    transform: translateY(5px);
+					  } 
+					  50%{
+					    transform:translateY(-5px);;
+					  } 
+					  100%{
+					    transform: translateY(5px);
+					  }       
+					}
 					&.tag-1, &.tag-2, &.tag-3 {
 						width: 270px;
 						img {
@@ -97,16 +117,19 @@
 					&.tag-1 {
 						top: 140px;
 						left: 265px;
+						animation-duration: 7s;  
 					}
 					&.tag-2 {
 						top: 255px;
 						left: 28px;
 					    z-index: -1;
+					    animation-duration: 5s;  
 					}
 					&.tag-3 {
 						top: 350px;
 						left: 235px;
 					    z-index: -1;	
+					    animation-duration: 9s;  
 					}
 					&.tag-4, &.tag-5, &.tag-6 {
 						border-radius: 4px;
@@ -121,18 +144,21 @@
 						right: 110px;
 						background-color: #EBF1F4;
 						color:$colorMain_3;
+						animation-duration: 10s;  
 					}
 					&.tag-5 {
 						top: 232px;
 						left: 110px;
 						background-color: $colorMain_2;
 						color:#FFF;
+						animation-duration: 6s;  
 					}
 					&.tag-6 {
 						top: 330px;
 						right: 90px;
 						background-color: $colorMain_1;
 						color:#FFF;
+						animation-duration: 8s;  
 					}
 				}
 			}
