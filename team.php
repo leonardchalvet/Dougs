@@ -15,7 +15,7 @@
 
 	</head>
 	
-	<body>
+	<body id="team">
 
 		<?php include('header.php'); ?>
 

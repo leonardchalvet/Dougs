@@ -15,7 +15,7 @@
 
 	</head>
 	
-	<body>
+	<body id="creation">
 
 		<?php include('header.php'); ?>
 
@@ -145,7 +145,7 @@
 					</div>
 
 					<div class="container-quotes">
-						<div class="li-quotes">
+						<div class="li-quotes active">
 							<div class="quote">
 								<img class="shape" src="img/creation/quote-shape1.svg">
 								<div class="quote-content">
@@ -189,7 +189,63 @@
 								</div>
 							</div>	
 						</div>
+						<div class="li-quotes">
+							<div class="quote">
+								<img class="shape" src="img/home/quote-shape1.svg">
+								<div class="quote-content">
+									<h5 class="name">
+										Amaury Bouchard 
+									</h5>	
+									<p class="text">
+										Très bon cabinet comptable en ligne. L'application est facile à utiliser. L'équipe est réactive et a toujours répondu à mes questlkdh sqkljdh qslkdh dhsqjk dsdkjqs kj
+									</p>
+									<a class="link" href="">
+										Lire plus
+									</a>
+								</div>
+							</div>
+							<div class="quote">
+								<img class="shape" src="img/home/quote-shape2.svg">
+								<div class="quote-content">
+									<h5 class="name">
+										Calvïn Poujol
+									</h5>	
+									<p class="text">
+										Dougs est un expert-comptable connecté à la pointe des dernières technologies Web ! Deux applications développées en respectant lesjh jkqsgh qjks qhkjsh qkjs h
+									</p>
+									<a class="link" href="">
+										Lire plus
+									</a>
+								</div>
+							</div>
+							<div class="quote">
+								<img class="shape" src="img/home/quote-shape3.svg">
+								<div class="quote-content">
+									<h5 class="name">
+										Jeremy Brouche
+									</h5>	
+									<p class="text">
+										Cela fait 2 ans que je travaille avec eux pour mon compte professionnel concernant mon activité de kiné. C'est synchronisé avec ma banque, celad gsd gsqdg sqjg
+									</p>
+									<a class="link" href="">
+										Lire plus
+									</a>
+								</div>
+							</div>	
+						</div>
 					</div>
+
+					<div class="container-nav">
+						<div class="nav active" data-liQuote="1">
+							<div class="num">01</div>
+							<div class="underline"></div>
+						</div>
+						<div class="nav" data-liQuote="2">
+							<div class="num">02</div>
+							<div class="underline"></div>
+						</div>
+					</div>
+					
 				</div>
 
 			</section>

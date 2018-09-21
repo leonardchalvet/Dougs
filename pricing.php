@@ -15,7 +15,7 @@
 
 	</head>
 	
-	<body>
+	<body id="pricing">
 
 		<?php include('header.php'); ?>
 

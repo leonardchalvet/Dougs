@@ -15,7 +15,7 @@
 
 	</head>
 	
-	<body>
+	<body id="features">
 
 		<?php include('header.php'); ?>
 

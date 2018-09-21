@@ -15,7 +15,7 @@
 
 	</head>
 	
-	<body>
+	<body id="home">
 
 		<?php include('header.php'); ?>
 

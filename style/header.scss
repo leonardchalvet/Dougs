@@ -81,6 +81,9 @@
 					&:last-child{
 						margin-right:0px;
 					}
+					&.here {
+						opacity: 1;
+					}
 					&.active {
 						opacity: 0.3;
 					}

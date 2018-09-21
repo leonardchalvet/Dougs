@@ -69,4 +69,14 @@ $(window).on('load', function() {
 		$('.li-quotes').addClass('active');
 	}
 
+	let body = $('body').attr('id');
+	let linkHeader = '#header-desktop .wrapper .container .li-link a';
+
+	switch(body) {
+		case 'features' : $(linkHeader + ':nth-child(1)').addClass('here');  break;
+		case 'pricing' : $(linkHeader + ':nth-child(2)').addClass('here');  break;
+		case 'creation' : $(linkHeader + ':nth-child(3)').addClass('here');  break;
+		case 'team' : $(linkHeader + ':nth-child(4)').addClass('here');  break;
+	}
+
 })
