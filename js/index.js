@@ -49,20 +49,24 @@ $(window).on('load', function() {
 	animCarousel();
 
 	$('#common-section-quotes .wrapper .container-nav .nav').click(function(){
-
-		//console.log( $(this).attr('data-liquote') );
-
 		let num = $(this).attr('data-liquote');
+
+		$('#common-section-quotes .wrapper .container-nav .nav').removeClass('active');
 
 		if(!$('.li-quotes:nth-child('+num+')').hasClass('active')) {
 
 			$('.li-quotes').removeClass('active');
 			setTimeout(function(){
+				$('#common-section-quotes .wrapper .container-nav .nav:nth-child('+num+')').addClass('active');
+
 				$('.li-quotes').show();
 				$('.li-quotes:not(:nth-child('+num+')').hide();
 				$('.li-quotes:nth-child('+num+')').addClass('active');
 			}, 500)
 		}
 	});
+	if (window.matchMedia("(max-width: 700px)").matches) {
+		$('.li-quotes').addClass('active');
+	}
 
 })

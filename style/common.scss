@@ -623,11 +623,16 @@ main
 	}
 	#common-section-quotes .wrapper .container-quotes {
 		height: auto;
+		overflow-x: auto;
+		overflow-y: hidden;
+		display: flex;
+		flex-wrap: nowrap;
 	}
 	#common-section-quotes .wrapper .container-quotes .li-quotes {
 		flex-wrap: nowrap;
-		height: 275px;
-		overflow-x: auto;
+		height: 300px;
+		transform: translateY(35px);
+		width: 1000px;
 	}
 	#common-section-quotes .wrapper .container-quotes .li-quotes .quote {
 		margin-top: 0 !important;

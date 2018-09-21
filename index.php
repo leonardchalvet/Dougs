@@ -239,7 +239,7 @@
 					</div>
 
 					<div class="container-nav">
-						<div class="nav" data-liQuote="1">
+						<div class="nav active" data-liQuote="1">
 							<div class="num">01</div>
 							<div class="underline"></div>
 						</div>
