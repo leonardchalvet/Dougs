@@ -48,9 +48,21 @@ $(window).on('load', function() {
 
 	animCarousel();
 
-	$('body').click(function(){
-		$('.li-quotes').toggleClass('active');
-	})
+	$('#common-section-quotes .wrapper .container-nav .nav').click(function(){
 
+		//console.log( $(this).attr('data-liquote') );
+
+		let num = $(this).attr('data-liquote');
+
+		if(!$('.li-quotes:nth-child('+num+')').hasClass('active')) {
+
+			$('.li-quotes').removeClass('active');
+			setTimeout(function(){
+				$('.li-quotes').show();
+				$('.li-quotes:not(:nth-child('+num+')').hide();
+				$('.li-quotes:nth-child('+num+')').addClass('active');
+			}, 500)
+		}
+	});
 
 })
