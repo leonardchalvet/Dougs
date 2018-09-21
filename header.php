@@ -48,7 +48,6 @@
 					Blog
 				</a>
 			</div>
-			<div class="sep"></div>
 			<div class="li-action">
 				<a class="action-signin" href="">
 					Se Connecter

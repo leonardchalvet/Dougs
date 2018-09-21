@@ -6,7 +6,7 @@
 	transition: all ease 0.25s;
 	&.scroll{
 		background-color: #FFF;
-		    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
 	}
 	.wrapper{
 		position: absolute;
@@ -15,15 +15,22 @@
 		transform: translate(-50%, -50%);
 		@include styleGrid1;
 		display: inline-flex;
-		flex-flow: row wrap;
+		flex-flow: row nowrap;
 		align-items: center;
 		justify-content: space-between;
 		.container{
 			display: inline-flex;
-			flex-flow: row wrap;
+			flex-flow: row nowrap;
 			align-items: center;
+			&.desktop {
+				min-width: 260px;
+			}
 			&.mobile {
 				display: none;
+			}
+			&.container-right {
+				width: 100%;
+    			justify-content: space-between;
 			}
 			.sep{
 				margin-left: 23px;
@@ -61,6 +68,8 @@
 				display: flex;
 				flex-flow: row wrap;
 				align-items: center;
+				width: 100%;
+    			justify-content: center;
 				a{
 					color: #000;
 					opacity: 0.5;
@@ -68,12 +77,12 @@
 					font-size: $linkStyle1_textsize_desktop;
 					line-height: $linkStyle1_lineheight_desktop;
 					text-decoration: none;
-					margin-right: 40px;
+					padding: 5px 17px;
 					&:last-child{
 						margin-right:0px;
 					}
 					&.active {
-						opacity: 0.2;
+						opacity: 0.3;
 					}
 					&:hover {
 						opacity: 1;
@@ -84,13 +93,20 @@
 				display: flex;
 				flex-flow: row wrap;
 				align-items: center;
+				min-width: 210px;
 				.action-signin{
 					@include styleLinkStyle1;
+					font-family: $font_1_regular;
+					font-size: $linkStyle1_textsize_desktop;
+					line-height: $linkStyle1_lineheight_desktop;
 					margin-right: 18px;
 					text-decoration: none;
 				}
 				.action-signup{
 					@include styleBtnStyle1;
+					font-family: $font_1_regular;
+					font-size: $linkStyle1_textsize_desktop;
+					line-height: $linkStyle1_lineheight_desktop;
 					border:1px solid $colorMain_2;
 					padding: 12px 25px;
 					.btn-content{
@@ -108,27 +124,14 @@
 		height: 105px;
 	}
 	#header-desktop .wrapper {
-		align-items: start;
-		justify-content: space-around;
+		flex-wrap: wrap;
 	}
-	#header-desktop .wrapper .container {
-		flex-direction: column;
-		align-items: start;
-		justify-content: space-between;
+	#header-desktop .wrapper .container.desktop {
+		margin-bottom: 10px;
 	}
-	#header-desktop .wrapper .container .li-link a {
-		margin-right: 20px;
+	#header-desktop .wrapper .container .li-link {
+		justify-content: flex-start;
 	}
-	#header-desktop .wrapper .container .sep {
-		display: none;
-	}
-	#header-desktop .wrapper .container .tel {
-		margin-top: 10px;
-	}
-	#header-desktop .wrapper .container .li-action {
-		margin-top: 10px;
-	}
-
 }
 
 @media screen and (max-width: $breakPoint_mobile) {

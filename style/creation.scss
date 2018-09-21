@@ -159,7 +159,7 @@
 
 /*----------  SECTION XPR  ----------*/
 #section-xpr {
-	padding: 70px 0;
+	padding: 90px 0 70px 0;
 	.wrapper {
 		position: relative;
 		@include styleGrid1;
@@ -241,16 +241,20 @@
 /*----------  SECTION COMMON SECTION PRESS  ----------*/
 #common-section-pres {
 	padding-top: 60px;
+	padding-bottom: 30px;
 	background-color: $colorMain_4;
 	.wrapper {
-		padding-top: 70px;
+		padding-top: 80px;
 		border-top: 1px solid rgba(1,58,81,0.1);
+		.container-col {
+			border: none;
+		}
 	}
 }
 
 /*----------  SECTION START  ----------*/
 #section-start {
-	padding: 80px 0 120px 0;
+	padding: 90px 0 120px 0;
 	background-color: #0ED094;
 	.wrapper {
 		position: relative;
