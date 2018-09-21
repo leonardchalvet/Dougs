@@ -71,9 +71,71 @@
 		justify-content: space-between;
 		align-items: center;
 
-		.illu {
+		.container-img {
+			margin-top: 30px;
 			position: relative;
 			width: 550px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.illu {
+				width: 260px;
+			}
+ 			.container-tag {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				.tag {
+					position: absolute;
+					&.tag-1, &.tag-2, &.tag-3 {
+						width: 270px;
+						img {
+							width: 100%;
+						}
+					}
+					&.tag-1 {
+						top: 140px;
+						left: 265px;
+					}
+					&.tag-2 {
+						top: 255px;
+						left: 28px;
+					    z-index: -1;
+					}
+					&.tag-3 {
+						top: 350px;
+						left: 235px;
+					    z-index: -1;	
+					}
+					&.tag-4, &.tag-5, &.tag-6 {
+						border-radius: 4px;
+						padding: 4px 8px 4px 8px;
+						font-size:11px;
+						line-height: 14px;
+						display: inline-flex;
+						font-family: $font_2_semibold;
+					}
+					&.tag-4 {
+						top: 120px;
+						right: 110px;
+						background-color: #EBF1F4;
+						color:$colorMain_3;
+					}
+					&.tag-5 {
+						top: 232px;
+						left: 110px;
+						background-color: $colorMain_2;
+						color:#FFF;
+					}
+					&.tag-6 {
+						top: 330px;
+						right: 90px;
+						background-color: $colorMain_1;
+						color:#FFF;
+					}
+				}
+			}
 		}
 
 		.container-text {
@@ -256,16 +318,59 @@
 
 	#section-app {
 		margin-bottom: auto;
-		padding-bottom: 50px;
+		padding-bottom: 0;
+		margin-bottom: -30px;
 	}
 	#section-app .wrapper {
 		flex-wrap: wrap-reverse;
 		justify-content: center;
+		align-items: start;
 	}
-	#section-app .wrapper .illu {
-		margin-top: 50px;
-	    width: 500px;
+	#section-app .wrapper .container-img {
+		margin-top: 0;
+		width: 450px;
+		margin-bottom: 50px;
 	}
+	#section-app .wrapper .container-img .illu {
+		margin: 100px auto auto auto;
+	    display: flex;
+	    width: 250px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-1, 
+	#section-app .wrapper .container-img .container-tag .tag.tag-2, 
+	#section-app .wrapper .container-img .container-tag .tag.tag-3 {
+		width: 260px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-1 {
+		top: 233px;
+		left: 215px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-2 {
+		top: 344px;
+		left: -12px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-3 {
+		top: 436px;
+		left: 190px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-4, 
+	#section-app .wrapper .container-img .container-tag .tag.tag-5, 
+	#section-app .wrapper .container-img .container-tag .tag.tag-6 {
+		font-size: 14px;
+		padding: 6px 10px 6px 10px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-4 {
+		top: 210px;
+		right: 40px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-5 {
+		top: 323px;
+		left: 35px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-6 {
+		top: 415px;
+		right: 25px;
+    }
 
 	#section-ntf .wrapper .container-text {
 		width: 100%;
@@ -350,10 +455,49 @@
 	#section-app .wrapper .container-text .btn .btn-content {
 		font-size: 12px;
 	}
-	#section-app .wrapper .illu {
-		margin-top: 70px;
-		width: 80%;
+	#section-app .wrapper .container-img {
+		width: 300px;
 	}
+	#section-app .wrapper .container-img .illu {
+		margin: 70px auto auto auto;
+	    display: flex;
+	    width: 150px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-1,
+	#section-app .wrapper .container-img .container-tag .tag.tag-2,
+	#section-app .wrapper .container-img .container-tag .tag.tag-3 {
+		width: 200px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-1 {
+		top: 152px;
+    	left: 125px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-2 {
+		top: 218px;
+		left: -25px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-3 {
+		top: 270px;
+		left: 110px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-4,
+	#section-app .wrapper .container-img .container-tag .tag.tag-5,
+	#section-app .wrapper .container-img .container-tag .tag.tag-6 {
+		padding: 1px 6px;
+		font-size: 7px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-4 {
+		top: 140px;
+    	right: 52px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-5 {
+		top: 203px;
+		left: 50px;
+	}
+	#section-app .wrapper .container-img .container-tag .tag.tag-6 {
+		top: 259px;
+    	right: 47px;
+    }
 
 	#section-ntf {
 		padding: 75px 0;
