@@ -815,6 +815,9 @@
 	#section-btp .wrapper .container-el > .el:nth-child(2n) .container-text h2 {
 		margin-bottom: 40px;
 	}
+	.container-illu-anim{
+		width: 100% !important;
+	}
 
 	#section-app .wrapper {
 		padding: 60px 0;
@@ -824,8 +827,8 @@
 		width: 100%;
 		order: 2;
 	}
-	#section-app .wrapper .container-illu .illu {
-		width: 75%;
+	#section-app .wrapper .container-illu img {
+		width: 200px;
 	}
 	#section-app .wrapper .container-text {
 		width: 100%;

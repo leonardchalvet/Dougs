@@ -293,7 +293,7 @@
 						<div class="el container__anim">
 							<div class="container-illu container-illu-anim anim__fade anim__delay_6">
 								<div class="container-cards">
-									<div class="card order-1">
+									<div class="card order-3">
 										<div class="text">
 											<div class="date">Vendredi 14 Juin 1</div>
 											<p>Combien dois-je me verser de salaire</p>
@@ -305,7 +305,7 @@
 											<p>Combien dois-je mettre de côté pour mes cotisations sociales ?</p>
 										</div>
 									</div>
-									<div class="card order-3">
+									<div class="card order-1">
 										<div class="text">
 											<div class="date">Vendredi 14 Juin 3</div>
 											<p>Quel est mon taux de progression ce mois-ci ?</p>

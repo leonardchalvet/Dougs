@@ -658,6 +658,7 @@ main
 		flex-wrap: nowrap;
 	}
 	#common-section-quotes .wrapper .container-quotes .li-quotes {
+		display: flex !important;
 		flex-wrap: nowrap;
 		height: 300px;
 		transform: translateY(35px);
