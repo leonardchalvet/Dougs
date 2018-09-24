@@ -97,23 +97,42 @@
 					font-family: $font_2_semibold;
 					box-shadow: 0 4px 18px 0 rgba(0,0,0,0.1);
 
+					animation-name: floating;
+				  	animation-iteration-count: infinite;
+				  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+				  	transform-origin: 50% 1px; 
+				  	@keyframes floating {
+					  0%{
+					    transform: translateY(5px);
+					  } 
+					  50%{
+					    transform:translateY(-5px);;
+					  } 
+					  100%{
+					    transform: translateY(5px);
+					  }       
+					}
+
 					&.tag-1{
 						top: 87px;
 						right: -5px;
 						background-color: #FFF;
 						color:$colorMain_3;
+						animation-duration: 10s;
 					}
 					&.tag-2{
 						top: 240px;
 						right: 0px;
 						background-color: $colorMain_1;
 						color:#FFF;
+						animation-duration: 6s;
 					}
 					&.tag-3{
 						top: 318px;
 						left: 24px;
 						background-color: $colorMain_2;
 						color:#FFF;
+						animation-duration: 8s;
 					}
 				}
 			}
@@ -358,10 +377,36 @@
 		flex-flow: row wrap;
 		align-items: center;
 		.container-illu{
+			position: relative;
 			width: calc(100% - 430px);
 			text-align: center;
-			.illu{
-				width: 370px;
+			padding-left: 100px;
+			.illu-1 {
+				position: absolute;
+				width: 230px;
+				left: 150px;
+				top: 20px;
+
+				&.animScroll {
+					animation-name: floating;
+					animation-fill-mode: forwards;
+					animation-iteration-count: 1;
+					animation-duration: 6s;
+				}
+			}
+
+			.illu-2{
+				position: relative;
+				width: 230px;
+			}
+
+			@keyframes floating {
+			  0%{
+			    transform: translateX(0);
+			  } 
+			  100%{
+			    transform: translateX(-65px);
+			  }       
 			}
 		}
 		.container-text{
@@ -669,6 +714,9 @@
 	#section-app .wrapper .container-illu img {
 		width: 320px;
 	}
+	#section-app .wrapper .container-illu .illu-1 {
+		left: 65px;
+	}
 
 	#section-banner .wrapper {
 		justify-content: center;
@@ -746,6 +794,7 @@
 	#section-btp .wrapper .container-el > .el {
 		padding: 60px 0;
 		width: 100%;
+		flex-direction: column;
 	}
 	#section-btp .wrapper .container-el > .el:nth-child(odd) .container-illu {
 		order: 2;

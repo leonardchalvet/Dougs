@@ -362,7 +362,8 @@
 			<section id="section-app">
 				<div class="wrapper">
 					<div class="container-illu">
-						<img class="illu" src="img/home/app-illu.png">
+						<img class="illu-1" src="img/home/app-illu-2.png">
+						<img class="illu-2" src="img/home/app-illu-1.png">
 					</div>
 					<div class="container-text">	
 						<h3 class="homeCommon-section-onTitle">

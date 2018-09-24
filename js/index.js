@@ -1,7 +1,7 @@
 $(window).on('load', function() {
 
 	$window = $(window);
-
+	const body = $('body').attr('id');
 
 	/* HEADER */
 
@@ -25,7 +25,6 @@ $(window).on('load', function() {
 			$('#header-desktop .wrapper .container .li-link a').removeClass('active');
 	});
 
-	let body = $('body').attr('id');
 	let index = -1;
 	const linkHeader = index => `#header-desktop .wrapper .container .li-link a:nth-child(${index})`;
 
@@ -67,6 +66,7 @@ $(window).on('load', function() {
 
 	animCarousel();
 
+
 	/* QUOTE */
 
 	$('.li-quotes:not(:first-child)').hide();
@@ -98,4 +98,46 @@ $(window).on('load', function() {
 	})
 
 	/* END QUOTE */
+
+
+	/* HOME APP */
+
+	$window.scroll(function() {
+	    
+	    if($('body').attr('id') == 'home') {
+			const offsetTopSectonApp = $('#section-app').offset().top;
+			const wHeight = $( window ).height();
+
+		    if ( $window.scrollTop() + (wHeight/2) >= offsetTopSectonApp ) {
+		    	$('#section-app .wrapper .container-illu .illu-1').addClass('animScroll');
+		    }
+		}
+	});
+
+	/* END HOME APP */
+
+
+	/* FEATURES APP */
+
+	$window.scroll(function() {
+	    
+	    if($('body').attr('id') == 'features') {
+			const offsetTopSectonApp = $('#section-app').offset().top;
+			const wHeight = $( window ).height();
+			const link = '#section-app .wrapper .container-img .container-tag';
+
+		    if ( $window.scrollTop() + (wHeight/2) >= offsetTopSectonApp ) {
+		    	if(!$(link).hasClass('stopAnim')) {
+		    		$(link).addClass('animScroll');
+
+		    		setTimeout(function() {
+						$(link).addClass('stopAnim');
+						$(link).removeClass('animScroll');		    			
+		    		}, 4000);
+		    	}
+		    }
+		}
+	});	
+
+	/* END FEATURES APP */
 })

@@ -121,13 +121,13 @@
 					}
 					&.tag-2 {
 						top: 255px;
-						left: 28px;
+						left: 108px;
 					    z-index: -1;
 					    animation-duration: 5s;  
 					}
 					&.tag-3 {
 						top: 350px;
-						left: 235px;
+						left: 155px;
 					    z-index: -1;	
 					    animation-duration: 9s;  
 					}
@@ -159,6 +159,48 @@
 						background-color: $colorMain_1;
 						color:#FFF;
 						animation-duration: 8s;  
+					}
+				}
+
+				&.animScroll {
+					.tag {
+					  	animation-iteration-count: 1;
+					  	animation-fill-mode: forwards;
+						&.tag-2 {
+						    animation-name: moveTag2;
+						    animation-duration: 4s;  
+						}
+						&.tag-3 {
+						    animation-name: moveTag3;
+						    animation-duration: 4s;  
+						}
+						@keyframes moveTag2 {
+						  0%{
+						    transform: translateX(0);
+						  } 
+						  100%{
+						    transform: translateX(-80px) translateY(5px);
+						  }       
+						}
+						@keyframes moveTag3 {
+						  0%{
+						    transform: translateX(0);
+						  } 
+						  100%{
+						    transform: translateX(80px) translateY(5px);
+						  }       
+						}
+					}
+				}
+
+				&.stopAnim {
+					.tag {
+						&.tag-2 {
+							left: 28px;
+						}
+						&.tag-3 {
+							left: 235px;
+						}	
 					}
 				}
 			}
@@ -373,11 +415,23 @@
 	}
 	#section-app .wrapper .container-img .container-tag .tag.tag-2 {
 		top: 344px;
-		left: -12px;
+		left: 68px;
 	}
+
 	#section-app .wrapper .container-img .container-tag .tag.tag-3 {
 		top: 436px;
-		left: 190px;
+		left: 110px;
+	}
+	#section-app .wrapper .container-img .container-tag.stopAnim {
+		.tag {
+			&.tag-2 {
+				left: -12px;
+			}
+			&.tag-3 {
+				left: 190px;
+			}	
+
+		}
 	}
 	#section-app .wrapper .container-img .container-tag .tag.tag-4, 
 	#section-app .wrapper .container-img .container-tag .tag.tag-5, 
@@ -500,11 +554,37 @@
 	}
 	#section-app .wrapper .container-img .container-tag .tag.tag-2 {
 		top: 218px;
-		left: -25px;
+		left: 15px;
 	}
 	#section-app .wrapper .container-img .container-tag .tag.tag-3 {
 		top: 270px;
-		left: 110px;
+		left: 70px;
+	}
+	#section-app .wrapper .container-img .container-tag.stopAnim {
+		.tag {
+			@keyframes moveTag2 {
+			  0%{
+			    transform: translateX(0);
+			  } 
+			  100%{
+			    transform: translateX(-40px) translateY(5px);
+			  }       
+			}
+			@keyframes moveTag3 {
+			  0%{
+			    transform: translateX(0);
+			  } 
+			  100%{
+			    transform: translateX(40px) translateY(5px);
+			  }       
+			}
+			&.tag-2 {
+				left: -25px;
+			}
+			&.tag-3 {
+				left: 110px;
+			}	
+		}
 	}
 	#section-app .wrapper .container-img .container-tag .tag.tag-4,
 	#section-app .wrapper .container-img .container-tag .tag.tag-5,
