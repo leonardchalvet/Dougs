@@ -21,8 +21,8 @@
 
 		<main>
 
-			<section id="section-cover">
-				<div class="wrapper">
+			<section id="section-cover" class="container__anim">
+				<div class="wrapper anim__fade anim__delay_2">
 					<div class="pattern">
 						<img src="img/team/cover-pattern-1.svg">
 						<img src="img/team/cover-pattern-2.svg">
@@ -42,9 +42,9 @@
 				</div>
 			</section>
 
-			<section id="section-team">
+			<section id="section-team" class="container__anim">
 				
-				<div class="wrapper">
+				<div class="wrapper anim__fade anim__delay_6">
 					<div class="item">
 						<div class="pp" style="background-image: url(img/team/pp-1.jpg);"></div>
 						<div class="container-text">
@@ -373,11 +373,11 @@
 
 			</section>
 
-			<section id="section-fondateur">
+			<section id="section-fondateur" class="container__anim">
 				<div class="wrapper">
 					<div class="container-el">
 						<div class="el">
-							<div class="container-illu">
+							<div class="container-illu anim__fade anim__delay_4">
 								<img class="pattern" src="img/team/fondateur-pattern.svg">
 								<img class="illu" src="img/team/fondateur.png">
 								<div class="under-illu">
@@ -391,7 +391,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="container-text">
+							<div class="container-text anim__fade anim__delay_2">
 								<h2 class="title">
 									Oubliez la saisie manuelle de vos opérations
 								</h2>

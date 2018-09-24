@@ -1,9 +1,9 @@
-<section id="common-sectionBnd">
+<section id="common-sectionBnd" class="container__anim">
 	<div class="wrapper">
-		<div class="container-img">
+		<div class="container-img anim__fade anim__delay_2">
 			<img src="img/footer/cta-illu.svg">
 		</div>
-		<div class="container-text">
+		<div class="container-text anim__fade anim__delay_4">
 			<h2>
 				Réduisez votre facture comptable dès aujourd'hui !
 			</h2>

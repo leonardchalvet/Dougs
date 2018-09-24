@@ -253,10 +253,10 @@
 
 			</section>
 
-			<section id="section-btp" class="container__anim">
+			<section id="section-btp">
 				<div class="wrapper">
 					<div class="container-el">
-						<div class="el">
+						<div class="el container__anim">
 							<div class="container-illu anim__fade anim__delay_2">
 								<img class="pattern "src="img/home/btp-pattern.svg">
 								<img class="illu" src="img/home/btp-el1-illu.png">
@@ -290,7 +290,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="el">
+						<div class="el container__anim">
 							<div class="container-illu container-illu-anim anim__fade anim__delay_6">
 								<div class="container-cards">
 									<div class="card order-1">
@@ -362,8 +362,8 @@
 			<section id="section-app" class="container__anim">
 				<div class="wrapper">
 					<div class="container-illu anim__fade anim__delay_2">
-						<img class="illu-1" src="img/home/app-illu-2.png">
-						<img class="illu-2" src="img/home/app-illu-1.png">
+						<img src="img/home/app-illu-2.png">
+						<img src="img/home/app-illu-1.png">
 					</div>
 					<div class="container-text anim__fade anim__delay_4">	
 						<h3 class="homeCommon-section-onTitle">

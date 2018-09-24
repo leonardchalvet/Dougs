@@ -369,98 +369,88 @@
 
 /*----------  SECTION APP  ----------*/
 #section-app{
-	position: relative;
-	.wrapper{
-		padding: 125px 0px 125px 0px;
-		@include styleGrid3;
-		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		.container-illu{
-			position: relative;
-			width: calc(100% - 430px);
-			text-align: center;
-			padding-left: 100px;
-			.illu-1 {
-				position: absolute;
-				width: 230px;
-				left: 150px;
-				top: 20px;
-
-				&.animScroll {
-					animation-name: floating;
-					animation-fill-mode: forwards;
-					animation-iteration-count: 1;
-					animation-duration: 6s;
-				}
-			}
-
-			.illu-2{
-				position: relative;
-				width: 230px;
-			}
-
-			@keyframes floating {
-			  0%{
-			    transform: translateX(0);
-			  } 
-			  100%{
-			    transform: translateX(-65px);
-			  }       
-			}
-		}
-		.container-text{
-			width: 430px;
-			>p{
-				@include styleParagraphMedium;
-				margin-top: 30px;
-			}
-			.container-action{
-				margin-top: 45px;
-				display: flex;
-				flex-flow: row wrap;
-				align-items: center;
-				a{
-					margin-right: 24px;
-					&:last-child{
-						margin-right: 0px;
-					}
-					text-decoration: none;
-					padding: 10px 20px 10px 20px;
-					border-radius: 25px;
-					background-color: $colorMain_3;
-					display: flex;
-					flex-flow: row nowrap;
-					align-items: center;
-					justify-content: start;
-					.logo{
-						height: 27px;
-						margin-right: 13px;
-					}
-					.text{
-						width: 100%;
-						.onTitle{
-							color:#FFF;
-							font-size: 8px;
-							font-family: $font_1_regular;
-						}
-						.store{
-							color:#FFF;
-							font-size: 16px;
-							font-family: $font_1_regular;
-						}
-					}
-
-					&:first-child {
-						width: 150px;
-					}
-					&:last-child {
-						width: 175px;
-					}
-				}
-			}
-		}
-	}
+    position: relative;
+    &.reach{
+        .wrapper .container-illu{
+            img:nth-child(1){
+                transform: translate(-80%, -50%) scale(0.9);
+            }
+            img:nth-child(2){
+                transform: translate(-20%, -50%);
+            }
+        }
+    }
+    .wrapper{
+        padding: 125px 0px 125px 0px;
+        @include styleGrid3;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        .container-illu{
+            position: relative;
+            width: 465px;
+            height: 465px;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 240px;
+                transition: all 1500ms cubic-bezier(0.77, 0, 0.175, 1);
+            }
+        }
+        .container-text{
+            width: 430px;
+            >p{
+                @include styleParagraphMedium;
+                margin-top: 30px;
+            }
+            .container-action{
+                margin-top: 45px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                a{
+                    margin-right: 24px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    text-decoration: none;
+                    padding: 10px 20px 10px 20px;
+                    border-radius: 25px;
+                    background-color: $colorMain_3;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: start;
+                    .logo{
+                        height: 27px;
+                        margin-right: 13px;
+                    }
+                    .text{
+                        width: 100%;
+                        .onTitle{
+                            color:#FFF;
+                            font-size: 8px;
+                            font-family: $font_1_regular;
+                        }
+                        .store{
+                            color:#FFF;
+                            font-size: 16px;
+                            font-family: $font_1_regular;
+                        }
+                    }
+                    &:first-child {
+                        width: 150px;
+                    }
+                    &:last-child {
+                        width: 175px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

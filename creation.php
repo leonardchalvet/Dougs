@@ -21,8 +21,8 @@
 
 		<main>
 			
-			<section id="section-cover">
-				<div class="wrapper">
+			<section id="section-cover" class="container__anim">
+				<div class="wrapper anim__fade anim__delay_2">
 					<img class="pattern" src="img/creation/cover-pattern.svg">
 					<img class="pattern-mobile" src="img/creation/start-pattern-1.svg">
 					<div class="container-text">
@@ -43,9 +43,9 @@
 				</div>
 			</section>
 
-			<section id="section-jpd">
+			<section id="section-jpd" class="container__anim">
 				<div class="wrapper">
-					<div class="container-ftr">
+					<div class="container-ftr anim__fade anim__delay_2">
 						<div class="container-text">
 							<h2 class="creationCommon-section-title">
 								La création de votre entreprise par un juriste professionnel
@@ -72,7 +72,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="container-desc">
+					<div class="container-desc anim__fade anim__delay_">
 						<img class="illu" src="img/creation/jpd-illu.png">
 						<div class="container-text">
 							<p class="text">
@@ -91,20 +91,20 @@
 				</div>
 			</section>
 
-			<section id="section-xpr">
+			<section id="section-xpr" class="container__anim">
 				<div class="wrapper">
 					<div class="container-text">
-						<h2 class="creationCommon-section-title">
+						<h2 class="creationCommon-section-title anim__fade anim__delay_2">
 							Dougs est un cabinet d'expertise-comptable en ligne, c'est une garantie de sérieux
 						</h2>
 						<ul>
-							<li>
+							<li class="anim__fade anim__delay_4">
 								<img src="img/creation/xpr-icon.svg">
 								<p>
 									En tant que cabinet d'expertise-comptable inscrit à l'Ordre des experts-comptables de Lyon, Dougs se doit d'un haut niveau de qualité de conseil et de professionnalisme. Cela vous garantit que les solutions trouvées pour la création de votre entreprise seront les meilleures pour vous et que le travail sera mené à bien.
 								</p>
 							</li>
-							<li>
+							<li class="anim__fade anim__delay_6">
 								<img src="img/creation/xpr-icon.svg">
 								<p>
 									Une fois votre entreprise créée, Dougs pourra vous accompagner pour votre comptabilité et votre gestion avec des conseils spécifiques, dédiés aux nouveaux entrepreneurs. Cela vous permettra d'assurer le succès de votre nouvelle activité !
@@ -115,16 +115,16 @@
 				</div>
 			</section>
 
-			<section id="section-btn">
+			<section id="section-btn" class="container__anim">
 				<div class="wrapper">
 					<div class="container-text">
-						<h2 class="creationCommon-section-title">
+						<h2 class="creationCommon-section-title anim__fade anim__delay_2">
 							Découvrez pourquoi Dougs est si populaire pour la création d'entreprise !
 						</h2>
-						<p>
+						<p class="anim__fade anim__delay_4">
 							Vous souhaitez en savoir plus ? Demandez et un juriste expert en création d'entreprise vous appelle dans les 30 secondes.
 						</p>
-						<div class="container-action">
+						<div class="container-action anim__fade anim__delay_6">
 							<a href="#" class="btn">
 								<div class="btn-content">
 									Demander un rappel gratuit !
@@ -135,16 +135,16 @@
 				</div>
 			</section>
 
-			<section id="common-section-quotes">
+			<section id="common-section-quotes" class="container__anim">
 				<div class="wrapper">
 					
-					<div class="head">
+					<div class="head anim__fade anim__delay_2">
 						<h2 class="creationCommon-section-title">
 							Nos clients en parlent mieux que nous !
 						</h2>
 					</div>
 
-					<div class="container-quotes">
+					<div class="container-quotes anim__fade anim__delay_4">
 						<div class="li-quotes active">
 							<div class="quote">
 								<img class="shape" src="img/creation/quote-shape1.svg">
@@ -238,7 +238,7 @@
 						</div>
 					</div>
 
-					<div class="container-nav">
+					<div class="container-nav anim__fade anim__delay_6">
 						<div class="nav active" data-liQuote="1">
 							<div class="num">01</div>
 							<div class="underline"></div>
@@ -253,15 +253,15 @@
 
 			</section>
 
-			<section id="common-section-pres">
+			<section id="common-section-pres" class="container__anim">
 				<div class="wrapper">
-					<div class="head">
+					<div class="head anim__fade anim__delay_2">
 						<h2 class="creationCommon-section-title">
 							Concrètement, les 6 étapes de la création d'entreprise
 						</h2>
 					</div>
 					<div class="container-col">
-						<div class="col-el col-el-1">
+						<div class="col-el col-el-1 anim__fade anim__delay_4">
 							<div class="el">
 								<h5>.01</h5>
 								<p>Vous remplissez quelques informations directement en ligne pour commencer la création de votre entreprise.</p>
@@ -275,8 +275,8 @@
 								<p>Vous transmettez le projet à la banque de votre choix et déposez le capital.</p>
 							</div>
 						</div>
-						<img class="illu" src="img/creation/sectionPres-illu.svg">
-						<div class="col-el col-el-2">
+						<img class="illu anim__fade anim__delay_6" src="img/creation/sectionPres-illu.svg">
+						<div class="col-el col-el-2 anim__fade anim__delay_4">
 							<div class="el">
 								<h5>.04</h5>
 								<p>La banque vous remet une attestation de dépôt des fonds, vous nous la transmettez.</p>
@@ -294,22 +294,22 @@
 				</div>
 			</section>
 
-			<section id="section-start">
+			<section id="section-start" class="container__anim">
 				<div class="wrapper">
-					<div class="pattern">
+					<div class="pattern anim__fade anim__delay_2">
 						<img class="pattern" src="img/creation/start-pattern-1.svg">
 						<img class="pattern" src="img/creation/start-pattern-2.svg">
 						<img class="pattern" src="img/creation/start-pattern-3.svg">
 						<img class="pattern" src="img/creation/start-pattern-3.svg">
 						<img class="pattern" src="img/creation/start-pattern-4.svg">
 					</div>
-					<div class="container-title">
+					<div class="container-title anim__fade anim__delay_2">
 						<h2 class="creationCommon-section-title">
 							Lancez votre activité dés aujourd’hui !
 						</h2>
 					</div>
 					<div class="container-grp">
-						<div class="el el-1">
+						<div class="el el-1 anim__fade anim__delay_4">
 							<img class="icon" src="img/creation/start-el1-icon">
 							<p>
 								Commencer à renseigner vos informations sur Dougs, un juriste expert en création d'entreprise vous appelle dans la journée. C'est gratuit, rapide et sans engagement.
@@ -322,10 +322,10 @@
 								</a>
 							</div>
 						</div>
-						<div class="sep">
+						<div class="sep anim__fade anim__delay_6">
 							<div class="circle">OU</div>
 						</div>
-						<div class="el el-2">
+						<div class="el el-2 anim__fade anim__delay_8">
 							<img class="icon" src="img/creation/start-el3-icon">
 							<p>
 								 Demandez une présentation de Dougs, un juriste expert en création d’entreprise vous appelle dans la minute. C’est gratuit, rapide et sans engagement 

@@ -99,24 +99,6 @@ $(window).on('load', function() {
 
 	/* END QUOTE */
 
-
-	/* HOME APP */
-
-	if($('body').attr('id') == 'home') {
-		$window.scroll(function() {
-		    		    
-			const offsetTopSectonApp = $('#section-app').offset().top;
-			const wHeight = $( window ).height();
-
-		    if ( $window.scrollTop() + (wHeight/2) >= offsetTopSectonApp ) {
-		    	$('#section-app .wrapper .container-illu .illu-1').addClass('animScroll');
-		    }
-		})
-	}
-
-	/* END HOME APP */
-
-
 	/* FEATURES APP */
 	if($('body').attr('id') == 'features') {
 		$window.scroll(function() {
