@@ -97,11 +97,11 @@
 					font-family: $font_2_semibold;
 					box-shadow: 0 4px 18px 0 rgba(0,0,0,0.1);
 
-					animation-name: floating;
+					animation-name: floatingTag;
 				  	animation-iteration-count: infinite;
 				  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
 				  	transform-origin: 50% 1px; 
-				  	@keyframes floating {
+				  	@keyframes floatingTag {
 					  0%{
 					    transform: translateY(5px);
 					  } 
