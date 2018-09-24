@@ -26,14 +26,18 @@ $(window).on('load', function() {
 	});
 
 	let body = $('body').attr('id');
-	let linkHeader = '#header-desktop .wrapper .container .li-link a:nth-child(';
+	let index = -1;
+	const linkHeader = index => `#header-desktop .wrapper .container .li-link a:nth-child(${index})`;
 
 	switch(body) {
-		case 'features'  : $(linkHeader + '1)').addClass('here');  break;
-		case 'pricing'   : $(linkHeader + '2)').addClass('here');  break;
-		case 'creation'  : $(linkHeader + '3)').addClass('here');  break;
-		case 'team'      : $(linkHeader + '4)').addClass('here');  break;
+		case 'features'  : index = 1; break;
+		case 'pricing'   : index = 2; break;
+		case 'creation'  : index = 3; break;
+		case 'team'      : index = 4; break;
 	}
+
+	if(index > 0)
+		$(linkHeader(index)).addClass('here');
 
 	/* END HEADER */
 
