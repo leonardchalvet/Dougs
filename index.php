@@ -17,14 +17,14 @@
 	
 	<body id="home">
 
-		<?php include('header.php'); ?>
+		<?php $page="home"; include('header.php'); ?>
 
 		<main>
 			
-			<section id="section-cover" class="container__anim">
+			<section id="section-cover">
 				<div class="wrapper">
 					
-					<div class="container-text anim__fade anim__delay_2">
+					<div class="container-text">
 						<h1>
 							L’expert-comptable en ligne qui vous simplifie vraiment la vie
 						</h1>
@@ -45,7 +45,7 @@
 							</div>
 						</div>
 					</div>	
-					<div class="container-img anim__fade anim__delay_4">
+					<div class="container-img">
 						<img src="img/home/section-cover-img.png">
 						<div class="container-tag">
 							<div class="tag tag-1">
@@ -63,22 +63,22 @@
 				</div>
 			</section>
 
-			<section id="section-ftr" class="container__anim">
+			<section id="section-ftr">
 				<div class="wrapper">
 					<div class="container-ftr">
-						<div class="ftr anim__fade anim__delay_2">
+						<div class="ftr">
 							<img class="logo" src="img/home/icn-cabinet.svg">
 							<p class="text">
 								Sans engagement, tarifs attractifs
 							</p>
 						</div>
-						<div class="ftr anim__fade anim__delay_4">
+						<div class="ftr">
 							<img class="logo" src="img/home/icn-liasse.svg">
 							<p class="text">
 								Cabinet membre de l'Ordre des Experts Comptables
 							</p>
 						</div>
-						<div class="ftr anim__fade anim__delay_6">
+						<div class="ftr">
 							<img class="logo" src="img/home/icn-tarifs.svg">
 							<p class="text">
 								Liasse fiscale, bilan et compte de résultat
@@ -88,9 +88,9 @@
 				</div>
 			</section>
 
-			<section id="common-section-pres" class="container__anim">
+			<section id="common-section-pres">
 				<div class="wrapper">
-					<div class="head anim__fade anim__delay_2">
+					<div class="head">
 						<h3 class="homeCommon-section-onTitle">
 							Dougs est unique 
 						</h3>
@@ -101,7 +101,7 @@
 							Voici ce qui rend nos clients heureux et que vous allez adorer :
 						</p>
 					</div>
-					<div class="container-col anim__fade anim__delay_4">
+					<div class="container-col">
 						<div class="col-el col-el-1">
 							<div class="el">
 								<h5>Votre bilan</h5>
@@ -116,8 +116,8 @@
 								<p>Avoir votre comptable Dougs toujours disponible pour vous conseiller, en un clic comme au téléphone.</p>
 							</div>
 						</div>
-						<img class="illu anim__fade anim__delay_6" src="img/home/sectionPres-illu.svg">
-						<div class="col-el col-el-2 anim__fade anim__delay_4">
+						<img class="illu" src="img/home/sectionPres-illu.svg">
+						<div class="col-el col-el-2">
 							<div class="el">
 								<h5>Prédiction</h5>
 								<p>La prédiction en temps réel de vos charges, cotisations et TVA.</p>
@@ -135,10 +135,10 @@
 				</div>
 			</section>
 
-			<section id="common-section-quotes" class="container__anim">
+			<section id="common-section-quotes">
 				<div class="wrapper">
 					
-					<div class="head anim__fade anim__delay_2">
+					<div class="head">
 						<h3 class="homeCommon-section-onTitle">
 							Témoignages
 						</h3>
@@ -147,7 +147,7 @@
 						</h2>
 					</div>
 
-					<div class="container-quotes anim__fade anim__delay_4">
+					<div class="container-quotes">
 						<div class="li-quotes active">
 							<div class="quote">
 								<img class="shape" src="img/home/quote-shape1.svg">
@@ -238,7 +238,7 @@
 						</div>
 					</div>
 
-					<div class="container-nav anim__fade anim__delay_6">
+					<div class="container-nav">
 						<div class="nav active" data-liQuote="1">
 							<div class="num">01</div>
 							<div class="underline"></div>
@@ -256,12 +256,12 @@
 			<section id="section-btp">
 				<div class="wrapper">
 					<div class="container-el">
-						<div class="el container__anim">
-							<div class="container-illu anim__fade anim__delay_2">
+						<div class="el">
+							<div class="container-illu">
 								<img class="pattern "src="img/home/btp-pattern.svg">
 								<img class="illu" src="img/home/btp-el1-illu.png">
 							</div>
-							<div class="container-text anim__fade anim__delay_4">
+							<div class="container-text">
 								<h3 class="homeCommon-section-onTitle">
 									Gagnez du temps
 								</h3>
@@ -291,7 +291,7 @@
 							</div>
 						</div>
 						<div class="el container__anim">
-							<div class="container-illu container-illu-anim anim__fade anim__delay_6">
+							<div class="container-illu container-illu-anim">
 								<div class="container-cards">
 									<div class="card order-3">
 										<div class="text">
@@ -313,7 +313,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="container-text anim__fade anim__delay_8">
+							<div class="container-text">
 								<h3 class="homeCommon-section-onTitle">
 									Soyez serein
 								</h3>
@@ -359,13 +359,13 @@
 				</div>
 			</section>
 
-			<section id="section-app" class="container__anim">
+			<section id="section-app">
 				<div class="wrapper">
-					<div class="container-illu anim__fade anim__delay_2">
+					<div class="container-illu">
 						<img src="img/home/app-illu-2.png">
 						<img src="img/home/app-illu-1.png">
 					</div>
-					<div class="container-text anim__fade anim__delay_4">	
+					<div class="container-text">	
 						<h3 class="homeCommon-section-onTitle">
 							Soyez mobile
 						</h3>
@@ -405,23 +405,23 @@
 				</div>
 			</section>
 
-			<section id="section-banner" class="container__anim">
+			<section id="section-banner">
 				<div class="wrapper">
-					<h2 class="title homeCommon-section-title anim__fade anim__delay_2">
+					<h2 class="title homeCommon-section-title">
 						Votre compta à jour, en quelques minutes, où que vous soyez
 					</h2>
-					<p class="text anim__fade anim__delay_4">
+					<p class="text">
 						Vous souhaitez en savoir plus ? Demandez et nous vous rappelons dans les 30 secondes.
 					</p>
-					<a class="btn anim__fade anim__delay_6" href="">
+					<a class="btn" href="">
 						<span class="btn-content">Demander un rappel gratuit !</span>
 					</a>
 				</div>
 			</section>
 
-			<section id="section-expert" class="container__anim">
+			<section id="section-expert">
 				<div class="wrapper">
-					<div class="container-text anim__fade anim__delay_2">
+					<div class="container-text">
 						<h3 class="homeCommon-section-onTitle">
 							Soyez mobile
 						</h3>
@@ -438,7 +438,7 @@
 							Tchatter avec un Comptable
 						</a>
 					</div>
-					<div class="container-img anim__fade anim__delay_4">
+					<div class="container-img">
 						<img class="img" src="img/home/expert-img.png">
 						<div class="cdr">
 							<div class="name">
@@ -452,9 +452,9 @@
 				</div>
 			</section>
 
-			<section id="section-secu" class="container__anim">
+			<section id="section-secu">
 				<div class="wrapper">
-					<div class="head anim__fade anim__delay_2">
+					<div class="head">
 						<h3 class="homeCommon-section-onTitle">
 							Sûr et confortable
 						</h3>
@@ -464,7 +464,7 @@
 					</div>
 					<div class="container-el">
 						<div class="el">
-							<div class="illu anim__fade anim__delay_4">
+							<div class="illu">
 								<img src="img/home/secu-illu1.svg">
 							</div>
 							<h3 class="title anim__fade">
@@ -475,7 +475,7 @@
 							</p>
 						</div>
 						<div class="el">
-							<div class="illu anim__fade anim__delay_6">
+							<div class="illu">
 								<img src="img/home/secu-illu2.svg">
 							</div>
 							<h3 class="title anim__fade">
@@ -489,9 +489,9 @@
 				</div>
 			</section>
 
-			<section id="section-tarifs" class="container__anim">
+			<section id="section-tarifs">
 				<div class="wrapper">
-					<h2 class="homeCommon-section-title anim__fade anim__delay_2">
+					<h2 class="homeCommon-section-title">
 						Pourquoi est-ce moins cher ?
 					</h2>
 					<p class="text anim__fade anim__delay_4">

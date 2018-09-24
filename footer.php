@@ -1,12 +1,12 @@
-<footer id="footer" class="container__anim">
+<footer id="footer">
 	<div class="wrapper">
-		<div class="container-logo anim__fade anim__delay_2">
+		<div class="container-logo">
 			<img class="logo" src="img/footer/logo-white.svg">
 			<p>
 				L'Expert Comptable qui vous simplifie vraiment la vie.
 			</p>
 		</div>
-		<div class="container-ul anim__fade anim__delay_4">
+		<div class="container-ul">
 			<ul>
 				<li><a href="">À Propos</a></li>
 				<li><a href="">L’équipe</a></li>
@@ -41,7 +41,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="foot anim__fade anim__delay_6">
+	<div class="foot">
 		<div class="container-left">
 			<p>
 				© 2018 Dougs Compta. Cabinet d'expertise-comptable enregistré à l’Ordre. Tous droits réservés.

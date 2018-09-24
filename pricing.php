@@ -17,14 +17,14 @@
 	
 	<body id="pricing">
 
-		<?php include('header.php'); ?>
+		<?php $page="pricing"; include('header.php'); ?>
 
 		<main>
 			
-			<section id="section-price" class="container__anim">
+			<section id="section-price">
 				<div class="wrapper">
 					
-					<div class="head anim__fade anim__delay_2">
+					<div class="head">
 						<h5>
 							Sans engagement, 30 jours d'essai gratuit 
 						</h5>
@@ -33,7 +33,7 @@
 						</h2>
 					</div>
 
-					<div class="container-el anim__fade anim__delay_4">
+					<div class="container-el">
 						<div class="el el-1">
 							<div class="container-icon">
 								<img src="img/pricing/price-el1-icon.svg">
@@ -249,7 +249,7 @@
 						</div>
 					</div>
 
-					<div class="foot anim__fade anim__delay_6">
+					<div class="foot">
 						<p>
 							Le suivi de votre dossier et l'ensemble des prestations sont réalisées par les comptables et experts-comptables de notre cabinet Lyonnais.
 						</p>
@@ -264,10 +264,10 @@
 				</div>
 			</section>
 			
-			<section id="section-details" class="container__anim">
+			<section id="section-details">
 				<div class="wrapper">
 					<div class="container-text">
-						<ul class="anim__fade anim__delay_2">
+						<ul>
 							<li>
 								<p>
 									Création de statut
@@ -309,7 +309,7 @@
 								</p>
 							</li>
 						</ul>
-						<ul class="anim__fade anim__delay_4">
+						<ul>
 							<li>
 								<p>
 									Bulletins de salaire
@@ -339,14 +339,14 @@
 				</div>
 			</section>
 
-			<section id="section-frq" class="container__anim">
+			<section id="section-frq">
 				<div class="wrapper">
-					<div class="container-title anim__fade anim__delay_2">
+					<div class="container-title">
 						<h2 class="pricingCommon-section-title">
 							Questions fréquentes
 						</h2>
 					</div>
-					<div class="container-text anim__fade anim__delay_4">
+					<div class="container-text">
 						<div class="el">
 							<h4>
 								Je ne sais pas quel pack choisir, pouvez-vous m'aider ?

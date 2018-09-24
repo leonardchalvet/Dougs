@@ -17,14 +17,14 @@
 	
 	<body id="features">
 
-		<?php include('header.php'); ?>
+		<?php $page="features"; include('header.php'); ?>
 
 		<main>
 			
-			<section id="section-cover" class="container__anim">
+			<section id="section-cover">
 				<div class="wrapper">
 					
-					<div class="container-text anim__fade anim__delay_2">
+					<div class="container-text">
 						<h1>
 							Le suivi d’un expert-comptable, une application en plus
 						</h1>
@@ -39,16 +39,16 @@
 							</a>
 						</div>
 					</div>	
-					<div class="container-img anim__fade anim__delay_4">
+					<div class="container-img">
 						<img src="img/features/section-cover-img.png">
 					</div>
 				</div>
 			</section>
 
-			<section id="section-app" class="container__anim">
+			<section id="section-app">
 				<div class="wrapper">
 
-					<div class="container-img anim__fade anim__delay_2">
+					<div class="container-img">
 						<img class="illu" src="img/features/app-illu.png">
 						<div class="container-tag">
 							<div class="tag tag-1">
@@ -72,7 +72,7 @@
 						</div>
 					</div>
 
-					<div class="container-text anim__fade anim__delay_4">
+					<div class="container-text">
 						<h2 class="featuresCommon-section-title">
 							La récupération des opérations de votre compte bancaire professionnel est automatique
 						</h2>
@@ -89,10 +89,10 @@
 				</div>
 			</section>
 
-			<section id="section-ntf" class="container__anim">
+			<section id="section-ntf">
 				<div class="wrapper">
 
-					<div class="container-text anim__fade anim__delay_2">
+					<div class="container-text">
 						<h2 class="featuresCommon-section-title">
 							Reposez-vous sur nous
 						</h2>
@@ -101,7 +101,7 @@
 						</p>
 					</div>
 
-					<div class="container-img anim__fade anim__delay_4">
+					<div class="container-img">
 						<img class="pattern" src="img/features/ntf-pattern.svg">
 						<img src="img/features/ntf-illu.png">
 					</div>
@@ -112,11 +112,11 @@
 			<section id="section-lpt">
 				<div class="wrapper">
 					<div class="container-el">
-						<div class="el container__anim">
-							<div class="container-illu anim__fade anim__delay_2">
+						<div class="el">
+							<div class="container-illu">
 								<img src="img/features/lpt-el1-illu.png">
 							</div>
-							<div class="container-text anim__fade anim__delay_4">
+							<div class="container-text">
 								<h2 class="featuresCommon-section-title">
 									Gérez vos notes de frais… vraiment.
 								</h2>
@@ -125,11 +125,11 @@
 								</p>
 							</div>
 						</div>
-						<div class="el container__anim">
-							<div class="container-illu anim__fade anim__delay_2">
+						<div class="el">
+							<div class="container-illu">
 								<img src="img/features/lpt-el2-illu.png">
 							</div>
-							<div class="container-text anim__fade anim__delay_4">
+							<div class="container-text">
 								<h2 class="featuresCommon-section-title">
 									Prennez le contrôle de votre entreprise
 								</h2>
@@ -142,14 +142,14 @@
 				</div>
 			</section>
 
-			<section id="section-bln" class="container__anim">
+			<section id="section-bln">
 				<div class="wrapper">
 
-					<div class="container-img anim__fade anim__delay_2">
+					<div class="container-img">
 						<img src="img/features/bln-illu.png">
 					</div>
 
-					<div class="container-text anim__fade anim__delay_4">
+					<div class="container-text">
 						<h2 class="featuresCommon-section-title">
 							Votre bilan est préparé, attesté, et transmis à l’administration fiscale par nos comptables Dougs
 						</h2>

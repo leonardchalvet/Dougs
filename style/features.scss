@@ -80,11 +80,6 @@
 			justify-content: center;
 			.illu {
 				width: 260px;
-				animation-name: floating;
-			  	animation-iteration-count: infinite;
-			  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
-			  	transform-origin: 50% 1px; 
-			  	animation-duration: 7s;  
 			}
  			.container-tag {
 				position: absolute;
@@ -93,21 +88,6 @@
 				height: 100%;
 				.tag {
 					position: absolute;
-					animation-name: floating;
-				  	animation-iteration-count: infinite;
-				  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
-				  	transform-origin: 50% 1px; 
-					@keyframes floating {
-					  0%{
-					    transform: translateY(5px);
-					  } 
-					  50%{
-					    transform:translateY(-5px);;
-					  } 
-					  100%{
-					    transform: translateY(5px);
-					  }       
-					}
 					&.tag-1, &.tag-2, &.tag-3 {
 						width: 270px;
 						img {
@@ -117,19 +97,26 @@
 					&.tag-1 {
 						top: 140px;
 						left: 265px;
-						animation-duration: 7s;  
 					}
 					&.tag-2 {
 						top: 255px;
 						left: 108px;
 					    z-index: -1;
-					    animation-duration: 5s;  
+
+					    animation-iteration-count: 1;
+					  	animation-fill-mode: forwards;
+					  	animation-name: moveTag2;
+						animation-duration: 2s;  
 					}
 					&.tag-3 {
 						top: 350px;
-						left: 155px;
-					    z-index: -1;	
-					    animation-duration: 9s;  
+						left: 165px;
+					    z-index: -1;
+
+					    animation-iteration-count: 1;
+					  	animation-fill-mode: forwards;
+					  	animation-name: moveTag3;
+						animation-duration: 2s;	
 					}
 					&.tag-4, &.tag-5, &.tag-6 {
 						border-radius: 4px;
@@ -144,63 +131,34 @@
 						right: 110px;
 						background-color: #EBF1F4;
 						color:$colorMain_3;
-						animation-duration: 10s;  
 					}
 					&.tag-5 {
 						top: 232px;
 						left: 110px;
 						background-color: $colorMain_2;
-						color:#FFF;
-						animation-duration: 6s;  
+						color:#FFF; 
 					}
 					&.tag-6 {
 						top: 330px;
 						right: 90px;
 						background-color: $colorMain_1;
 						color:#FFF;
-						animation-duration: 8s;  
 					}
-				}
-
-				&.animScroll {
-					.tag {
-					  	animation-iteration-count: 1;
-					  	animation-fill-mode: forwards;
-						&.tag-2 {
-						    animation-name: moveTag2;
-						    animation-duration: 4s;  
-						}
-						&.tag-3 {
-						    animation-name: moveTag3;
-						    animation-duration: 4s;  
-						}
-						@keyframes moveTag2 {
-						  0%{
-						    transform: translateX(0);
-						  } 
-						  100%{
-						    transform: translateX(-80px) translateY(5px);
-						  }       
-						}
-						@keyframes moveTag3 {
-						  0%{
-						    transform: translateX(0);
-						  } 
-						  100%{
-						    transform: translateX(80px) translateY(5px);
-						  }       
-						}
+					@keyframes moveTag2 {
+					  0%{
+					    transform: translateX(0);
+					  } 
+					  100%{
+					    transform: translateX(-80px) translateY(5px);
+					  }       
 					}
-				}
-
-				&.stopAnim {
-					.tag {
-						&.tag-2 {
-							left: 28px;
-						}
-						&.tag-3 {
-							left: 235px;
-						}	
+					@keyframes moveTag3 {
+					  0%{
+					    transform: translateX(0);
+					  } 
+					  100%{
+					    transform: translateX(80px) translateY(5px);
+					  }       
 					}
 				}
 			}
@@ -422,17 +380,6 @@
 		top: 436px;
 		left: 110px;
 	}
-	#section-app .wrapper .container-img .container-tag.stopAnim {
-		.tag {
-			&.tag-2 {
-				left: -12px;
-			}
-			&.tag-3 {
-				left: 190px;
-			}	
-
-		}
-	}
 	#section-app .wrapper .container-img .container-tag .tag.tag-4, 
 	#section-app .wrapper .container-img .container-tag .tag.tag-5, 
 	#section-app .wrapper .container-img .container-tag .tag.tag-6 {
@@ -560,31 +507,21 @@
 		top: 270px;
 		left: 70px;
 	}
-	#section-app .wrapper .container-img .container-tag.stopAnim {
-		.tag {
-			@keyframes moveTag2 {
-			  0%{
-			    transform: translateX(0);
-			  } 
-			  100%{
-			    transform: translateX(-40px) translateY(5px);
-			  }       
-			}
-			@keyframes moveTag3 {
-			  0%{
-			    transform: translateX(0);
-			  } 
-			  100%{
-			    transform: translateX(40px) translateY(5px);
-			  }       
-			}
-			&.tag-2 {
-				left: -25px;
-			}
-			&.tag-3 {
-				left: 110px;
-			}	
-		}
+	@keyframes moveTag2 {
+	  0%{
+	    transform: translateX(0);
+	  } 
+	  100%{
+	    transform: translateX(-40px) translateY(5px);
+	  }       
+	}
+	@keyframes moveTag3 {
+	  0%{
+	    transform: translateX(0);
+	  } 
+	  100%{
+	    transform: translateX(40px) translateY(5px);
+	  }       
 	}
 	#section-app .wrapper .container-img .container-tag .tag.tag-4,
 	#section-app .wrapper .container-img .container-tag .tag.tag-5,

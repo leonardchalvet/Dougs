@@ -81,10 +81,10 @@
 					&:last-child{
 						margin-right:0px;
 					}
-					&.here {
+					&.active {
 						opacity: 1;
 					}
-					&.active {
+					&.hide {
 						opacity: 0.3;
 					}
 					&:hover {

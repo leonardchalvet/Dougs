@@ -32,16 +32,16 @@
 		</div>
 		<div class="container container-right">
 			<div class="li-link">
-				<a href="features.php">
+				<a <?php if($page=="features") echo('class="active"');?> href="features.php">
 					Fonctionnalités
 				</a>
-				<a href="pricing.php">
+				<a <?php if($page=="pricing") echo('class="active"');?> href="pricing.php">
 					Tarifs
 				</a>
-				<a href="creation.php">
+				<a <?php if($page=="creation") echo('class="active"');?> href="creation.php">
 					Création d’entreprise
 				</a>
-				<a href="team.php">
+				<a <?php if($page=="team") echo('class="active"');?> href="team.php">
 					L’équipe
 				</a>
 				<a href="">

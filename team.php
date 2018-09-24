@@ -17,12 +17,12 @@
 	
 	<body id="team">
 
-		<?php include('header.php'); ?>
+		<?php $page="team"; include('header.php'); ?>
 
 		<main>
 
-			<section id="section-cover" class="container__anim">
-				<div class="wrapper anim__fade anim__delay_2">
+			<section id="section-cover">
+				<div class="wrapper">
 					<div class="pattern">
 						<img src="img/team/cover-pattern-1.svg">
 						<img src="img/team/cover-pattern-2.svg">
@@ -42,9 +42,9 @@
 				</div>
 			</section>
 
-			<section id="section-team" class="container__anim">
+			<section id="section-team">
 				
-				<div class="wrapper anim__fade anim__delay_6">
+				<div class="wrapper">
 					<div class="item">
 						<div class="pp" style="background-image: url(img/team/pp-1.jpg);"></div>
 						<div class="container-text">
@@ -373,11 +373,11 @@
 
 			</section>
 
-			<section id="section-fondateur" class="container__anim">
+			<section id="section-fondateur">
 				<div class="wrapper">
 					<div class="container-el">
 						<div class="el">
-							<div class="container-illu anim__fade anim__delay_4">
+							<div class="container-illu">
 								<img class="pattern" src="img/team/fondateur-pattern.svg">
 								<img class="illu" src="img/team/fondateur.png">
 								<div class="under-illu">
@@ -391,7 +391,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="container-text anim__fade anim__delay_2">
+							<div class="container-text">
 								<h2 class="title">
 									Oubliez la saisie manuelle de vos opérations
 								</h2>
