@@ -53,6 +53,7 @@
 			}
 		}
 		.container-text{
+			position: relative;
 			text-align: center;
 			h1{
 				@include styleH1;	

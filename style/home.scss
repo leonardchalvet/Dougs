@@ -196,6 +196,25 @@
 					.illu {
 						position: relative;
 					}
+					.cta {
+						position: absolute;
+						bottom: 0;
+						left: 50%;
+						transform: translateX(-50%);
+						height: 35px;	
+						width: 105px;	
+						border-radius: 17px;	
+						background-color: #11ABEC;
+						.line {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translateX(-50%) translateY(-50%);
+							height: 4px;	
+							width: 54px;	
+							background-color: #A9E6FF;
+						}
+					}
 				}
 				.container-text{
 					width: 410px;

@@ -296,9 +296,9 @@
 								<p>
 									Autres formes juridiques
 								</p>
-								<p class="contact">
+								<a href="" class="contact">
 									Nous contacter
-								</p>
+								</a>
 							</li>
 							<li>
 								<p>
@@ -330,9 +330,9 @@
 								<p>
 									Pour 2 ou 3 bulletins
 								</p>
-								<p class="contact">
+								<a href="" class="contact">
 									Nous contacter
-								</p>
+								</a>
 							</li>
 						</ul>
 					</div>

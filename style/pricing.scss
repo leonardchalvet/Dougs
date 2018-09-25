@@ -266,7 +266,7 @@
 
 					&:not(:first-child) {
 						margin-top: 25px;
-						p {
+						p, a {
 							@include styleParagraphMedium();
 							color: $colorMain_3;
 							&:last-child {
@@ -274,7 +274,12 @@
 								font-family: OpenSans-Bold;
 							}
 							&.contact {
+								text-decoration: none;
 								color: #3799D0;
+
+								&:hover {
+									text-decoration: underline;
+								}
 							}
 						}
 					}

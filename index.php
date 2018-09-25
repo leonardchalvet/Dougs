@@ -312,6 +312,9 @@
 										</div>
 									</div>
 								</div>
+								<div class="cta">
+									<div class="line"></div>
+								</div>
 							</div>
 							<div class="container-text">
 								<h3 class="homeCommon-section-onTitle">
