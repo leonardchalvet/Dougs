@@ -69,6 +69,9 @@
 				.btn-content{
 					color: $colorMain_3;
 				}
+				&:hover {
+					@include styleBtnHover($colorMain_2, #fff, $colorMain_2);
+				}
 			}
 
 		}
