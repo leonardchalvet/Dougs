@@ -88,7 +88,13 @@ $(window).on('load', function() {
 				$('#common-section-quotes .wrapper .container-nav .nav:nth-child('+num+')').addClass('active');
 
 				$('.li-quotes').show();
-				$('.li-quotes:not(:nth-child('+num+')').hide();
+
+				for( let i=1 ; i <= $('.li-quotes').length ; i++ ) {
+					if(i != num) {
+						$('.li-quotes:nth-child('+i+')').hide();
+					}
+				}
+
 				$('.li-quotes:nth-child('+num+')').addClass('active');
 			}, 500)
 		}
@@ -111,13 +117,9 @@ $(window).on('load', function() {
 		animQuote($(this).attr('data-liquote'));
 		boucle = 0;
 	});
-	$('#common-section-quotes .wrapper .container-quotes .li-quotes .quote .quote-content .link').click(function(){
-		boucle = 0;
-	})
-
-
 	$('#common-section-quotes .wrapper .container-quotes .li-quotes .quote .quote-content .link').click(function() {
 		$(this.parentNode).parent().toggleClass('show');
+		boucle = 0;
 	})
 
 	/* END QUOTE */
