@@ -737,6 +737,11 @@
 	#section-cover .wrapper .container-img .container-tag .tag.tag-3{
 		top: 215px;
 	}
+	#section-cover .wrapper .container-play {
+		right: 20%;
+		transform: translateX(50%);
+		left: auto;
+	}
 
 	#section-ftr .wrapper .container-ftr .ftr{
 		width: calc(100% / 3.5);
@@ -853,6 +858,10 @@
 	#section-cover .wrapper .container-img .container-tag .tag.tag-3 {
 		top: 155px;
 		left: 25px;
+	}
+	#section-cover .wrapper .container-play {
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	#section-ftr .wrapper .container-ftr {
