@@ -35,7 +35,7 @@
 						<p>Voici l'équipe qui vous simplifie la vie et vous aide à oublier la paperasse.</p>
 						<a href="" class="btn">
 							<div class="btn-content">
-								► &nbsp;&nbsp; Voir la vidéo
+								► &nbsp; Voir la vidéo
 							</div>
 						</a>
 					</div>

@@ -165,6 +165,9 @@
     			border-radius: 0;
 				.btn-content{
 					color: $colorMain_3;
+					&:first-letter {
+						font-size: 12px;
+					}
 				}
 			}
 			&:hover {

@@ -68,6 +68,9 @@
 				border: 1px solid #EBF1F4;
 				.btn-content{
 					color: $colorMain_3;
+					&:first-letter {
+						font-size: 12px;
+					}
 				}
 				&:hover {
 					@include styleBtnHover($colorMain_2, #fff, $colorMain_2);
