@@ -42,6 +42,13 @@
 						} 
 					}
 
+					&:nth-child(1) .btn:hover {
+						@include styleBtnHover(#fff, $colorMain_2, #fff);
+					}
+					&:nth-child(2) .btn:hover {
+						@include styleBtnHover(#fff, $colorMain_3, #fff);
+					}
+
 					.btn-under {
 						position: absolute;
 						@include styleParagraphSmall;

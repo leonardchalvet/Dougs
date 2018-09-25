@@ -52,6 +52,9 @@
 					.btn-content{
 						color:#FFF;
 					} 
+					&:hover {
+						@include styleBtnHover(#fff, $colorMain_2, #CFD9DC);
+					}
 				}
 			}
 		}
@@ -223,6 +226,9 @@
 					.btn-content{
 						color:#FFF;
 					} 
+					&:hover {
+						@include styleBtnHover(#fff, $colorMain_2, #CFD9DC);
+					}
 				}
 			}
 		}
@@ -353,6 +359,9 @@
 						.btn-content{
 							color:#FFF;
 						} 
+						&:hover {
+							@include styleBtnHover(#fff, $colorMain_3, #fff);
+						}
 					}
 					.tel {
 						position: absolute;

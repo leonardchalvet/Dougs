@@ -23,7 +23,7 @@
 			flex-flow: row nowrap;
 			align-items: center;
 			&.desktop {
-				min-width: 260px;
+				min-width: 261px;
 			}
 			&.mobile {
 				display: none;
@@ -96,7 +96,7 @@
 				display: flex;
 				flex-flow: row wrap;
 				align-items: center;
-				min-width: 210px;
+				min-width: 211px;
 				.action-signin{
 					@include styleLinkStyle1;
 					font-family: $font_1_regular;
@@ -115,6 +115,10 @@
 					.btn-content{
 						color:$colorMain_2;
 					} 
+
+					&:hover {
+						@include styleBtnHover($colorMain_2, #fff, $colorMain_2);
+					}
 				}
 			}
 		}

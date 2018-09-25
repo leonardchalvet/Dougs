@@ -56,11 +56,7 @@
 					.container-action {
 						.btn {
 							transition-duration: 0.2s;
-							border:1px solid $colorMain_2;
-							background-color: $colorMain_2;
-							.btn-content {
-								color: #fff;
-							} 
+							@include styleBtnHover($colorMain_2, #fff, $colorMain_2);
 						}
 					}
 				}

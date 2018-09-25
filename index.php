@@ -59,7 +59,13 @@
 							</div>
 						</div>
 					</div>
-					<div class=""></div>
+					<div class="container-play">
+						<a href="" class="btn">
+							<div class="btn-content">
+								► &nbsp;&nbsp; Voir la vidéo
+							</div>
+						</a>
+					</div>
 				</div>
 			</section>
 

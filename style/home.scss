@@ -17,6 +17,7 @@
 	padding: 235px 0px 0px 0px;
 	background-color: #C0E0ED;
 	.wrapper{
+		position: relative;
 		@include styleGrid1;
 		display: flex;
 		flex-flow: row wrap;
@@ -39,6 +40,10 @@
 					background-color:$colorMain_2;
 					.btn-content{
 						color:#FFF;
+					}
+
+					&:hover {
+						@include styleBtnHover(#fff, $colorMain_2, transparent);
 					} 
 				}
 				.price {
@@ -102,8 +107,8 @@
 				  	animation-timing-function: linear;
 				  	transform-origin: 50% 1px; 
 					@keyframes floatingTag {
-						from { 	transform: rotate(0deg) translateX(50px) rotate(0deg); }
-						to   {  transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+						from { 	transform: rotate(0deg) translateX(10px) rotate(0deg); }
+						to   {  transform: rotate(360deg) translateX(10px) rotate(-360deg); }
 					}
 
 					&.tag-1{
@@ -111,7 +116,7 @@
 						right: -5px;
 						background-color: #FFF;
 						color:$colorMain_3;
-						animation-duration: 20s;
+						animation-duration: 8s;
 					}
 					&.tag-2{
 						top: 240px;
@@ -125,8 +130,47 @@
 						left: 24px;
 						background-color: $colorMain_2;
 						color:#FFF;
-						animation-duration: 22s;
+						animation-duration: 10s;
 					}
+				}
+			}
+		}
+		.container-play {
+			position: absolute;
+			left: 0;
+			bottom: -10px;
+			height: 65px;	
+			width: 150px;	
+			background-color: #fff;
+			overflow: hidden;
+
+			&:before {
+				content: " ";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background-color: $colorMain_2;
+				transform: translateY(100%);
+			}
+
+			.btn{
+				display: flex;
+				align-items: center;
+				width: 100%;
+				height: 100%;
+				@include styleBtnStyle1;
+				padding: 0;
+    			border-radius: 0;
+				.btn-content{
+					color: $colorMain_3;
+				}
+			}
+			&:hover {
+				&:before {
+					transition-duration: 0.6s;
+					transform: translateY(-100%);
 				}
 			}
 		}
@@ -431,22 +475,27 @@
                     padding: 10px 20px 10px 20px;
                     border-radius: 25px;
                     background-color: $colorMain_3;
+                    border: 1px solid transparent;
                     display: flex;
                     flex-flow: row nowrap;
                     align-items: center;
                     justify-content: start;
+                    transition-duration: 0.5s;
                     .logo{
+                    	transition-duration: 0.5s;
                         height: 27px;
                         margin-right: 13px;
                     }
                     .text{
                         width: 100%;
                         .onTitle{
+                            transition-duration: 0.5s;
                             color:#FFF;
                             font-size: 8px;
                             font-family: $font_1_regular;
                         }
                         .store{
+                        	transition-duration: 0.5s;
                             color:#FFF;
                             font-size: 16px;
                             font-family: $font_1_regular;
@@ -457,6 +506,18 @@
                     }
                     &:last-child {
                         width: 175px;
+                    }
+                    &:hover {
+                    	background-color: #fff;
+                    	border: 1px solid #CFD9DC;
+                    	.logo {
+                    		filter: invert(80%);
+                    	}
+                    	.text {
+                    		.onTitle, .store {
+                    			color: $colorMain_3;
+                    		}
+                    	}
                     }
                 }
             }
@@ -490,6 +551,9 @@
 			.btn-content{
 				color: #FFF;
 			}
+			&:hover {
+				@include styleBtnHover(#fff, $colorMain_2, #CFD9DC);
+			} 
 		}
 	}
 }
@@ -544,7 +608,7 @@
 			.cdr{
 				width: 270px;
 				left: 50%;
-				bottom: 0px;
+				bottom: -1px;
 				transform: translateX(-50%);
 				position: absolute;
 				text-align: center;
@@ -626,6 +690,9 @@
 			.btn-content{
 				color: #FFF;
 			}
+			&:hover {
+				@include styleBtnHover(#fff, $colorMain_2, #CFD9DC);
+			} 
 		}
 	}
 }
@@ -713,7 +780,7 @@
 		width: 400px;
 	}
 	#section-app .wrapper .container-illu img {
-		width: 320px;
+		width: 220px;
 	}
 	#section-app .wrapper .container-illu .illu-1 {
 		left: 65px;

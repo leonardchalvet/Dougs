@@ -35,6 +35,9 @@
 					.btn-content{
 						color:#FFF;
 					} 
+					&:hover {
+						@include styleBtnHover(#fff, $colorMain_2, transparent);
+					}
 				}
 			}
 		}
@@ -180,6 +183,9 @@
 				margin-top: 70px;
 				.btn-content{
 					color: #FFF;
+				}
+				&:hover {
+					@include styleBtnHover(#fff, $colorMain_2, #CFD9DC);
 				}
 			}
 		}
