@@ -59,7 +59,7 @@ $(window).on('load', function() {
 	if($('body').attr('id') == 'features') {
 		$window.scroll(function() {
 		    		    
-			const offsetTopSectonApp = $('#section-app').offset().top;
+			const offsetTopSectonApp = $('#section-app .wrapper .container-img').offset().top;
 			const wHeight = $( window ).height();
 
 		    if ( $window.scrollTop() + (wHeight/2) - (wHeight/8) >= offsetTopSectonApp ) {

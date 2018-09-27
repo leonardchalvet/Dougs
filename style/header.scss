@@ -134,9 +134,8 @@
 	z-index: 20;
 	top: 0;
 	left: 0;
-	height: 78px;
+	height: 80px;
 	width: 100%;
-	transition-duration: 0.5s;
 
 	&.scroll{
 		background-color: #FFF;
@@ -144,7 +143,10 @@
 	}
 
 	.head {
+		position: relative;
+		z-index: 1;
 		padding: 20px 25px 18px 25px;
+		height: 80px;
 		.wrapper {
 			flex-direction: column;
 
@@ -196,7 +198,10 @@
 	}
 
 	.content {
-		display: none;
+		background-color: #FFF;
+		transition-duration: 0.5s;
+		transform: translateY(-200%);
+		height: 500px;
 		.container {
 			width: 100%;
 			display: flex;
@@ -309,14 +314,13 @@
 		}
 
 		.content { 
-			transition-duration: 0.4s;
-			display: block;
+			transform: translateY(0);
 		}
 	}
 }
 
 
-@media screen and (min-width: $breakPoint_mobile_header) and (max-width: $breakPoint_tablet) {
+@media screen and (min-width: $breakPoint_mobile_ipad) and (max-width: $breakPoint_tablet) {
 
 	#header-desktop {
 		height: 105px;
@@ -332,7 +336,7 @@
 	}
 }
 
-@media screen and (max-width: $breakPoint_mobile_header) {
+@media screen and (max-width: $breakPoint_mobile_ipad) {
 	#header-mobile {
 		display: block;
 	}

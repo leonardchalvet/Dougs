@@ -143,7 +143,7 @@
 			&.anim {
 				.container-tag { 
 					.tag {
-						transition-duration: 3s;
+						transition-duration: 1.5s;
 						&.tag-2 {
 						    transform: translateX(-80px);
 						}
@@ -501,21 +501,17 @@
 		top: 270px;
 		left: 70px;
 	}
-	@keyframes moveTag2 {
-	  0%{
-	    transform: translateX(0);
-	  } 
-	  100%{
-	    transform: translateX(-40px) translateY(5px);
-	  }       
-	}
-	@keyframes moveTag3 {
-	  0%{
-	    transform: translateX(0);
-	  } 
-	  100%{
-	    transform: translateX(40px) translateY(5px);
-	  }       
+	#section-app .wrapper .container-img.anim {
+		.container-tag { 
+			.tag {
+				&.tag-2 {
+				    transform: translateX(-30px);
+				}
+				&.tag-3 {
+					transform: translateX(40px);
+				}
+			}
+		}
 	}
 	#section-app .wrapper .container-img .container-tag .tag.tag-4,
 	#section-app .wrapper .container-img .container-tag .tag.tag-5,

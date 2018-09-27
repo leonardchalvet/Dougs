@@ -321,9 +321,16 @@
 /*----------  RESPONSIVE ----------*/
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
 	
-	#section-price .wrapper .container-el {
-		flex-wrap: wrap;
-		justify-content: center;
+	#section-price .wrapper {
+		width: 100%;
+	}
+	#section-price .wrapper .container-el{
+		width: 100%;
+    	justify-content: space-around;
+	}
+	#section-price .wrapper .container-el .el {
+		padding: 100px 16px 70px 16px;
+    	width: 320px;
 	}
 
 	#section-details .wrapper .container-text {
@@ -342,6 +349,7 @@
 		margin: 0 20px 40px 20px;
 	}
 }
+
 @media screen and (max-width: $breakPoint_mobile){
 
 	#section-price .wrapper .head {
