@@ -678,6 +678,7 @@ main
 	#common-section-quotes .wrapper .container-quotes {
 		height: auto;
 		overflow-x: auto;
+		-webkit-overflow-scrolling: touch; 
 		overflow-y: hidden;
 		display: flex;
 		flex-wrap: nowrap;
