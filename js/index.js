@@ -118,7 +118,7 @@ $(window).on('load', function() {
 		}
 	}
 
-	if (window.matchMedia("(max-width: 700px)").matches) {
+	if (window.matchMedia("(max-width: 800px)").matches) {
 		$('.li-quotes').addClass('active');
 	}
 	else {

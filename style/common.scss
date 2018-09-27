@@ -615,7 +615,9 @@ main
 	#common-section-pres .wrapper .container-col .col-el{
 		width: 190px;
 	}
+}
 
+@media screen and (min-width: 800px) and (max-width: $breakPoint_tablet) {
 	#common-section-quotes .wrapper .container-quotes {
 		height: 500px;
 	}
@@ -624,7 +626,6 @@ main
 		height: 210px;
 		padding: 20px;
 	}
-
 }
 
 
@@ -660,8 +661,9 @@ main
 		transform: none !important;
 		margin-bottom: 40px;
 	}
+}
 
-
+@media screen and (max-width: 800px) {
 	#common-section-quotes {
 		padding: 60px 0;
 	}
