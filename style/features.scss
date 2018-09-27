@@ -105,21 +105,11 @@
 						top: 255px;
 						left: 108px;
 					    z-index: -1;
-
-					    animation-iteration-count: 1;
-					  	animation-fill-mode: forwards;
-					  	animation-name: moveTag2;
-						animation-duration: 2s;  
 					}
 					&.tag-3 {
 						top: 350px;
 						left: 165px;
 					    z-index: -1;
-
-					    animation-iteration-count: 1;
-					  	animation-fill-mode: forwards;
-					  	animation-name: moveTag3;
-						animation-duration: 2s;	
 					}
 					&.tag-4, &.tag-5, &.tag-6 {
 						border-radius: 4px;
@@ -147,21 +137,19 @@
 						background-color: $colorMain_1;
 						color:#FFF;
 					}
-					@keyframes moveTag2 {
-					  0%{
-					    transform: translateX(0);
-					  } 
-					  100%{
-					    transform: translateX(-80px) translateY(5px);
-					  }       
-					}
-					@keyframes moveTag3 {
-					  0%{
-					    transform: translateX(0);
-					  } 
-					  100%{
-					    transform: translateX(80px) translateY(5px);
-					  }       
+				}
+			}
+
+			&.anim {
+				.container-tag { 
+					.tag {
+						transition-duration: 3s;
+						&.tag-2 {
+						    transform: translateX(-80px);
+						}
+						&.tag-3 {
+							transform: translateX(80px);
+						}
 					}
 				}
 			}

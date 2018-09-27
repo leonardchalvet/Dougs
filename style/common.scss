@@ -61,7 +61,7 @@ main
 	$colorMain_1: #0ED094;
 	$colorMain_2: #11ABEC;
 	$colorMain_3: #013A51;
-	$colorMain_4: #FCFCFC;
+	$colorMain_4: #F4F4F4;
 	$colorMain_5: #002534;
 	$colorMain_6: #58676D;
 
@@ -168,6 +168,7 @@ main
 
 	$breakPoint_tablet: 1250px;
 	$breakPoint_mobile: 700px;
+	$breakPoint_mobile_header : 1025px;
 
 
 /*=====  End of BREAK POINT  ======*/
@@ -682,9 +683,11 @@ main
 	#common-section-quotes .wrapper .container-quotes .li-quotes {
 		display: flex !important;
 		flex-wrap: nowrap;
-		height: 300px;
+		min-height: 300px;
+		height: auto;
 		transform: translateY(35px);
 		width: 1000px;
+		padding-bottom: 50px;
 	}
 	#common-section-quotes .wrapper .container-quotes .li-quotes .quote {
 		margin-top: 0 !important;

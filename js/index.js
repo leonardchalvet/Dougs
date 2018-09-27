@@ -1,20 +1,21 @@
 $(window).on('load', function() {
 
 	$window = $(window);
-	const body = $('body').attr('id');
 
 	/* HEADER */
 
 	$window.scroll(function() {
 	    if ( $window.scrollTop() >= 1 ) {
 	        $('#header-desktop').addClass('scroll');
+	        $('#header-mobile').addClass('scroll');
 	    } else {
 	    	$('#header-desktop').removeClass('scroll');
+	    	$('#header-mobile').removeClass('scroll');
 	    };
 	});
 
 	$('.burger').click(function() {
-		$(this.parentNode).parent().parent().toggleClass('active');
+		$(this.parentNode).parent().parent().parent().toggleClass('active');
 	})
 
 	$('#header-desktop .wrapper .container .li-link a')
@@ -52,6 +53,23 @@ $(window).on('load', function() {
 	}
 
 	animCarousel();
+
+	/* FEATURES APP */
+
+	if($('body').attr('id') == 'features') {
+		$window.scroll(function() {
+		    		    
+			const offsetTopSectonApp = $('#section-app').offset().top;
+			const wHeight = $( window ).height();
+
+		    if ( $window.scrollTop() + (wHeight/2) - (wHeight/8) >= offsetTopSectonApp ) {
+		    	if(!$('#section-app .wrapper .container-img').hasClass('anim'))
+		    		$('#section-app .wrapper .container-img').addClass('anim');
+		    }
+		})
+	}
+
+	/* END FEATURES APP */
 
 
 	/* HOME APP */
